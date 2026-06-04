@@ -1,8 +1,9 @@
 # Gojomons
 
-A turn-based creature-battler built in Godot 4.5 / GDScript. Original creatures,
-a custom 9-element type chart, relics, masters, and a campaign loop that runs
-overworld → towns → routes → battles.
+A roguelike auto-battler creature game built in Godot 4.5 / GDScript. You draft a
+team of original creatures over a run, pick up relics and items along the way, and
+watch fast auto battles decide whether the build holds. Inspired by Slay the
+Spire, Super Auto Pets, Pokémon, and Hearthstone Battlegrounds.
 
 A personal project, in active development. This repo is a showcase of it, not a release.
 
@@ -21,34 +22,24 @@ the prototype stage.
 
 ## What it is
 
-A creature-collecting battler in the monster-tamer tradition, with a few of my
-own systems:
+The strategy lives in building the team, not in micromanaging each fight. Battles
+resolve on their own, so you win or lose on drafting, routing, and synergies.
 
+- **Roguelike runs.** Start a run, pick a master and a starter, then move through
+  towns (shop, heal, choose where to go next) and routes (chains of rooms and
+  events) toward a boss. Towns and routes are decision spaces, not a free-roam
+  overworld.
+- **Auto battles.** Combat plays out automatically, meant to be fast and readable.
+  Low input, high strategy.
+- **Relics and items.** Run-modifying pickups in the Slay the Spire vein that hook
+  into combat and bend the math.
 - **Custom type system.** 9 elements (Fire, Water, Life, Machine, Storm, Mystic,
-  Light, Dark, Alien) on a hand-built effectiveness chart, plus a neutral `Base`
-  element that ignores STAB and the type chart.
-- **Relics and items.** Run-modifying passives that hook into combat at set event
-  points and adjust the damage/modifier pipeline.
-- **Masters.** Element-themed mentors, each with their own specialization and
-  starter creatures.
-- **Campaign loop.** Overworld map → towns (with shops) → routes → encounters →
-  battle, with run state (party, gold, location) saved between steps.
-
-### Creatures
-
-https://github.com/user-attachments/assets/37fd310a-7f81-4918-bca0-5bf175075fe9
-
-*Catra.*
-
-![Roster and art direction](media/StyleExploration.png)
-
-### Combat
-
-https://github.com/user-attachments/assets/6949fa0d-eae7-488f-94ff-aa767a7bdbc2
-
-An early combat showcase, here in 2v2. Both 1v1 and 2v2 formats exist. I'm still
-working on how combat is presented: layout, pacing, animation, and how much
-impact each hit reads with. Expect this to keep changing.
+  Light, Dark, Alien) on a hand-built chart, plus a neutral `Base` element that
+  ignores STAB and the chart.
+- **Masters.** Element-themed run identities, each with their own specialization
+  and starter.
+- **Creatures.** Surreal companions, closer to spirits and archetypes than
+  ordinary critters. Each has a type, an aspect, and a combat style.
 
 ---
 
@@ -96,8 +87,9 @@ balance simulator use.
 ### Tests and balance tooling
 
 A headless runner (`godot --headless`) checks the combat rules, type chart, and
-game state with roughly 1,500 assertions. A separate headless simulator replays
-real fights to measure win rates, which I use to find balance outliers. See
+game state with roughly 1,500 assertions. Since battles auto-resolve, the same
+rules also drive a headless simulator that replays fights to measure win rates,
+which I use to find balance outliers. See
 [design/balance-by-simulation.md](design/balance-by-simulation.md) and
 [design/symmetrical-type-chart.md](design/symmetrical-type-chart.md).
 
@@ -112,29 +104,19 @@ BattleController
     PostTurn     KO detection, switches, win/loss check
 ```
 
-### UI
-
-https://github.com/user-attachments/assets/c3c74b29-404c-4d1b-a405-19657dc0aac6
-
-*Party menu.*
-
 ---
 
 ## Roadmap
 
-The full pipeline is in [`roadmap/pipeline_view.html`](roadmap/pipeline_view.html),
-an interactive checklist grouped by system area. Open it in a browser; GitHub
-shows it as source, not rendered. It's an early iteration that tried to capture
-every feature that might make it in, so it's broader than what's actually scoped.
-Rough state right now:
+The full interactive checklist is in [`roadmap/pipeline_view.html`](roadmap/pipeline_view.html),
+grouped by system area. Rough state right now:
 
 - **Working:** party and PC storage, shops, node map, town scenes, base trainer
   battles, and the core combat loop (moves, types, damage, single and 2v2).
 - **In progress:** relics, move cooldowns and styles, position and party-wide
   effects.
 - **Planned:** catching/recruitment, gyms and bosses, masters and rivals,
-  economy and scaling, map events and fog of war, overworld exploration, unlocks
-  and challenge runs.
+  economy and scaling, map events and fog of war, unlocks and challenge runs.
 
 It's early, and a lot of the design is still open.
 
@@ -149,7 +131,30 @@ SYSTEMS/
   gojomons/  creature + move resources, species DB, rules layer
   moves/     move definitions
   items/  relics/  masters/   content databases
-  map/  towns/  routes/  campaign/  encounters/   the world loop
+  map/  towns/  routes/  campaign/  encounters/   the run loop
   core/      event dispatcher, rates, config
 UI/          menu/scene router
 ```
+
+---
+
+## Showcase
+
+### Creatures
+
+https://github.com/user-attachments/assets/37fd310a-7f81-4918-bca0-5bf175075fe9
+
+*Catra.*
+
+![Roster and art direction](media/StyleExploration.png)
+
+### Combat
+
+https://github.com/user-attachments/assets/6949fa0d-eae7-488f-94ff-aa767a7bdbc2
+
+An early combat showcase, 2v2. Battles auto-resolve; I'm still working on how they
+read: layout, pacing, animation, and impact. Both 1v1 and 2v2 formats exist.
+
+### Party menu
+
+https://github.com/user-attachments/assets/c3c74b29-404c-4d1b-a405-19657dc0aac6
