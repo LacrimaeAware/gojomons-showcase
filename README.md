@@ -4,19 +4,18 @@ A turn-based creature-battler built in Godot 4.5 / GDScript. Original creatures,
 a custom 9-element type chart, relics, masters, and a campaign loop that runs
 overworld → towns → routes → battles.
 
-This is a personal project in active development. This repo is a showcase of it:
-the writing and media here are a record of what I'm building and how it works,
-not a release.
+A personal project, in active development. This repo is a showcase of it, not a release.
 
-<!-- MAIN MENU: upload media/MainMenuAnim.mp4 in the GitHub editor, paste the
-     user-attachments URL on its own line below this comment. -->
+### Main menu
 
-*Main menu.*
+https://github.com/user-attachments/assets/002a4908-96f4-4c86-a180-8253683c4f1a
 
-I work on this solo: art, design, and code. I use AI to speed up art prototyping
-and parts of development. I've been building creature-battler games for several
-years across earlier prototypes; this repo is the current one, started in late
-2025, so its commit history is much shorter than the actual time spent.
+I work on this solo: art, design, and code. AI has sped up prototyping art and
+code and testing styles; figuring out how to balance that speed against quality
+and coherence has been part of the work. I've been prototyping games in Godot for
+about five years; this project started in summer 2025, so its commit history is
+much shorter than the time I've spent in the engine. Most of the art is still at
+the prototype stage.
 
 ---
 
@@ -37,13 +36,19 @@ own systems:
 
 ### Creatures
 
-<!-- CATRA: upload media/CatraAnim.mp4, paste its user-attachments URL below. -->
+https://github.com/user-attachments/assets/37fd310a-7f81-4918-bca0-5bf175075fe9
 
-*Catra, one of the more finished creatures.*
+*Catra.*
 
 ![Roster and art direction](media/StyleExploration.png)
 
-*A wider look at the roster and art direction.*
+### Combat
+
+https://github.com/user-attachments/assets/6949fa0d-eae7-488f-94ff-aa767a7bdbc2
+
+An early combat showcase, here in 2v2. Both 1v1 and 2v2 formats exist. I'm still
+working on how combat is presented: layout, pacing, animation, and how much
+impact each hit reads with. Expect this to keep changing.
 
 ---
 
@@ -78,8 +83,8 @@ EventDispatcher.emit(GameEvents.SOME_EVENT, context_dict)
 
 Handlers get a single `Dictionary` context. Relics, items, and master passives
 read that context and adjust it in place to inject their modifiers. Adding a new
-relic means registering a handler, not editing the damage code. Background on why
-I switched to this is in [design/event-driven-combat-architecture.md](design/event-driven-combat-architecture.md).
+relic means registering a handler, not editing the damage code. Background is in
+[design/event-driven-combat-architecture.md](design/event-driven-combat-architecture.md).
 
 ### Pure rules layer
 
@@ -92,7 +97,7 @@ balance simulator use.
 
 A headless runner (`godot --headless`) checks the combat rules, type chart, and
 game state with roughly 1,500 assertions. A separate headless simulator replays
-real fights to measure win rates. I use it to find balance outliers. See
+real fights to measure win rates, which I use to find balance outliers. See
 [design/balance-by-simulation.md](design/balance-by-simulation.md) and
 [design/symmetrical-type-chart.md](design/symmetrical-type-chart.md).
 
@@ -109,7 +114,7 @@ BattleController
 
 ### UI
 
-<!-- PARTY MENU: upload media/PartyMenuAnim.mp4, paste its URL below. -->
+https://github.com/user-attachments/assets/c3c74b29-404c-4d1b-a405-19657dc0aac6
 
 *Party menu.*
 
@@ -117,10 +122,21 @@ BattleController
 
 ## Roadmap
 
-[`roadmap/pipeline_view.html`](roadmap/pipeline_view.html) is an interactive,
-color-coded view of the development pipeline across every system area, with
-priorities and notes (including ideas that were considered and cut). Details in
-[roadmap/README.md](roadmap/README.md).
+The full pipeline is in [`roadmap/pipeline_view.html`](roadmap/pipeline_view.html),
+an interactive checklist grouped by system area. Open it in a browser; GitHub
+shows it as source, not rendered. It's an early iteration that tried to capture
+every feature that might make it in, so it's broader than what's actually scoped.
+Rough state right now:
+
+- **Working:** party and PC storage, shops, node map, town scenes, base trainer
+  battles, and the core combat loop (moves, types, damage, single and 2v2).
+- **In progress:** relics, move cooldowns and styles, position and party-wide
+  effects.
+- **Planned:** catching/recruitment, gyms and bosses, masters and rivals,
+  economy and scaling, map events and fog of war, overworld exploration, unlocks
+  and challenge runs.
+
+It's early, and a lot of the design is still open.
 
 ---
 
@@ -137,12 +153,3 @@ SYSTEMS/
   core/      event dispatcher, rates, config
 UI/          menu/scene router
 ```
-
----
-
-## Notes
-
-- Media here is hosted on GitHub's CDN, not committed to the repo. To add a clip,
-  drag the file from `media/` into the GitHub README editor and paste the
-  generated URL where the placeholders are. See [media/README.md](media/README.md).
-- Engine: Godot 4.5. Language: GDScript.
