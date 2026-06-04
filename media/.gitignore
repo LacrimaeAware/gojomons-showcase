@@ -1,0 +1,6 @@
+# Raw media stays LOCAL — never commit the binaries.
+# They're shown in the README via externally-hosted URLs (GitHub's
+# user-attachments CDN), not from the repo. See README.md in this folder.
+*
+!.gitignore
+!README.md
