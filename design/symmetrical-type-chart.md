@@ -1,33 +1,26 @@
-# Design Decision: A Symmetrical Type Chart
+# The type chart
 
-*How I made a 9-element type chart provably fair — without forcing every type to
-have the same number of strengths and weaknesses.*
+Most type charts (Pokémon and its descendants) are lopsided: some types just end
+up better because they have more resistances or fewer weaknesses. I wanted types
+with distinct feels (a strong-but-fragile attacker, a weak-but-tanky defender)
+that still came out even overall.
 
-## The problem
+## How the chart is stored
 
-Pokémon-style type charts are famously lopsided. Some types are simply better
-than others because they have more resistances, fewer weaknesses, or hit more
-things super-effectively. The naive fix — *"give every type the same count of
-strengths and weaknesses"* — is rigid and produces bland, samey types. I wanted
-types with **distinct personalities** (a glass-cannon attacker, a tanky
-defender) that were nonetheless **fair**.
+Each relationship is `+1` or `-1`, written from both sides:
 
-## The insight
+- **Offense:** `+1` means this type hits the other one hard, `-1` means it hits
+  weakly.
+- **Defense:** `+1` means this type is *weak* to the other (takes more), `-1`
+  means it *resists* the other (takes less).
 
-Fairness isn't about *count*, it's about *net*. A type can have lots of offensive
-advantages as long as it pays for them somewhere — in defensive fragility, in
-fewer defensive resistances, whatever. The constraint I imposed:
+So a `-1` in the defense column is good for the defender. That sign flip is the
+part that's easy to misread.
 
-> **Every type's total advantages must equal its total disadvantages — net zero —
-> even if the distribution between offense and defense differs.**
-
-That lets Dark be a strong-but-fragile attacker and Light be a weak-but-tanky
-defender, while *neither is objectively better* than the other.
-
-## The implementation
-
-The chart is **additive** rather than multiplicative-lookup. Each relationship is
-just `+1` (advantage) or `-1` (disadvantage), stored from both perspectives:
+The multiplier is additive. It starts at 1.0, each `+1` adds 0.5, each `-1`
+subtracts 0.5, clamped at 0. Multi-element moves and dual-type defenders sum all
+the relationships, so the additive form composes without needing a lookup entry
+for every combination.
 
 ```gdscript
 "Dark": {
@@ -40,28 +33,23 @@ just `+1` (advantage) or `-1` (disadvantage), stored from both perspectives:
 },
 ```
 
-Damage multiplier starts at `1.0`; each `+1` adds `0.5`, each `-1` subtracts
-`0.5`, clamped at `0`. Multi-element moves and dual-type defenders just sum their
-relationships — the additive model composes cleanly where a lookup table would
-need an entry for every combination.
+Reading Light: it attacks Mystic and Life weakly (two offensive `-1`), and it
+resists Dark and Mystic (two defensive `-1`, both resistances). So Light deals
+less damage than average but also takes less.
 
-## The proof
+## The rule I balanced around
 
-This is the part I'm proud of: I didn't just *assert* the chart was balanced — I
-**measured it**. The headless balance report computes every type's pure
-offensive + defensive multiplier profile across all 9 types. The result:
+For every type, **average damage dealt equals average damage taken**. A type that
+hits hard gets hit equally hard; a type that hits softly is equally hard to hurt.
+Offense and defense are tied together so neither side comes out ahead.
 
-> **Every type nets +0.00.** The chart has *personalities* (Dark =
-> 1.06/1.06 strong-attacker/fragile; Light = 0.89/0.89 weak-attacker/tanky) but
-> every advantage is paid for by an equal disadvantage.
+The balance report computes each type's average offensive and defensive
+multiplier across all 9 types. The two numbers match for every type:
 
-So the chart is *demonstrably* symmetric in net power while still being
-asymmetric — and interesting — in flavor. (Balance work later confirmed the chart
-itself was **not** a source of imbalance and could be ruled out entirely — see
-[balance-by-simulation.md](balance-by-simulation.md).)
+- Dark: 1.06 out / 1.06 in. Hits above average, takes above average.
+- Light: 0.89 out / 0.89 in. Hits below average, takes below average.
 
----
-
-*It's not deep mathematics — it's an invariant (net-zero per type) plus the
-discipline to verify it computationally instead of by intuition. But that's
-exactly the mindset I wanted the system to reflect.*
+Same idea, measured instead of assumed. Later balance work confirmed the chart
+itself isn't a source of imbalance and ruled it out (see
+[balance-by-simulation.md](balance-by-simulation.md)). The remaining problems
+live in individual creatures, not the chart.
