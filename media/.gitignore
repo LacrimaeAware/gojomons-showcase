@@ -1,6 +1,7 @@
-# Raw media stays LOCAL — never commit the binaries.
-# They're shown in the README via externally-hosted URLs (GitHub's
-# user-attachments CDN), not from the repo. See README.md in this folder.
+# Binaries are ignored by default. Stills that are safe to publish get
+# explicitly un-ignored below so the README can embed them by path.
+# Video stays out unless converted to GIF (see README.md).
 *
 !.gitignore
 !README.md
+!StyleExploration.png

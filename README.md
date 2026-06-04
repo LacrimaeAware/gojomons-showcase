@@ -41,7 +41,7 @@ own systems:
 
 *Catra, one of the more finished creatures.*
 
-<!-- STYLE SHOWCASE: upload media/StyleExploration.png, use ![roster](URL). -->
+![Roster and art direction](media/StyleExploration.png)
 
 *A wider look at the roster and art direction.*
 
