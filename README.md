@@ -38,8 +38,8 @@ resolve on their own, so you win or lose on drafting, routing, and synergies.
   ignores STAB and the chart.
 - **Masters.** Element-themed run identities, each with their own specialization
   and starter.
-- **Creatures.** Surreal companions, closer to spirits and archetypes than
-  ordinary critters. Each has a type, an aspect, and a combat style.
+- **Creatures.** A mix of spirits, archetypes, and more ordinary critters, each
+  with a type, an aspect, and a combat style.
 
 ---
 
@@ -144,9 +144,11 @@ UI/          menu/scene router
 
 https://github.com/user-attachments/assets/37fd310a-7f81-4918-bca0-5bf175075fe9
 
-*Catra.*
+*Catra, the current flagship Gojomon.*
 
-![Roster and art direction](media/StyleExploration.png)
+![Early Gojomon prototypes](media/StyleExploration.png)
+
+*Some early Gojomon prototypes.*
 
 ### Combat
 
