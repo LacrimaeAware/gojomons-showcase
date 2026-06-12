@@ -2,8 +2,8 @@
 
 A roguelike auto-battler creature game built in Godot 4.5 / GDScript. You draft a
 team of original creatures over a run, pick up relics and items along the way, and
-watch fast auto battles decide whether the build holds. Inspired by Slay the
-Spire, Super Auto Pets, Pokémon, and Hearthstone Battlegrounds.
+watch fast auto battles decide whether the build holds. The shape is capture,
+route pressure, shop choices, and draft synergies in one run-based structure.
 
 A personal project, in active development. This repo is a showcase of it, not a release.
 
@@ -31,11 +31,11 @@ resolve on their own, so you win or lose on drafting, routing, and synergies.
   overworld.
 - **Auto battles.** Combat plays out automatically, meant to be fast and readable.
   Low input, high strategy.
-- **Relics and items.** Run-modifying pickups in the Slay the Spire vein that hook
-  into combat and bend the math.
+- **Relics and items.** Run-modifying pickups that hook into combat and bend the
+  math.
 - **Custom type system.** 9 elements (Fire, Water, Life, Machine, Storm, Mystic,
   Light, Dark, Alien) on a hand-built chart, plus a neutral `Base` element that
-  ignores STAB and the chart.
+  ignores same-type attack bonus and the chart.
 - **Masters.** Element-themed run identities, each with their own specialization
   and starter.
 - **Creatures.** A mix of spirits, archetypes, and more ordinary critters, each
@@ -109,14 +109,21 @@ BattleController
 ## Roadmap
 
 The full interactive checklist is in [`roadmap/pipeline_view.html`](roadmap/pipeline_view.html),
-grouped by system area. Rough state right now:
+grouped by system area. The cleaner current documentation plan is in
+[`roadmap/showcase-documentation-plan.md`](roadmap/showcase-documentation-plan.md),
+with a current return handoff in
+[`roadmap/return-handoff-2026-06-12.md`](roadmap/return-handoff-2026-06-12.md).
+Rough state right now:
 
-- **Working:** party and PC storage, shops, node map, town scenes, base trainer
-  battles, and the core combat loop (moves, types, damage, single and 2v2).
-- **In progress:** relics, move cooldowns and styles, position and party-wide
-  effects.
-- **Planned:** catching/recruitment, gyms and bosses, masters and rivals,
-  economy and scaling, map events and fog of war, unlocks and challenge runs.
+- **Working:** master selection, starter trail, town day loop, shops, PC, route
+  fights, capture, relic rewards, 1v1 and selected 2v2 battles, gyms, final boss,
+  and the shared combat rules used by the simulator.
+- **In progress:** live UI integration for the richer decision graph, clearer
+  route telegraphs, elite skill checks, town services, combat readability, and
+  replacing temporary media with original work.
+- **Planned or banked:** deeper type services, item and relic quality, stronger
+  build synergies, world travel, authored events, roster pressure, cosmetic
+  unlocks, challenge modes, and later meta-progression.
 
 It's early, and a lot of the design is still open.
 
@@ -155,7 +162,8 @@ https://github.com/user-attachments/assets/37fd310a-7f81-4918-bca0-5bf175075fe9
 https://github.com/user-attachments/assets/6949fa0d-eae7-488f-94ff-aa767a7bdbc2
 
 An early combat showcase, 2v2. Battles auto-resolve; I'm still working on how they
-read: layout, pacing, animation, and impact. Both 1v1 and 2v2 formats exist.
+read: layout, pacing, animation, and impact. The target is a mix where 2v2 is a
+recurring minority format, not the whole game.
 
 ### Party menu
 

@@ -1,10 +1,15 @@
 # Roadmap
 
+Start with [`return-handoff-2026-06-12.md`](return-handoff-2026-06-12.md) if
+returning after a break. Use
+[`showcase-documentation-plan.md`](showcase-documentation-plan.md) for the
+current public documentation shape.
+
 `pipeline_view.html` is an interactive checklist of the development pipeline,
 grouped by system area (Combat, Macro, Map, Town, Overworld, Unlocks, and more),
 color-coded by status, with a priority weight and a short note on each item.
 
 The notes record why things are planned, including ideas that were considered and
-cut (real-time trainer control, a tower-defense minigame) and questions still
-open. It's an early iteration that lists more than is actually scoped, and it
-changes as the project does.
+cut (full manual trainer control, a tower-defense minigame) and questions still
+open. It is an older planning artifact that lists more than is actually scoped,
+so the documentation plan is the better first read.

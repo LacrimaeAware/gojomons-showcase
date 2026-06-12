@@ -1,9 +1,9 @@
 # The type chart
 
-Most type charts (Pokémon and its descendants) are lopsided: some types just end
-up better because they have more resistances or fewer weaknesses. I wanted types
-with distinct feels (a strong-but-fragile attacker, a weak-but-tanky defender)
-that still came out even overall.
+Most creature-battler type charts are lopsided: some types just end up better
+because they have more resistances or fewer weaknesses. I wanted types with
+distinct feels (a strong-but-fragile attacker, a weak-but-tanky defender) that
+still came out even overall.
 
 ## How the chart is stored
 

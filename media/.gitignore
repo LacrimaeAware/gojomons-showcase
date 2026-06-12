@@ -1,4 +1,4 @@
-# Binaries are ignored by default. Stills that are safe to publish get
+# Binaries are ignored by default. Published stills get
 # explicitly un-ignored below so the README can embed them by path.
 # Video stays out unless converted to GIF (see README.md).
 *
