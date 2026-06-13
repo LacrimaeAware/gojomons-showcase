@@ -75,7 +75,7 @@ EventDispatcher.emit(GameEvents.SOME_EVENT, context_dict)
 Handlers get a single `Dictionary` context. Relics, items, and master passives
 read that context and adjust it in place to inject their modifiers. Adding a new
 relic means registering a handler, not editing the damage code. Background is in
-[design/event-driven-combat-architecture.md](design/event-driven-combat-architecture.md).
+[docs/design/event-driven-combat-architecture.md](docs/design/event-driven-combat-architecture.md).
 
 ### Pure rules layer
 
@@ -90,8 +90,8 @@ A headless runner (`godot --headless`) checks the combat rules, type chart, and
 game state with roughly 1,500 assertions. Since battles auto-resolve, the same
 rules also drive a headless simulator that replays fights to measure win rates,
 which I use to find balance outliers. See
-[design/balance-by-simulation.md](design/balance-by-simulation.md) and
-[design/symmetrical-type-chart.md](design/symmetrical-type-chart.md).
+[docs/design/balance-by-simulation.md](docs/design/balance-by-simulation.md) and
+[docs/design/symmetrical-type-chart.md](docs/design/symmetrical-type-chart.md).
 
 ### Battle pipeline
 
@@ -100,7 +100,7 @@ BattleController
   build BattleState from run state
   loop until battle over:
     PreCombat    spawn battlers, load encounter, music/bg
-    TurnManager  intents → move resolution → effects → VFX
+    TurnManager  intents -> move resolution -> effects -> VFX
     PostTurn     KO detection, switches, win/loss check
 ```
 
@@ -108,11 +108,13 @@ BattleController
 
 ## Roadmap
 
-The full interactive checklist is in [`roadmap/pipeline_view.html`](roadmap/pipeline_view.html),
-grouped by system area. The cleaner current documentation plan is in
-[`roadmap/showcase-documentation-plan.md`](roadmap/showcase-documentation-plan.md),
+The documentation index is in [`docs/README.md`](docs/README.md). The older
+interactive checklist is in
+[`docs/roadmap/pipeline_view.html`](docs/roadmap/pipeline_view.html), grouped by
+system area. The cleaner current documentation plan is in
+[`docs/roadmap/showcase-documentation-plan.md`](docs/roadmap/showcase-documentation-plan.md),
 with a current return handoff in
-[`roadmap/return-handoff-2026-06-12.md`](roadmap/return-handoff-2026-06-12.md).
+[`docs/roadmap/current-state.md`](docs/roadmap/current-state.md).
 Rough state right now:
 
 - **Working:** master selection, starter trail, town day loop, shops, PC, route

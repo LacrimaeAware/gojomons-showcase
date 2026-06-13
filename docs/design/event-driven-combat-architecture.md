@@ -20,7 +20,7 @@ four things that used to be mixed together:
 
 1. **Events** are facts: "damage was dealt", "HP hit zero", "shop opened". They
    carry a context payload and don't change the world themselves.
-2. **The dispatcher** maps `event_name → list of handlers` and calls them. No game
+2. **The dispatcher** maps `event_name -> list of handlers` and calls them. No game
    logic, no state.
 3. **Handlers** (relics, items, master passives) read the event context and add
    their modifiers by editing that context. They don't assume an order and don't

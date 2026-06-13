@@ -1,8 +1,7 @@
 # Roadmap
 
-Start with [`return-handoff-2026-06-12.md`](return-handoff-2026-06-12.md) if
-returning after a break. Use
-[`showcase-documentation-plan.md`](showcase-documentation-plan.md) for the
+Start with [`current-state.md`](current-state.md) if returning after a break.
+Use [`showcase-documentation-plan.md`](showcase-documentation-plan.md) for the
 current public documentation shape.
 
 `pipeline_view.html` is an interactive checklist of the development pipeline,

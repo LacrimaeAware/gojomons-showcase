@@ -2,7 +2,7 @@
 
 Manual playtesting only covers a handful of matchups and leans on whatever you
 already expect to happen. To get past that, I built a headless simulator that
-runs the real combat rules (the same intent → resolve → apply pipeline the game
+runs the real combat rules (the same intent -> resolve -> apply pipeline the game
 uses) without VFX, animation, or a scene tree, so a full fight resolves
 instantly. This works because the rules layer emits events instead of driving the
 UI (see [event-driven-combat-architecture.md](event-driven-combat-architecture.md)).
@@ -49,13 +49,13 @@ element family, which is the advantage it's missing.
 Instead of guessing at a buff, I swept a stat multiplier on single-types and
 watched where the win rates crossed:
 
-| Single stat ×mult | Single WR | Dual WR |
+| Single stat x mult | Single WR | Dual WR |
 |---|---|---|
 | 1.00 (original) | 36.1% | 57.9% |
 | 1.10 | 47.1% | 51.7% |
 | 1.15 (parity) | 51.3% | 49.3% |
 
-So a second type is worth roughly +50–60 BST. I closed about half the gap with a
+So a second type is worth roughly +50-60 BST. I closed about half the gap with a
 stat bump and left the rest as the reward budget for "graft" items that add a
 second type, so a grafted single-type isn't buffed twice.
 
@@ -66,15 +66,15 @@ view, from one run (63 creatures, 8 runs each):
 
 ```
 TYPE TIER LIST (aggregate 1v1 win rate)
-  Water     61.3%   ████████████
-  Machine   60.1%   ████████████
-  Mystic    59.9%   ███████████
-  Light     59.4%   ███████████
-  Alien     50.8%   ██████████
-  Storm     49.6%   █████████
-  Fire      49.6%   █████████
-  Life      45.5%   █████████
-  Dark      41.0%   ████████
+  Water     61.3%   ############
+  Machine   60.1%   ############
+  Mystic    59.9%   ###########
+  Light     59.4%   ###########
+  Alien     50.8%   ##########
+  Storm     49.6%   #########
+  Fire      49.6%   #########
+  Life      45.5%   #########
+  Dark      41.0%   ########
 ```
 
 The per-creature spread is still wide (top creature ~97%, bottom ~12%), which is

@@ -1,0 +1,26 @@
+name: Docs freshness
+
+on:
+  push:
+    paths:
+      - "README.md"
+      - "docs/**"
+      - "media/**"
+      - "scripts/check-public-docs.ps1"
+      - ".github/workflows/docs-freshness.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - "docs/**"
+      - "media/**"
+      - "scripts/check-public-docs.ps1"
+      - ".github/workflows/docs-freshness.yml"
+
+jobs:
+  public-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check public docs
+        shell: pwsh
+        run: ./scripts/check-public-docs.ps1
