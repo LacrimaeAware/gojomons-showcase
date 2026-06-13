@@ -1,0 +1,3147 @@
+{
+    "generated_on":  "2026-06-13",
+    "counts":  {
+                   "gojomons":  63,
+                   "moves":  90,
+                   "items":  49,
+                   "relics":  32,
+                   "types":  9
+               },
+    "gojomons":  [
+                     {
+                         "slug":  "abyssal-angler",
+                         "name":  "Abyssal Angler",
+                         "types":  [
+                                       "Water",
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Aquatic"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "swamp",
+                                      "coast"
+                                  ],
+                         "description":  "A deep-water ghost-fish that lures prey with a false light. Wears foes down with status and special pressure rather than brute force."
+                     },
+                     {
+                         "slug":  "aethernox",
+                         "name":  "Aethernox",
+                         "types":  [
+                                       "Life",
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Dragon"
+                                      ],
+                         "style":  "balanced",
+                         "bst":  520,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "legendary",
+                                      "shrine"
+                                  ],
+                         "description":  "A many-winged dragon of reincarnation; each scale holds a lifetime. A run-defining legend that bends growth and fate alike."
+                     },
+                     {
+                         "slug":  "anvilion",
+                         "name":  "Anvilion",
+                         "types":  [
+                                       "Machine"
+                                   ],
+                         "subtypes":  [
+                                          "Construct"
+                                      ],
+                         "style":  "tank",
+                         "bst":  402,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Samsiron at level 34",
+                         "tags":  [
+                                      "ruins",
+                                      "cave"
+                                  ],
+                         "description":  "A one-eyed sentinel golem guarding a gate to nowhere. Heavier and harder, it turns the battlefield into a siege."
+                     },
+                     {
+                         "slug":  "belldel",
+                         "name":  "Belldel",
+                         "types":  [
+                                       "Storm",
+                                       "Machine"
+                                   ],
+                         "subtypes":  [
+                                          "Machine"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "Evolves to Rainspire at level 18",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A bell-shaped storm construct that hums with stored charge. Balanced bulk and special output make it the team\u0027s battery and backbone."
+                     },
+                     {
+                         "slug":  "catra",
+                         "name":  "Catra",
+                         "types":  [
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Feline"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A lithe mystic feline that strikes from blind angles. High special power and speed but little to spare on defense it ends fights before they start."
+                     },
+                     {
+                         "slug":  "chimmy",
+                         "name":  "Chimmy",
+                         "types":  [
+                                       "Alien"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A twitchy alien beast moving faster than instinct should allow. Blistering speed and physical bite, paper-thin everywhere else."
+                     },
+                     {
+                         "slug":  "chupaflux",
+                         "name":  "Chupaflux",
+                         "types":  [
+                                       "Alien",
+                                       "Machine"
+                                   ],
+                         "subtypes":  [
+                                          "Machine"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "An unstable alien-machine that drains and glitches what it touches. Fast and special-leaning but fragile a hit-and-run saboteur."
+                     },
+                     {
+                         "slug":  "cindara",
+                         "name":  "Cindara",
+                         "types":  [
+                                       "Fire"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  418,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Branches to Volcarion (level:34); Cranedel (item:prism_core_light)",
+                         "tags":  [
+                                      "forest",
+                                      "hills"
+                                  ],
+                         "description":  "Cinder Hare\u0027s grown form a lantern-striped cat wreathed in calligraphic flame. Faster and fiercer, it presses advantages its smaller self never could."
+                     },
+                     {
+                         "slug":  "cinder-hare",
+                         "name":  "Cinder Hare",
+                         "types":  [
+                                       "Fire"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Cindara at level 16",
+                         "tags":  [
+                                      "forest",
+                                      "starter"
+                                  ],
+                         "description":  "A spark-fueled hare that ignites with every leap. Trades bulk for blazing speed strikes first, burns fast, and rarely sticks around to take a hit."
+                     },
+                     {
+                         "slug":  "cogspar",
+                         "name":  "Cogspar",
+                         "types":  [
+                                       "Machine"
+                                   ],
+                         "subtypes":  [
+                                          "Construct"
+                                      ],
+                         "style":  "tank",
+                         "bst":  368,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Anvilion at level 16",
+                         "tags":  [
+                                      "ruins",
+                                      "cave",
+                                      "starter"
+                                  ],
+                         "description":  "A small miner-automaton endlessly digging for a core it never finds. Sturdy, patient, and built to take hits."
+                     },
+                     {
+                         "slug":  "cranedel",
+                         "name":  "Cranedel",
+                         "types":  [
+                                       "Fire",
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A radiant fire-crane that strikes with talon and flare alike. Strong mixed offense and decent speed make it a flexible attacker."
+                     },
+                     {
+                         "slug":  "cranelum",
+                         "name":  "Cranelum",
+                         "types":  [
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "support",
+                         "bst":  408,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Solmere at level 32",
+                         "tags":  [
+                                      "shrine",
+                                      "sky"
+                                  ],
+                         "description":  "A paper-crane spirit that unfolds into searing light. Fragile origami hiding a piercing radiance."
+                     },
+                     {
+                         "slug":  "cyclowl",
+                         "name":  "Cyclowl",
+                         "types":  [
+                                       "Storm",
+                                       "Alien"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  394,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "sky"
+                                  ],
+                         "description":  "An owl whose wings carve spiraling storm-tunnels. It scatters foes and rides the chaos it makes."
+                     },
+                     {
+                         "slug":  "dragonel",
+                         "name":  "Dragonel",
+                         "types":  [
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Reptile"
+                                      ],
+                         "style":  "tank",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A slow, scaled life-reptile that simply refuses to fall. Big HP and defense let it outlast aggressors and grind value over time."
+                     },
+                     {
+                         "slug":  "dreamoon",
+                         "name":  "Dreamoon",
+                         "types":  [
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Lotunari at level 18",
+                         "tags":  [
+                                      "shrine",
+                                      "starter"
+                                  ],
+                         "description":  "A sleep-spirit whose dreams gently reshape reality. Soft-spoken control that bends a fight before it begins."
+                     },
+                     {
+                         "slug":  "ferronova",
+                         "name":  "Ferronova",
+                         "types":  [
+                                       "Machine",
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Construct"
+                                      ],
+                         "style":  "support",
+                         "bst":  400,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "ruins",
+                                      "shrine"
+                                  ],
+                         "description":  "A clockwork sun that resets time whenever it fails to rise. Radiant machinery that buoys the team turn after turn."
+                     },
+                     {
+                         "slug":  "fishdel",
+                         "name":  "Fishdel",
+                         "types":  [
+                                       "Water",
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Aquatic"
+                                      ],
+                         "style":  "balanced",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A murky water-shade that fights smart, not flashy. Even stats with a touch of bite let it flex between pressure and brawling."
+                     },
+                     {
+                         "slug":  "florisha",
+                         "name":  "Florisha",
+                         "types":  [
+                                       "Life",
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Flora"
+                                      ],
+                         "style":  "support",
+                         "bst":  420,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "forest",
+                                      "shrine"
+                                  ],
+                         "description":  "A lotus-deer that blossoms once for each life it has lived. Radiant sustain that turns healing into a slow, blooming offense."
+                     },
+                     {
+                         "slug":  "florune",
+                         "name":  "Florune",
+                         "types":  [
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Flora"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Florisha at level 18",
+                         "tags":  [
+                                      "forest",
+                                      "starter"
+                                  ],
+                         "description":  "A cycle-flower that sheds petals to mend its allies. A humble healer that thrives by giving itself away."
+                     },
+                     {
+                         "slug":  "forgeel",
+                         "name":  "Forgeel",
+                         "types":  [
+                                       "Fire",
+                                       "Machine"
+                                   ],
+                         "subtypes":  [
+                                          "Metal"
+                                      ],
+                         "style":  "tank",
+                         "bst":  388,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "ruins",
+                                      "hills"
+                                  ],
+                         "description":  "A molten anvil-tortoise whose shell glows white-hot when it braces. Endures punishment and forges it into pressure."
+                     },
+                     {
+                         "slug":  "gearghoul",
+                         "name":  "Gearghoul",
+                         "types":  [
+                                       "Machine",
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  400,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "ruins",
+                                      "cave"
+                                  ],
+                         "description":  "A haunted automaton animated by trapped spirits. Glitching and vengeful, it corrodes foes from the inside."
+                     },
+                     {
+                         "slug":  "gemerelda",
+                         "name":  "Gemerelda",
+                         "types":  [
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Gem"
+                                      ],
+                         "style":  "support",
+                         "bst":  365,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "Evolves to Seraphawn at level 20",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A faceted light-gem that turns harm back on attackers. Even bulk and strong special defense make it a patient, protective anchor."
+                     },
+                     {
+                         "slug":  "glaymoth",
+                         "name":  "Glaymoth",
+                         "types":  [
+                                       "Alien",
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "void",
+                                      "sky"
+                                  ],
+                         "description":  "A data-moth that disintegrates the instant it touches the light it craves. Beautiful, doomed, and disruptive."
+                     },
+                     {
+                         "slug":  "glimmy",
+                         "name":  "Glimmy",
+                         "types":  [
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A gentle life-spirit that mends as it lingers. Strong special bulk and modest power it wins by keeping the team alive, not by hitting hard."
+                     },
+                     {
+                         "slug":  "greencatra",
+                         "name":  "GreenCatra",
+                         "types":  [
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Feline"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A mutant Catra strain wired for mischief. Extreme speed and special power with brittle bulk it disrupts and outpaces before retaliation lands."
+                     },
+                     {
+                         "slug":  "infinarch",
+                         "name":  "Infinarch",
+                         "types":  [
+                                       "Storm",
+                                       "Machine"
+                                   ],
+                         "subtypes":  [
+                                          "Construct"
+                                      ],
+                         "style":  "tank",
+                         "bst":  520,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "legendary",
+                                      "ruins"
+                                  ],
+                         "description":  "A colossus of stormlight and machinery ascending an endless staircase. An unstoppable legend that only grows heavier with the climb."
+                     },
+                     {
+                         "slug":  "kappalette",
+                         "name":  "Kappalette",
+                         "types":  [
+                                       "Water",
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Aquatic"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Kappantra at level 18",
+                         "tags":  [
+                                      "swamp",
+                                      "coast"
+                                  ],
+                         "description":  "A lotus-frog spirit that heals allies when submerged. Gentle, balanced, and quietly indispensable."
+                     },
+                     {
+                         "slug":  "kappantra",
+                         "name":  "Kappantra",
+                         "types":  [
+                                       "Water",
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Aquatic"
+                                      ],
+                         "style":  "support",
+                         "bst":  423,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "swamp",
+                                      "coast"
+                                  ],
+                         "description":  "A lotus-dancer kappa spinning a bowl that reflects souls. Its grown poise turns sustain into a war of attrition."
+                     },
+                     {
+                         "slug":  "kindrel",
+                         "name":  "Kindrel",
+                         "types":  [
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Cranelum at level 16",
+                         "tags":  [
+                                      "shrine",
+                                      "starter"
+                                  ],
+                         "description":  "A lantern-spirit whose flame both leads and deceives. A modest guide that grows into a beacon."
+                     },
+                     {
+                         "slug":  "koko",
+                         "name":  "Koko",
+                         "types":  [
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "berserk",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A vengeful dark spirit that hits like a landslide. Towering attack and speed, almost no defense a true glass cannon that lives or dies on its first move."
+                     },
+                     {
+                         "slug":  "lotunari",
+                         "name":  "Lotunari",
+                         "types":  [
+                                       "Mystic",
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "support",
+                         "bst":  420,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "shrine"
+                                  ],
+                         "description":  "A dream-elephant carrying miniature stars in its trunk. Its presence steadies and uplifts the whole team."
+                     },
+                     {
+                         "slug":  "maelura",
+                         "name":  "Maelura",
+                         "types":  [
+                                       "Water"
+                                   ],
+                         "subtypes":  [
+                                          "Aquatic"
+                                      ],
+                         "style":  "tank",
+                         "bst":  520,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "legendary",
+                                      "coast"
+                                  ],
+                         "description":  "A leviathan of the deep tides whose presence calms or drowns. The Water realm\u0027s apex an ocean that simply outlasts everything."
+                     },
+                     {
+                         "slug":  "makrill",
+                         "name":  "Makrill",
+                         "types":  [
+                                       "Water",
+                                       "Machine"
+                                   ],
+                         "subtypes":  [
+                                          "Reptile"
+                                      ],
+                         "style":  "tank",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "coast",
+                                      "ruins"
+                                  ],
+                         "description":  "A makara of crocodile and carp plating, guardian of temple gates. A slow, armored wall that simply does not yield."
+                     },
+                     {
+                         "slug":  "mindveil",
+                         "name":  "Mindveil",
+                         "types":  [
+                                       "Mystic",
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Feline"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  394,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "ruins",
+                                      "shrine"
+                                  ],
+                         "description":  "A hooded psychic cat that reads thought with eyes closed. It unravels foes before they commit to a move."
+                     },
+                     {
+                         "slug":  "neuroseed",
+                         "name":  "Neuroseed",
+                         "types":  [
+                                       "Alien"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Veeprion at level 18",
+                         "tags":  [
+                                      "void",
+                                      "cave",
+                                      "starter"
+                                  ],
+                         "description":  "A floating jelly-core decoding \u0027life\u0027 through mimicry. Strange and soft, it learns the fight as it goes."
+                     },
+                     {
+                         "slug":  "noko",
+                         "name":  "Noko",
+                         "types":  [
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "balanced",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "Evolves to Umbrieve at level 16",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A steady dark spirit with no glaring weakness. Even stats make it a dependable all-rounder that adapts to whatever the fight needs."
+                     },
+                     {
+                         "slug":  "nulling",
+                         "name":  "Nulling",
+                         "types":  [
+                                       "Alien",
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  395,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "void",
+                                      "cave"
+                                  ],
+                         "description":  "A shadow of logic that drains meaning from its surroundings. Quietly erodes a fight until nothing is left."
+                     },
+                     {
+                         "slug":  "nyxcrow",
+                         "name":  "Nyxcrow",
+                         "types":  [
+                                       "Dark",
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  396,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "sky",
+                                      "ruins"
+                                  ],
+                         "description":  "A trickster raven that shapeshifts mid-attack. Reads the player between cycles and never plays it straight."
+                     },
+                     {
+                         "slug":  "obelune",
+                         "name":  "Obelune",
+                         "types":  [
+                                       "Alien",
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Construct"
+                                      ],
+                         "style":  "tank",
+                         "bst":  402,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "void",
+                                      "ruins"
+                                  ],
+                         "description":  "A floating rune-stone head that speaks only in glyphs. An ancient monolith that endures and answers slowly."
+                     },
+                     {
+                         "slug":  "omnindra",
+                         "name":  "Omnindra",
+                         "types":  [
+                                       "Light",
+                                       "Dark",
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "balanced",
+                         "bst":  520,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "legendary",
+                                      "shrine"
+                                  ],
+                         "description":  "A three-faced deity of serenity, doubt, and clarity whose faces never align. A legend embodying the Wanderer realm light, dark, and mind in one."
+                     },
+                     {
+                         "slug":  "pyrethon",
+                         "name":  "Pyrethon",
+                         "types":  [
+                                       "Fire"
+                                   ],
+                         "subtypes":  [
+                                          "Dragon"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  520,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "legendary",
+                                      "hills"
+                                  ],
+                         "description":  "A sky-scorching wyrm wreathed in perpetual flame. The Fire realm\u0027s apex relentless, blinding offense few can outlast."
+                     },
+                     {
+                         "slug":  "pyrridra",
+                         "name":  "Pyrridra",
+                         "types":  [
+                                       "Fire"
+                                   ],
+                         "subtypes":  [
+                                          "Dragon"
+                                      ],
+                         "style":  "berserk",
+                         "bst":  390,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "hills",
+                                      "ruins"
+                                  ],
+                         "description":  "An ash-phoenix serpent born from volcanic glass; smaller forms hatch from its own heartstone. It burns brightest when cornered."
+                     },
+                     {
+                         "slug":  "qilin-9",
+                         "name":  "Qilin-9",
+                         "types":  [
+                                       "Machine",
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Construct"
+                                      ],
+                         "style":  "balanced",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "shrine",
+                                      "ruins"
+                                  ],
+                         "description":  "A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth."
+                     },
+                     {
+                         "slug":  "quetzabranch",
+                         "name":  "Quetzabranch",
+                         "types":  [
+                                       "Life",
+                                       "Storm"
+                                   ],
+                         "subtypes":  [
+                                          "Reptile"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  418,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "forest",
+                                      "sky"
+                                  ],
+                         "description":  "A feathered-serpent vine that pollinates as it strikes from the sky. Fast, green lightning with a wide reach."
+                     },
+                     {
+                         "slug":  "rainspire",
+                         "name":  "Rainspire",
+                         "types":  [
+                                       "Storm",
+                                       "Machine"
+                                   ],
+                         "subtypes":  [
+                                          "Construct"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  397,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "sky",
+                                      "ruins"
+                                  ],
+                         "description":  "A living antenna eroded by the tempests it draws. It conducts chaos through anything nearby."
+                     },
+                     {
+                         "slug":  "rendclaw",
+                         "name":  "Rendclaw",
+                         "types":  [
+                                       "Alien"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "berserk",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "void",
+                                      "cave"
+                                  ],
+                         "description":  "A clawed xeno-predator that phases between strikes. All instinct and edge, it commits fully or not at all."
+                     },
+                     {
+                         "slug":  "samsiron",
+                         "name":  "Samsiron",
+                         "types":  [
+                                       "Machine",
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Construct"
+                                      ],
+                         "style":  "tank",
+                         "bst":  445,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "ruins"
+                                  ],
+                         "description":  "A self-repairing war-golem that devours the unworthy. A late, fortress-like final form built to outlast and overrun."
+                     },
+                     {
+                         "slug":  "saprim",
+                         "name":  "Saprim",
+                         "types":  [
+                                       "Life",
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Fungus"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  390,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "swamp",
+                                      "forest"
+                                  ],
+                         "description":  "A fungal beast that sprouts mossy clones and seeds rot. It wins the long game by poisoning the present."
+                     },
+                     {
+                         "slug":  "scarmonk",
+                         "name":  "Scarmonk",
+                         "types":  [
+                                       "Fire",
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "balanced",
+                         "bst":  390,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "ruins"
+                                  ],
+                         "description":  "A charred monk spirit that reforms its cracked body mid-battle. Discipline through combustion steady, hard to put down."
+                     },
+                     {
+                         "slug":  "seraphawn",
+                         "name":  "Seraphawn",
+                         "types":  [
+                                       "Light",
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "tank",
+                         "bst":  410,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "shrine",
+                                      "ruins"
+                                  ],
+                         "description":  "A many-eyed lion seraph that judges by watching. Serene, unmovable, and quietly overwhelming."
+                     },
+                     {
+                         "slug":  "shroomnix",
+                         "name":  "Shroomnix",
+                         "types":  [
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Fungus"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A spore-laden fungus that smothers foes slowly. Enormous special defense and HP it stalls, seeds status, and waits out the clock."
+                     },
+                     {
+                         "slug":  "slugel",
+                         "name":  "Slugel",
+                         "types":  [
+                                       "Water"
+                                   ],
+                         "subtypes":  [
+                                          "Aquatic"
+                                      ],
+                         "style":  "tank",
+                         "bst":  385,
+                         "production_status":  "Sprite-backed",
+                         "evolution":  "-",
+                         "tags":  [
+
+                                  ],
+                         "description":  "A briny aquatic wall that oozes forward and absorbs everything. Huge HP and defense, glacial speed it wins routes by simply not dying."
+                     },
+                     {
+                         "slug":  "solmere",
+                         "name":  "Solmere",
+                         "types":  [
+                                       "Light",
+                                       "Water"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "support",
+                         "bst":  448,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "coast",
+                                      "sky"
+                                  ],
+                         "description":  "A glass-winged manta that guides lost travelers across the desert sun. A serene, radiant final form of light and tide."
+                     },
+                     {
+                         "slug":  "tempestris",
+                         "name":  "Tempestris",
+                         "types":  [
+                                       "Storm"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  420,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "sky",
+                                      "hills"
+                                  ],
+                         "description":  "A cloud-ape that wields lightning as a staff and dances with storms. Free, fast, and unpredictable."
+                     },
+                     {
+                         "slug":  "thundraco",
+                         "name":  "Thundraco",
+                         "types":  [
+                                       "Storm",
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Dragon"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  398,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "sky",
+                                      "forest"
+                                  ],
+                         "description":  "A thunderbird-dragon hybrid of sky and storm. Verdant lightning that strikes from cloud to canopy."
+                     },
+                     {
+                         "slug":  "tidemourn",
+                         "name":  "Tidemourn",
+                         "types":  [
+                                       "Water",
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "support",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "coast",
+                                      "ruins"
+                                  ],
+                         "description":  "A weeping shrine-fish whose tears crystallize into memory pearls. Bulky and psychic; it remembers every wound."
+                     },
+                     {
+                         "slug":  "umbrieve",
+                         "name":  "Umbrieve",
+                         "types":  [
+                                       "Dark"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  398,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "cave",
+                                      "ruins"
+                                  ],
+                         "description":  "An eclipse-wolf that splits into twin shadows mid-pounce. Hits hard and fast from places it shouldn\u0027t be."
+                     },
+                     {
+                         "slug":  "veeprion",
+                         "name":  "Veeprion",
+                         "types":  [
+                                       "Alien",
+                                       "Mystic"
+                                   ],
+                         "subtypes":  [
+                                          "Reptile"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  416,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "void",
+                                      "ruins"
+                                  ],
+                         "description":  "A holographic serpent of knowledge that consumes its own code. It assimilates and unwrites whatever it studies."
+                     },
+                     {
+                         "slug":  "volcarion",
+                         "name":  "Volcarion",
+                         "types":  [
+                                       "Fire"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  445,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "hills",
+                                      "ruins"
+                                  ],
+                         "description":  "A volcanic lion whose roar forges updrafts into storms. A late, hard-won final form overwhelming offense that demands real investment to reach."
+                     },
+                     {
+                         "slug":  "volkarta",
+                         "name":  "Volkarta",
+                         "types":  [
+                                       "Fire"
+                                   ],
+                         "subtypes":  [
+                                          "Reptile"
+                                      ],
+                         "style":  "tank",
+                         "bst":  389,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "hills"
+                                  ],
+                         "description":  "A living-mountain volcano tortoise that erupts only when provoked. Immovable until the pressure finally blows."
+                     },
+                     {
+                         "slug":  "voltrem",
+                         "name":  "Voltrem",
+                         "types":  [
+                                       "Storm"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "berserk",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "Evolves to Tempestris at level 18",
+                         "tags":  [
+                                      "hills"
+                                  ],
+                         "description":  "A lightning hound forever chasing the echo of its own thunder. All reckless power and speed, with almost nothing left over for defense."
+                     },
+                     {
+                         "slug":  "xenarch",
+                         "name":  "Xenarch",
+                         "types":  [
+                                       "Alien"
+                                   ],
+                         "subtypes":  [
+                                          "Beast"
+                                      ],
+                         "style":  "disruptor",
+                         "bst":  520,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "legendary",
+                                      "void"
+                                  ],
+                         "description":  "An extradimensional sovereign that warps space around its strikes. The Alien realm\u0027s apex it rewrites the battle\u0027s rules as it fights."
+                     },
+                     {
+                         "slug":  "zephyreel",
+                         "name":  "Zephyreel",
+                         "types":  [
+                                       "Storm",
+                                       "Light"
+                                   ],
+                         "subtypes":  [
+                                          "Spirit"
+                                      ],
+                         "style":  "sweeper",
+                         "bst":  405,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "sky"
+                                  ],
+                         "description":  "A fallen angel of turbine wings flying forever upward. Brilliant, relentless aerial pressure."
+                     }
+                 ],
+    "moves":  [
+                  {
+                      "slug":  "aegis-shell",
+                      "name":  "Aegis Shell",
+                      "elements":  [
+                                       "Light"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "shield"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "alien-focus",
+                      "name":  "Alien Focus",
+                      "elements":  [
+                                       "Alien"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "alien-swarm",
+                      "name":  "Alien Swarm",
+                      "elements":  [
+                                       "Alien"
+                                   ],
+                      "category":  "special",
+                      "power":  20,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "AoE",
+                                    "multi-hit"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "aqua-bolt",
+                      "name":  "Aqua Bolt",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "special",
+                      "power":  55,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "arcane-blast",
+                      "name":  "Arcane Blast",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "special",
+                      "power":  80,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "astral-drain",
+                      "name":  "Astral Drain",
+                      "elements":  [
+                                       "Alien"
+                                   ],
+                      "category":  "special",
+                      "power":  65,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "drain"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "aurora-veil",
+                      "name":  "Aurora Veil",
+                      "elements":  [
+                                       "Light"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "barrier",
+                      "name":  "Barrier",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "shield"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "blaze-fang",
+                      "name":  "Blaze Fang",
+                      "elements":  [
+                                       "Fire"
+                                   ],
+                      "category":  "physical",
+                      "power":  60,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "crit"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "blight",
+                      "name":  "Blight",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "status: poison"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "blizzard-field",
+                      "name":  "Blizzard Field",
+                      "elements":  [
+                                       "Water",
+                                       "Storm"
+                                   ],
+                      "category":  "special",
+                      "power":  65,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "AoE",
+                                    "status: freeze"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "bloom-burst",
+                      "name":  "Bloom Burst",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "special",
+                      "power":  78,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "drain"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "corrupt",
+                      "name":  "Corrupt",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "status: burn"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "crushing-blow",
+                      "name":  "Crushing Blow",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "physical",
+                      "power":  65,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "dark-wave",
+                      "name":  "Dark Wave",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "special",
+                      "power":  60,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "AoE"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "draining-kiss",
+                      "name":  "Draining Kiss",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "special",
+                      "power":  50,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "drain",
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "drake-flare",
+                      "name":  "Drake Flare",
+                      "elements":  [
+                                       "Storm"
+                                   ],
+                      "category":  "special",
+                      "power":  75,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "ember",
+                      "name":  "Ember",
+                      "elements":  [
+                                       "Fire"
+                                   ],
+                      "category":  "special",
+                      "power":  40,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "eruption",
+                      "name":  "Eruption",
+                      "elements":  [
+                                       "Fire"
+                                   ],
+                      "category":  "special",
+                      "power":  80,
+                      "accuracy":  0.8,
+                      "flags":  [
+                                    "AoE"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "fire-cross",
+                      "name":  "Fire Cross",
+                      "elements":  [
+                                       "Fire"
+                                   ],
+                      "category":  "physical",
+                      "power":  60,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "flame-surge",
+                      "name":  "Flame Surge",
+                      "elements":  [
+                                       "Fire"
+                                   ],
+                      "category":  "special",
+                      "power":  75,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "status: burn"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "flash-nova",
+                      "name":  "Flash Nova",
+                      "elements":  [
+                                       "Light"
+                                   ],
+                      "category":  "special",
+                      "power":  75,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "AoE",
+                                    "crit"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "flash-step",
+                      "name":  "Flash Step",
+                      "elements":  [
+                                       "Light"
+                                   ],
+                      "category":  "physical",
+                      "power":  45,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "gale-dance",
+                      "name":  "Gale Dance",
+                      "elements":  [
+                                       "Storm"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "gale-slash",
+                      "name":  "Gale Slash",
+                      "elements":  [
+                                       "Storm"
+                                   ],
+                      "category":  "physical",
+                      "power":  35,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "multi-hit"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "gear-strike",
+                      "name":  "Gear Strike",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "physical",
+                      "power":  60,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "growl",
+                      "name":  "Growl",
+                      "elements":  [
+                                       "Base"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "hex-flame",
+                      "name":  "Hex Flame",
+                      "elements":  [
+                                       "Dark",
+                                       "Fire"
+                                   ],
+                      "category":  "special",
+                      "power":  60,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "status: burn"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "hex-rot",
+                      "name":  "Hex Rot",
+                      "elements":  [
+                                       "Alien"
+                                   ],
+                      "category":  "special",
+                      "power":  30,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "status: poison"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "hex-weaken",
+                      "name":  "Hex Weaken",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "ignite",
+                      "name":  "Ignite",
+                      "elements":  [
+                                       "Fire"
+                                   ],
+                      "category":  "physical",
+                      "power":  40,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "status: burn"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "inferno",
+                      "name":  "Inferno",
+                      "elements":  [
+                                       "Fire"
+                                   ],
+                      "category":  "special",
+                      "power":  95,
+                      "accuracy":  0.8,
+                      "flags":  [
+                                    "status: burn"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "ion-beam",
+                      "name":  "Ion Beam",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "iron-skin",
+                      "name":  "Iron Skin",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "judgment",
+                      "name":  "Judgment",
+                      "elements":  [
+                                       "Light"
+                                   ],
+                      "category":  "special",
+                      "power":  95,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "crit"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "laser-array",
+                      "name":  "Laser Array",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "special",
+                      "power":  90,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "leaf-nibble",
+                      "name":  "Leaf Nibble",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "physical",
+                      "power":  42,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "leer",
+                      "name":  "Leer",
+                      "elements":  [
+                                       "Base"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "life-surge",
+                      "name":  "Life Surge",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "light-mend",
+                      "name":  "Light Mend",
+                      "elements":  [
+                                       "Light"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "heal"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "lightning-storm",
+                      "name":  "Lightning Storm",
+                      "elements":  [
+                                       "Storm"
+                                   ],
+                      "category":  "special",
+                      "power":  70,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "AoE"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "mend-pulse",
+                      "name":  "Mend Pulse",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "heal"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "metal-sound",
+                      "name":  "Metal Sound",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "mind-focus",
+                      "name":  "Mind Focus",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "mind-pulse",
+                      "name":  "Mind Pulse",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "special",
+                      "power":  50,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "drain"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "mind-shatter",
+                      "name":  "Mind Shatter",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "special",
+                      "power":  95,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "mucus-spray",
+                      "name":  "Mucus Spray",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "special",
+                      "power":  20,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "multi-hit"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "mystic-storm",
+                      "name":  "Mystic Storm",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "special",
+                      "power":  70,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "AoE"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "night-soot",
+                      "name":  "Night Soot",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "special",
+                      "power":  40,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "oblivion",
+                      "name":  "Oblivion",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "special",
+                      "power":  95,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "drain"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "overclock",
+                      "name":  "Overclock",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "special",
+                      "power":  80,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "overgrowth",
+                      "name":  "Overgrowth",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "special",
+                      "power":  72,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "drain"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "petal-storm",
+                      "name":  "Petal Storm",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "special",
+                      "power":  55,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "AoE",
+                                    "drain"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "phase-slash",
+                      "name":  "Phase Slash",
+                      "elements":  [
+                                       "Alien"
+                                   ],
+                      "category":  "physical",
+                      "power":  65,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "piston-punch",
+                      "name":  "Piston Punch",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "physical",
+                      "power":  80,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "power-charge",
+                      "name":  "Power Charge",
+                      "elements":  [
+                                       "Fire"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "psy-lance",
+                      "name":  "Psy Lance",
+                      "elements":  [
+                                       "Mystic"
+                                   ],
+                      "category":  "special",
+                      "power":  65,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "radiant-beam",
+                      "name":  "Radiant Beam",
+                      "elements":  [
+                                       "Light"
+                                   ],
+                      "category":  "special",
+                      "power":  80,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "crit"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "recover",
+                      "name":  "Recover",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "heal"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "regenerate",
+                      "name":  "Regenerate",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "heal"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "rend",
+                      "name":  "Rend",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "physical",
+                      "power":  70,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "scale-rush",
+                      "name":  "Scale Rush",
+                      "elements":  [
+                                       "Storm"
+                                   ],
+                      "category":  "physical",
+                      "power":  40,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "multi-hit"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "scary-face",
+                      "name":  "Scary Face",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "shadow-cloak",
+                      "name":  "Shadow Cloak",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "shadow-jab",
+                      "name":  "Shadow Jab",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "physical",
+                      "power":  50,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "shadow-step",
+                      "name":  "Shadow Step",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "physical",
+                      "power":  55,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "shock-wave",
+                      "name":  "Shock Wave",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "special",
+                      "power":  50,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "AoE"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "solar-dart",
+                      "name":  "Solar Dart",
+                      "elements":  [
+                                       "Light"
+                                   ],
+                      "category":  "special",
+                      "power":  55,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "soul-crush",
+                      "name":  "Soul Crush",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "special",
+                      "power":  60,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "soul-drain",
+                      "name":  "Soul Drain",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "special",
+                      "power":  55,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "drain"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "static-field",
+                      "name":  "Static Field",
+                      "elements":  [
+                                       "Storm"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "stone-guard",
+                      "name":  "Stone Guard",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "shield",
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "tackle",
+                      "name":  "Tackle",
+                      "elements":  [
+                                       "Base"
+                                   ],
+                      "category":  "physical",
+                      "power":  40,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "terror-strike",
+                      "name":  "Terror Strike",
+                      "elements":  [
+                                       "Dark"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "thorn-whip",
+                      "name":  "Thorn Whip",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "physical",
+                      "power":  62,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "thunder-crash",
+                      "name":  "Thunder Crash",
+                      "elements":  [
+                                       "Storm"
+                                   ],
+                      "category":  "special",
+                      "power":  90,
+                      "accuracy":  0.8,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "thunder-down",
+                      "name":  "Thunder Down",
+                      "elements":  [
+                                       "Storm"
+                                   ],
+                      "category":  "special",
+                      "power":  55,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "debuff"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "tidal-wave",
+                      "name":  "Tidal Wave",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "special",
+                      "power":  85,
+                      "accuracy":  0.85,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "tide-crash",
+                      "name":  "Tide Crash",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "physical",
+                      "power":  70,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "tide-renewal",
+                      "name":  "Tide Renewal",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "heal"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "tide-rise",
+                      "name":  "Tide Rise",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "torrent",
+                      "name":  "Torrent",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "special",
+                      "power":  65,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "toxic-spit",
+                      "name":  "Toxic Spit",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "special",
+                      "power":  35,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "status: poison"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "venom-fang",
+                      "name":  "Venom Fang",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "physical",
+                      "power":  45,
+                      "accuracy":  0.95,
+                      "flags":  [
+                                    "status: poison"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "vine-pop",
+                      "name":  "Vine Pop",
+                      "elements":  [
+                                       "Life"
+                                   ],
+                      "category":  "physical",
+                      "power":  52,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Custom VFX"
+                  },
+                  {
+                      "slug":  "void-call",
+                      "name":  "Void Call",
+                      "elements":  [
+                                       "Alien"
+                                   ],
+                      "category":  "special",
+                      "power":  25,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "multi-hit"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "void-ward",
+                      "name":  "Void Ward",
+                      "elements":  [
+                                       "Alien"
+                                   ],
+                      "category":  "status",
+                      "power":  0,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "shield"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "voltage-pulse",
+                      "name":  "Voltage Pulse",
+                      "elements":  [
+                                       "Machine"
+                                   ],
+                      "category":  "special",
+                      "power":  55,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "warp-strike",
+                      "name":  "Warp Strike",
+                      "elements":  [
+                                       "Alien"
+                                   ],
+                      "category":  "physical",
+                      "power":  75,
+                      "accuracy":  0.9,
+                      "flags":  [
+                                    "damage"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  },
+                  {
+                      "slug":  "water-wall",
+                      "name":  "Water Wall",
+                      "elements":  [
+                                       "Water"
+                                   ],
+                      "category":  "special",
+                      "power":  50,
+                      "accuracy":  1,
+                      "flags":  [
+                                    "setup"
+                                ],
+                      "vfx_status":  "Fallback VFX"
+                  }
+              ],
+    "items":  [
+                  {
+                      "slug":  "alien-graft",
+                      "name":  "Alien Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Alien type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "alien-prism-core",
+                      "name":  "Alien Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Alien and cloaks it in a warped aura."
+                  },
+                  {
+                      "slug":  "aqua-charm",
+                      "name":  "Aqua Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Water moves by 30%."
+                  },
+                  {
+                      "slug":  "arcane-charm",
+                      "name":  "Arcane Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Mystic moves by 30%."
+                  },
+                  {
+                      "slug":  "attack-amp",
+                      "name":  "Attack Amp",
+                      "category":  "Consumable",
+                      "price":  50,
+                      "rarity":  "",
+                      "description":  "Temporarily boosts the holder\u0027s Attack by 50% for 3 turns."
+                  },
+                  {
+                      "slug":  "choice-relay",
+                      "name":  "Choice Relay",
+                      "category":  "Held item",
+                      "price":  160,
+                      "rarity":  "",
+                      "description":  "Locks the holder into one move, but boosts its damage by 20%."
+                  },
+                  {
+                      "slug":  "commander-s-crest",
+                      "name":  "Commander\u0027s Crest",
+                      "category":  "Master gear",
+                      "price":  200,
+                      "rarity":  "",
+                      "description":  "Equipped to your Master: your whole party\u0027s attacks deal +15% damage."
+                  },
+                  {
+                      "slug":  "dark-graft",
+                      "name":  "Dark Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Dark type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "dark-prism-core",
+                      "name":  "Dark Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Dark and cloaks it in a shadow aura."
+                  },
+                  {
+                      "slug":  "defense-amp",
+                      "name":  "Defense Amp",
+                      "category":  "Consumable",
+                      "price":  50,
+                      "rarity":  "",
+                      "description":  "Temporarily boosts the holder\u0027s Defense by 50% for 3 turns."
+                  },
+                  {
+                      "slug":  "demon-sword",
+                      "name":  "Demon Sword",
+                      "category":  "Held item",
+                      "price":  180,
+                      "rarity":  "",
+                      "description":  "While the holder is below 30% HP, its attacks deal +30% damage."
+                  },
+                  {
+                      "slug":  "ember-charm",
+                      "name":  "Ember Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Ember move by 30%."
+                  },
+                  {
+                      "slug":  "field-kit",
+                      "name":  "Field Kit",
+                      "category":  "Consumable",
+                      "price":  40,
+                      "rarity":  "",
+                      "description":  "Use on an ally to heal 20% of its max HP."
+                  },
+                  {
+                      "slug":  "fire-graft",
+                      "name":  "Fire Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Fire type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "fire-prism-core",
+                      "name":  "Fire Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Fire and cloaks it in a fiery aura."
+                  },
+                  {
+                      "slug":  "flame-charm",
+                      "name":  "Flame Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Fire moves by 30%."
+                  },
+                  {
+                      "slug":  "gear-charm",
+                      "name":  "Gear Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Machine moves by 30%."
+                  },
+                  {
+                      "slug":  "health-potion",
+                      "name":  "Health Potion",
+                      "category":  "Consumable",
+                      "price":  80,
+                      "rarity":  "",
+                      "description":  "Auto-heals the holder for 30% max HP when it drops below 30%. One charge."
+                  },
+                  {
+                      "slug":  "last-stand-band",
+                      "name":  "Last Stand Band",
+                      "category":  "Held item",
+                      "price":  140,
+                      "rarity":  "",
+                      "description":  "25% chance to survive a KO hit with 1 HP."
+                  },
+                  {
+                      "slug":  "life-graft",
+                      "name":  "Life Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Life type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "life-prism-core",
+                      "name":  "Life Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Life and cloaks it in a verdant aura."
+                  },
+                  {
+                      "slug":  "light-charm",
+                      "name":  "Light Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Light moves by 30%."
+                  },
+                  {
+                      "slug":  "light-graft",
+                      "name":  "Light Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Light type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "light-prism-core",
+                      "name":  "Light Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Light and cloaks it in a radiant aura."
+                  },
+                  {
+                      "slug":  "machine-graft",
+                      "name":  "Machine Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Machine type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "machine-prism-core",
+                      "name":  "Machine Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Machine and cloaks it in a steel aura."
+                  },
+                  {
+                      "slug":  "mystic-core",
+                      "name":  "Mystic Core",
+                      "category":  "Held item",
+                      "price":  200,
+                      "rarity":  "",
+                      "description":  "Rewrites the holder\u0027s type to Mystic."
+                  },
+                  {
+                      "slug":  "mystic-graft",
+                      "name":  "Mystic Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Mystic type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "mystic-prism-core",
+                      "name":  "Mystic Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Mystic and cloaks it in an arcane aura."
+                  },
+                  {
+                      "slug":  "perfect-capture-orb",
+                      "name":  "Perfect Capture Orb",
+                      "category":  "Capture",
+                      "price":  0,
+                      "rarity":  "rare",
+                      "description":  "Never fails. The one you save for something worth keeping."
+                  },
+                  {
+                      "slug":  "phoenix-ember",
+                      "name":  "Phoenix Ember",
+                      "category":  "Held item",
+                      "price":  220,
+                      "rarity":  "",
+                      "description":  "Once per battle, the holder survives a KO hit with 1 HP."
+                  },
+                  {
+                      "slug":  "prime-capture-orb",
+                      "name":  "Prime Capture Orb",
+                      "category":  "Capture",
+                      "price":  150,
+                      "rarity":  "",
+                      "description":  "A premium capture orb. ~97% catch chance on a defeated wild."
+                  },
+                  {
+                      "slug":  "reliable-capture-orb",
+                      "name":  "Reliable Capture Orb",
+                      "category":  "Capture",
+                      "price":  80,
+                      "rarity":  "",
+                      "description":  "A sturdy capture orb. ~85% catch chance on a defeated wild."
+                  },
+                  {
+                      "slug":  "rescue-potion",
+                      "name":  "Rescue Potion",
+                      "category":  "Consumable",
+                      "price":  60,
+                      "rarity":  "",
+                      "description":  "Use on a fainted or weak ally to revive and heal 35% of its max HP."
+                  },
+                  {
+                      "slug":  "standard-capture-orb",
+                      "name":  "Standard Capture Orb",
+                      "category":  "Capture",
+                      "price":  30,
+                      "rarity":  "",
+                      "description":  "A basic capture orb. ~60% catch chance on a defeated wild."
+                  },
+                  {
+                      "slug":  "steel-coat",
+                      "name":  "Steel Coat",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Passively boosts the holder\u0027s Defense by 20%."
+                  },
+                  {
+                      "slug":  "storm-charm",
+                      "name":  "Storm Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Storm moves by 30%."
+                  },
+                  {
+                      "slug":  "storm-graft",
+                      "name":  "Storm Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Storm type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "storm-prism-core",
+                      "name":  "Storm Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Storm and cloaks it in a charged aura."
+                  },
+                  {
+                      "slug":  "storm-shield",
+                      "name":  "Storm Shield",
+                      "category":  "Held item",
+                      "price":  150,
+                      "rarity":  "",
+                      "description":  "Makes the holder immune to Storm-type damage."
+                  },
+                  {
+                      "slug":  "swift-lens",
+                      "name":  "Swift Lens",
+                      "category":  "Held item",
+                      "price":  110,
+                      "rarity":  "",
+                      "description":  "Passively improves accuracy by 10%."
+                  },
+                  {
+                      "slug":  "training-manual-ember",
+                      "name":  "Training Manual: Ember",
+                      "category":  "Training",
+                      "price":  90,
+                      "rarity":  "",
+                      "description":  "Teaches a Gojomon the move Ember (Fire)."
+                  },
+                  {
+                      "slug":  "training-manual-shadow-jab",
+                      "name":  "Training Manual: Shadow Jab",
+                      "category":  "Training",
+                      "price":  null,
+                      "rarity":  "",
+                      "description":  "Teaches a Gojomon the move Shadow Jab (Dark)."
+                  },
+                  {
+                      "slug":  "umbral-charm",
+                      "name":  "Umbral Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Dark moves by 30%."
+                  },
+                  {
+                      "slug":  "verdant-charm",
+                      "name":  "Verdant Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Life moves by 30%."
+                  },
+                  {
+                      "slug":  "vitality-core",
+                      "name":  "Vitality Core",
+                      "category":  "Held item",
+                      "price":  220,
+                      "rarity":  "",
+                      "description":  "Boosts all damage by 30% but the holder loses 10% HP each attack."
+                  },
+                  {
+                      "slug":  "void-charm",
+                      "name":  "Void Charm",
+                      "category":  "Element charm",
+                      "price":  120,
+                      "rarity":  "",
+                      "description":  "Boosts the holder\u0027s Alien moves by 30%."
+                  },
+                  {
+                      "slug":  "water-graft",
+                      "name":  "Water Graft",
+                      "category":  "Type graft",
+                      "price":  220,
+                      "rarity":  "rare",
+                      "description":  "Grafts an honorary Water type onto a single-type holder (no effect on dual-types)."
+                  },
+                  {
+                      "slug":  "water-prism-core",
+                      "name":  "Water Prism Core",
+                      "category":  "Type-change",
+                      "price":  240,
+                      "rarity":  "rare",
+                      "description":  "Rewrites the holder\u0027s type to Water and cloaks it in a tidal aura."
+                  }
+              ],
+    "relics":  [
+                   {
+                       "slug":  "aegis",
+                       "name":  "Aegis",
+                       "rarity":  "common",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  "Your party takes ~17% less damage."
+                   },
+                   {
+                       "slug":  "berserker-aura",
+                       "name":  "Berserker Aura",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "While below 60% HP, your attacks deal +20% damage."
+                   },
+                   {
+                       "slug":  "bloodthirst",
+                       "name":  "Bloodthirst",
+                       "rarity":  "common",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  "Critical hit rate increased by 12%."
+                   },
+                   {
+                       "slug":  "blueprint-core",
+                       "name":  "Blueprint Core",
+                       "rarity":  "signature",
+                       "role":  "defensive",
+                       "master_signature":  "machine",
+                       "description":  "Machine / Construct. Party takes ~17% less physical damage. (True item-synergy version is future work.)"
+                   },
+                   {
+                       "slug":  "champion-s-will",
+                       "name":  "Champion\u0027s Will",
+                       "rarity":  "signature",
+                       "role":  "offensive",
+                       "master_signature":  "fire",
+                       "description":  "Fire / Will. KO an enemy: gain +1 Attack stage. Fire moves deal +25% damage."
+                   },
+                   {
+                       "slug":  "collector-s-eye",
+                       "name":  "Collector\u0027s Eye",
+                       "rarity":  "rare",
+                       "role":  "utility",
+                       "master_signature":  "",
+                       "description":  "You catch the unfamiliar with ease: 1.35 capture chance vs a wild whose types you don\u0027t own yet (no bonus if you already own any of its types)."
+                   },
+                   {
+                       "slug":  "conductor-coil",
+                       "name":  "Conductor Coil",
+                       "rarity":  "signature",
+                       "role":  "offensive",
+                       "master_signature":  "storm",
+                       "description":  "Storm / Chain. Every 5th hit cleaves another enemy for 30% damage."
+                   },
+                   {
+                       "slug":  "crit-loom",
+                       "name":  "Crit Loom",
+                       "rarity":  "",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  ""
+                   },
+                   {
+                       "slug":  "dream-catalyst",
+                       "name":  "Dream Catalyst",
+                       "rarity":  "signature",
+                       "role":  "offensive",
+                       "master_signature":  "mystic",
+                       "description":  "Mystic / Echo. Mystic moves deal +15% damage, and any hit has a 25% chance to ECHO for half damage."
+                   },
+                   {
+                       "slug":  "echo-bell",
+                       "name":  "Echo Bell",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Any hit has a 15% chance to ECHO, striking again for half damage."
+                   },
+                   {
+                       "slug":  "ember-brand",
+                       "name":  "Ember Brand",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Your attacks have a 25% chance to BURN the target burns STACK (up to 3), intensifying the damage each turn."
+                   },
+                   {
+                       "slug":  "far-sight",
+                       "name":  "Far Sight",
+                       "rarity":  "common",
+                       "role":  "utility",
+                       "master_signature":  "",
+                       "description":  "Party moves gain +20% accuracy."
+                   },
+                   {
+                       "slug":  "glass-cannon",
+                       "name":  "Glass Cannon",
+                       "rarity":  "common",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  "Your attacks deal +25% damage, but you take 8% recoil."
+                   },
+                   {
+                       "slug":  "hex-brand",
+                       "name":  "Hex Brand",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Your hits have a 30% chance to BRAND the target (it takes +6% damage per brand, up to 5)."
+                   },
+                   {
+                       "slug":  "keen-eye",
+                       "name":  "Keen Eye",
+                       "rarity":  "common",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  "Party moves gain +15% accuracy."
+                   },
+                   {
+                       "slug":  "larval-pod",
+                       "name":  "Larval Pod",
+                       "rarity":  "signature",
+                       "role":  "offensive",
+                       "master_signature":  "alien",
+                       "description":  "Alien / Assimilate. Every 5th hit is a critical hit."
+                   },
+                   {
+                       "slug":  "lure-totem",
+                       "name":  "Lure Totem",
+                       "rarity":  "common",
+                       "role":  "utility",
+                       "master_signature":  "",
+                       "description":  "Wild Gojomon come quietly: +12% to all capture chance."
+                   },
+                   {
+                       "slug":  "mirror-ward",
+                       "name":  "Mirror Ward",
+                       "rarity":  "common",
+                       "role":  "defensive",
+                       "master_signature":  "",
+                       "description":  "When an ally is struck, 15% of the damage is reflected back at the attacker."
+                   },
+                   {
+                       "slug":  "momentum",
+                       "name":  "Momentum",
+                       "rarity":  "common",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  "Every 6th hit cleaves another enemy for 30% damage."
+                   },
+                   {
+                       "slug":  "oasis-charm",
+                       "name":  "Oasis Charm",
+                       "rarity":  "common",
+                       "role":  "support",
+                       "master_signature":  "",
+                       "description":  "After every 3 critical hits, heal 12% max HP."
+                   },
+                   {
+                       "slug":  "obsidian-veil",
+                       "name":  "Obsidian Veil",
+                       "rarity":  "signature",
+                       "role":  "offensive",
+                       "master_signature":  "dark",
+                       "description":  "Dark / Corrupt. After every 5 crits, deal +40% bonus damage."
+                   },
+                   {
+                       "slug":  "prism-seal",
+                       "name":  "Prism Seal",
+                       "rarity":  "signature",
+                       "role":  "defensive",
+                       "master_signature":  "light",
+                       "description":  "Light / Protect. Light types are immune to Dark damage."
+                   },
+                   {
+                       "slug":  "purification-crystal",
+                       "name":  "Purification Crystal",
+                       "rarity":  "common",
+                       "role":  "defensive",
+                       "master_signature":  "",
+                       "description":  "Your active mons are cured of status conditions at the start of each turn."
+                   },
+                   {
+                       "slug":  "root-heart",
+                       "name":  "Root Heart",
+                       "rarity":  "signature",
+                       "role":  "support",
+                       "master_signature":  "life",
+                       "description":  "Life / Regrow. After every 4 crits, heal 18% max HP."
+                   },
+                   {
+                       "slug":  "second-wind",
+                       "name":  "Second Wind",
+                       "rarity":  "common",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  "After every 4 critical hits, heal 15% max HP."
+                   },
+                   {
+                       "slug":  "soot-veil",
+                       "name":  "Soot Veil",
+                       "rarity":  "common",
+                       "role":  "defensive",
+                       "master_signature":  "",
+                       "description":  "Your hits have a 25% chance to BLIND the target for 2 turns (its attacks lose 25% accuracy)."
+                   },
+                   {
+                       "slug":  "stoneward",
+                       "name":  "Stoneward",
+                       "rarity":  "common",
+                       "role":  "defensive",
+                       "master_signature":  "",
+                       "description":  "Your party takes ~15% less physical damage."
+                   },
+                   {
+                       "slug":  "storm-cycle",
+                       "name":  "Storm Cycle",
+                       "rarity":  "",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  ""
+                   },
+                   {
+                       "slug":  "sun-pyre",
+                       "name":  "Sun Pyre",
+                       "rarity":  "signature",
+                       "role":  "offensive",
+                       "master_signature":  "fire",
+                       "description":  ""
+                   },
+                   {
+                       "slug":  "tide-sigil",
+                       "name":  "Tide Sigil",
+                       "rarity":  "signature",
+                       "role":  "defensive",
+                       "master_signature":  "water",
+                       "description":  "Water / Flow. Party takes ~17% less special damage."
+                   },
+                   {
+                       "slug":  "venom-needle",
+                       "name":  "Venom Needle",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Your attacks have a 20% chance to poison the target."
+                   },
+                   {
+                       "slug":  "void-cleave",
+                       "name":  "Void Cleave",
+                       "rarity":  "",
+                       "role":  "",
+                       "master_signature":  "",
+                       "description":  ""
+                   }
+               ]
+}

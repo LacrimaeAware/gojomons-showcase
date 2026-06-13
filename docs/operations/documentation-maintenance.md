@@ -10,8 +10,15 @@ Use this checklist when updating the showcase repo or preparing public pages.
    future intended, possible alternative, parked, cut, or needs call.
 4. Keep chronological material chronological. If a page is old pipeline context,
    label it that way instead of silently treating it as current.
-5. Update links after moving docs.
-6. Run the public-doc check:
+5. Regenerate the Living Game Bible if roster, move, item, relic, type-chart, or
+   opponent data changed:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1
+```
+
+6. Update links after moving docs.
+7. Run the public-doc check:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1
@@ -22,8 +29,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps
 The Codex app has an active weekly automation named
 `Gojomons weekly docs freshness audit`. It covers the private game repo as source
 material and this showcase repo as the public-facing output. The automation
-should audit freshness, run `scripts/check-public-docs.ps1` for showcase changes,
-and push reviewable docs branches instead of quietly publishing major changes.
+should audit freshness, regenerate the Living Game Bible when source data
+changed, run `scripts/check-public-docs.ps1` for showcase changes, and push
+reviewable docs branches instead of quietly publishing major changes.
 
 ## Public Readiness
 

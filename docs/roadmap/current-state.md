@@ -9,6 +9,8 @@ The showcase repo is now organized around a public `docs/` folder:
 
 - `docs/README.md`: document index and freshness rules.
 - `docs/design/`: evergreen design notes.
+- `docs/game-bible/`: generated public reference for current roster, types,
+  moves, items, relics, and opponent builders.
 - `docs/roadmap/`: current state, roadmap, public documentation plan, and the
   older interactive pipeline checklist.
 - `docs/operations/`: maintenance process.
@@ -54,22 +56,30 @@ The last active work was documentation freshness and public-facing organization:
 - consolidate public docs under `docs/`,
 - clarify current vs roadmap vs historical material,
 - create a repeatable public-doc audit,
-- decide whether the local Living Game Bible preview should ever become a real
-  public page.
+- replace the local Living Game Bible preview with a maintainable generated
+  reference under `docs/game-bible/`.
+
+Since then, `scripts/build-game-bible.ps1` now builds the public game-bible
+snapshot from the game repo data. It does not copy creature art or local paths;
+it records production status as sprite-backed or prototype marker.
 
 ## Next Agenda
 
-1. Decide whether `pages-preview/living-game-bible.html` stays local or becomes a
-   public GitHub Pages document.
-2. Draft a route-preview section with examples: next-three-town boss previews,
+1. Decide whether the generated `docs/game-bible/` reference should get a richer
+   GitHub Pages view, or stay as markdown plus JSON for now.
+2. Add a sprite/media pass only after deciding which art is original enough for
+   public use; for now the bible tracks production status without copying assets.
+3. Rename old capture/training item source keys toward the public language, then
+   regenerate the bible.
+4. Draft a route-preview section with examples: next-three-town boss previews,
    route elite/boss preview timing, room icons, reward tier, and danger.
-3. Draft a roster-pressure section: capture scarcity, targeted access, paid PC
+5. Draft a roster-pressure section: capture scarcity, targeted access, paid PC
    unlocks, daycare, trade, and restricted-party Master.
-4. Draft a reward-tier table by encounter type: wild, trainer, elite, gym, boss,
+6. Draft a reward-tier table by encounter type: wild, trainer, elite, gym, boss,
    event, shop.
-5. Decide whether limited battle inputs belong in near-term testing or remain a
+7. Decide whether limited battle inputs belong in near-term testing or remain a
    banked experiment.
-6. Pick the next public devlog topic from something visible: route telegraphs,
+8. Pick the next public devlog topic from something visible: route telegraphs,
    battle readability, reward tiers, type services, or original audio/media.
 
 ## Maintenance Loop
@@ -79,6 +89,12 @@ Before committing public doc changes:
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1
 git diff --check
+```
+
+If source content changed, regenerate the bible first:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1
 ```
 
 Then review the staged files and make sure local-only files remain ignored:

@@ -75,8 +75,9 @@ experience today and save the design target for the roadmap.
 
 ## Showcase Page Roadmap
 
-1. **Living Game Bible.** The main overview: spine, status labels, run loop,
-   combat identity, type spine, economy, roster pressure, bosses, and roadmap.
+1. **Living Game Bible.** Now generated under `docs/game-bible/`: roster, type
+   breakdown, moves, items, relics, opponent builders, and a public JSON snapshot.
+   The next step is a richer page view if the markdown version feels too flat.
 2. **Type Spine.** A public-friendly page for the nine types, verb pairs,
    service seeds, and creature motifs.
 3. **Run Structure.** Town week, route choices, gyms, final boss, and how the
@@ -117,3 +118,7 @@ experience today and save the design target for the roadmap.
 - Turn PC pressure into testable hooks: paid unlocks, restricted-party Master,
   daycare targeting, trades, and sacrifice-style offers.
 - Turn rewards into a tiered power-object system across relics, items, and gear.
+- Use the generated game bible as the current content reference before promoting
+  any local Pages preview.
+- Do not copy creature sprites into the public repo until each asset has passed
+  an originality/licensing check; production status is enough for now.

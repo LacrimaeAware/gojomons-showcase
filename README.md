@@ -47,16 +47,16 @@ resolve on their own, so you win or lose on drafting, routing, and synergies.
 
 | | |
 |---|---|
-| Lines of GDScript | ~26,800 |
-| Scripts (`.gd`) | 196 |
-| Scenes (`.tscn`) | 71 |
+| Lines of GDScript | ~30,100 |
+| Scripts (`.gd`) | 192 |
+| Scenes (`.tscn`) | 80 |
 | Creatures | 63 |
 | Moves | 90 |
-| Items | 47 |
-| Relics | 28 |
+| Items | 49 |
+| Relics | 32 |
 | Elements | 9 + neutral `Base` |
 
-*Snapshot: 2026-06-03.*
+*Snapshot: 2026-06-13.*
 
 ---
 
@@ -114,7 +114,9 @@ interactive checklist is in
 system area. The cleaner current documentation plan is in
 [`docs/roadmap/showcase-documentation-plan.md`](docs/roadmap/showcase-documentation-plan.md),
 with a current return handoff in
-[`docs/roadmap/current-state.md`](docs/roadmap/current-state.md).
+[`docs/roadmap/current-state.md`](docs/roadmap/current-state.md). The generated
+[`Living Game Bible`](docs/game-bible/README.md) is the current roster, type,
+move, item, relic, and opponent reference.
 Rough state right now:
 
 - **Working:** master selection, starter trail, town day loop, shops, PC, route

@@ -28,6 +28,13 @@ $blockedPatterns = @(
   "JoJo",
   "Pokecenter",
   "Elite Four",
+  "Master Ball",
+  "Great Ball",
+  "Ultra Ball",
+  "X-Attack",
+  "X-Defense",
+  "Life Orb",
+  "Focus Band",
   "Mega Button",
   "Fly, Surf",
   "public boundary",
@@ -57,7 +64,7 @@ function Get-PublicFiles {
     $item = Get-Item -LiteralPath $path
     if ($item.PSIsContainer) {
       Get-ChildItem -LiteralPath $path -Recurse -File |
-        Where-Object { $_.Extension -in @(".md", ".html", ".txt", ".yml", ".yaml") }
+        Where-Object { $_.Extension -in @(".md", ".html", ".txt", ".yml", ".yaml", ".json") }
     } else {
       $item
     }

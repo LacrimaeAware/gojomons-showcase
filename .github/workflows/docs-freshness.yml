@@ -7,6 +7,7 @@ on:
       - "docs/**"
       - "media/**"
       - "scripts/check-public-docs.ps1"
+      - "scripts/build-game-bible.ps1"
       - ".github/workflows/docs-freshness.yml"
   pull_request:
     paths:
@@ -14,6 +15,7 @@ on:
       - "docs/**"
       - "media/**"
       - "scripts/check-public-docs.ps1"
+      - "scripts/build-game-bible.ps1"
       - ".github/workflows/docs-freshness.yml"
 
 jobs:
