@@ -9,8 +9,9 @@ The showcase repo is now organized around a public `docs/` folder:
 
 - `docs/README.md`: document index and freshness rules.
 - `docs/design/`: evergreen design notes.
-- `docs/game-bible/`: generated public reference for current roster, types,
-  moves, items, relics, and opponent builders.
+- `docs/game-bible/`: interactive Living Game Bible plus generated markdown and
+  JSON reference for current roster, types, moves, items, relics, and opponent
+  builders.
 - `docs/roadmap/`: current state, roadmap, public documentation plan, and the
   older interactive pipeline checklist.
 - `docs/operations/`: maintenance process.
@@ -65,8 +66,8 @@ it records production status as sprite-backed or prototype marker.
 
 ## Next Agenda
 
-1. Decide whether the generated `docs/game-bible/` reference should get a richer
-   GitHub Pages view, or stay as markdown plus JSON for now.
+1. Playtest the tracked `docs/game-bible/living-game-bible.html` view and mark
+   anything that feels stale, thin, or misclassified.
 2. Add a sprite/media pass only after deciding which art is original enough for
    public use; for now the bible tracks production status without copying assets.
 3. Rename old capture/training item source keys toward the public language, then
@@ -105,5 +106,6 @@ Then review the staged files and make sure local-only files remain ignored:
 
 ## Pages Status
 
-No public Pages deployment was promoted during this pass. The HTML Living Game
-Bible preview remains local and ignored until a deliberate publish pass.
+The interactive Living Game Bible was promoted into the tracked docs tree at
+`docs/game-bible/living-game-bible.html`. The ignored
+`pages-preview/living-game-bible.html` copy remains the hot-reload workbench.

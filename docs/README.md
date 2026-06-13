@@ -8,8 +8,11 @@ live here.
 
 - [Current state](roadmap/current-state.md): current state, what was
   happening, and what to do next.
-- [Living Game Bible](game-bible/README.md): generated roster, types, moves,
-  items, relics, and opponent reference.
+- [Living Game Bible](game-bible/living-game-bible.html): interactive reference
+  for the game shape, pipeline, roster, types, bestiary, masters, economy,
+  catalog, bosses, balance, and roadmap.
+- [Generated Bible files](game-bible/README.md): markdown and JSON roster,
+  type, move, item, relic, and opponent reference.
 - [Showcase documentation plan](roadmap/showcase-documentation-plan.md): current
   public framing, status labels, and open decisions.
 - [Roadmap index](roadmap/README.md): roadmap document map.

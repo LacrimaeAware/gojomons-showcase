@@ -1,6 +1,10 @@
 # Living Game Bible
 
-Generated from the current game data on 2026-06-13. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure.
+Generated from the current game data on 2026-06-13. This is the one-stop reference for the project spine, roster, types, moves, items, relics, masters, economy, and opponent structure.
+
+## Interactive Bible
+
+- [Living Game Bible](living-game-bible.html): searchable HTML view for the current game shape, pipeline, roster/capture policy, type ledger, bestiary, masters, economy, catalog, bosses, balance, and roadmap.
 
 ## Sections
 - [Bestiary](bestiary.md): every current Gojomon, including type, style, stats, evolution notes, and production status.

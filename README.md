@@ -115,8 +115,9 @@ system area. The cleaner current documentation plan is in
 [`docs/roadmap/showcase-documentation-plan.md`](docs/roadmap/showcase-documentation-plan.md),
 with a current return handoff in
 [`docs/roadmap/current-state.md`](docs/roadmap/current-state.md). The generated
-[`Living Game Bible`](docs/game-bible/README.md) is the current roster, type,
-move, item, relic, and opponent reference.
+[`Living Game Bible`](docs/game-bible/living-game-bible.html) is the current
+interactive reference for the game shape, pipeline, roster, types, bestiary,
+masters, economy, catalog, bosses, balance, and roadmap.
 Rough state right now:
 
 - **Working:** master selection, starter trail, town day loop, shops, PC, route
