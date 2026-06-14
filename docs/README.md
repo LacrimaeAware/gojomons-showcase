@@ -38,7 +38,7 @@ Public docs should make their status clear:
 
 When docs disagree, use this order:
 
-1. The private game repo canon: `DOCUMENTATION/DOCS_CANON.md`,
+1. The source game repo canon: `DOCUMENTATION/DOCS_CANON.md`,
    `DOCUMENTATION/data/game_manifest.json`, and
    `DOCUMENTATION/data/project_facts.json`.
 2. The playable game.
@@ -46,5 +46,5 @@ When docs disagree, use this order:
 4. Current balance or simulation findings.
 5. Chronological notes and old idea banks.
 
-Do not publish raw working notes, local-only previews, unreviewed exports, or
-media with placeholder commercial audio.
+Keep unfinished workbench material, unreviewed exports, and draft media out of
+the published docs until they are ready.

@@ -6,7 +6,7 @@ Use this checklist when updating the showcase repo or preparing public pages.
 
 1. Read [docs/README.md](../README.md) and the latest return handoff.
 2. Compare README claims against the current playable game and current roadmap.
-3. Refresh the private game repo canon first:
+3. Refresh the source game repo canon first:
 
 ```powershell
 python DOCUMENTATION/tools/doc_intake.py generate_game_manifest --write
@@ -35,7 +35,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps
 ## Automation
 
 The Codex app has an active weekly automation named
-`Gojomons weekly docs freshness audit`. It covers the private game repo as source
+`Gojomons weekly docs freshness audit`. It covers the source game repo as source
 material and this showcase repo as the public-facing output. The automation
 should audit freshness, regenerate the Living Game Bible when source data
 changed, run `scripts/check-public-docs.ps1` for showcase changes, and push

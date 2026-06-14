@@ -1,8 +1,8 @@
 {
-    "generated_on":  "2026-06-13",
+    "generated_on":  "2026-06-14",
     "canon":  {
-                  "source_project":  "Gojomons private game repo",
-                  "validation":  "Public extraction matched private canon counts at build time.",
+                  "source_project":  "Gojomons source game repo",
+                  "validation":  "Public extraction matched source canon counts at build time.",
                   "source_files":  {
                                        "docs_canon":  "DOCUMENTATION/DOCS_CANON.md",
                                        "docs_canon_manifest":  "DOCUMENTATION/data/docs_canon_manifest.json",
@@ -16,19 +16,19 @@
                                          "masters":  10,
                                          "moves":  90,
                                          "relics":  32,
-                                         "species":  63,
+                                         "species":  64,
                                          "types":  9,
                                          "weather_states":  7
                                      },
                   "repository_metrics":  {
-                                             "gdscript_files":  192,
-                                             "gdscript_lines":  34486,
+                                             "gdscript_files":  195,
+                                             "gdscript_lines":  35254,
                                              "scene_files":  80,
-                                             "git_commits":  410
+                                             "git_commits":  426
                                          }
               },
     "counts":  {
-                   "gojomons":  63,
+                   "gojomons":  64,
                    "moves":  90,
                    "items":  49,
                    "relics":  32,
@@ -225,6 +225,25 @@
                                       "starter"
                                   ],
                          "description":  "A small miner-automaton endlessly digging for a core it never finds. Sturdy, patient, and built to take hits."
+                     },
+                     {
+                         "slug":  "cradroot",
+                         "name":  "Cradroot",
+                         "types":  [
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Plant"
+                                      ],
+                         "style":  "tank",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "forest",
+                                      "grove"
+                                  ],
+                         "description":  "A mangrove-mother whose roots cradle the fallen and plant them anew. Slow and immovable, it turns a grove into a fortress and decay into fresh growth."
                      },
                      {
                          "slug":  "cranedel",
@@ -862,7 +881,7 @@
                                       "shrine",
                                       "ruins"
                                   ],
-                         "description":  "A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth."
+                         "description":  "A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth quicker on its feet than it looks."
                      },
                      {
                          "slug":  "quetzabranch",
@@ -1431,7 +1450,7 @@
                       "power":  0,
                       "accuracy":  0.9,
                       "flags":  [
-                                    "status: burn"
+                                    "status: curse"
                                 ],
                       "vfx_status":  "Fallback VFX"
                   },
@@ -1938,7 +1957,7 @@
                       "power":  40,
                       "accuracy":  0.9,
                       "flags":  [
-                                    "damage"
+                                    "status: blind"
                                 ],
                       "vfx_status":  "Custom VFX"
                   },
@@ -2973,7 +2992,7 @@
                    {
                        "slug":  "crit-loom",
                        "name":  "Crit Loom",
-                       "rarity":  "",
+                       "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
                        "description":  ""
@@ -3133,7 +3152,7 @@
                    {
                        "slug":  "storm-cycle",
                        "name":  "Storm Cycle",
-                       "rarity":  "",
+                       "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
                        "description":  ""
@@ -3165,7 +3184,7 @@
                    {
                        "slug":  "void-cleave",
                        "name":  "Void Cleave",
-                       "rarity":  "",
+                       "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
                        "description":  ""

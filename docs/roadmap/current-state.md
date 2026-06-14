@@ -1,7 +1,7 @@
-# Current State - 2026-06-13
+# Current State - 2026-06-14
 
 This is the re-entry point for the showcase repo after the June documentation
-cleanup and freshness pass.
+cleanup, generated Bible refresh, and freshness pass.
 
 ## Where We Are
 
@@ -17,7 +17,7 @@ The showcase repo is now organized around a public `docs/` folder:
 - `docs/operations/`: maintenance process.
 - `scripts/check-public-docs.ps1`: local public-readiness check.
 - `.github/workflows/docs-freshness.yml`: CI check for public docs.
-- A weekly Codex app automation now covers the private game repo plus this
+- A weekly Codex app automation now covers the source game repo plus this
   showcase repo for docs freshness audits.
 
 The root README stays as the project front page. `media/` stays at the root
@@ -64,6 +64,11 @@ Since then, `scripts/build-game-bible.ps1` now builds the public game-bible
 snapshot from the game repo data. It does not copy creature art or local paths;
 it records production status as sprite-backed or prototype marker.
 
+The June 14 refresh moved the public snapshot to 64 Gojomons after the source
+roster added Cradroot and updated Qilin-9's stat/note record. The interactive
+Bible now rebuilds its embedded fallback data from the same generated JSON, so
+`file://` viewing and the markdown pages use the same counts.
+
 ## Next Agenda
 
 1. Playtest the tracked `docs/game-bible/living-game-bible.html` view and mark
@@ -92,7 +97,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps
 git diff --check
 ```
 
-If source content changed, refresh the private canon and regenerate the bible first:
+If source content changed, refresh the source canon and regenerate the bible first:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"

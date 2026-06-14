@@ -1,6 +1,6 @@
 # Items And Relics
 
-Generated on 2026-06-13 from the item and relic databases. Public names here favor original language for capture and training objects even when older source keys still need a naming pass.
+Generated on 2026-06-14 from the item and relic databases. Public names here favor original language for capture and training objects even when older source keys still need a naming pass.
 
 ## Items
 | Item | Category | Price | Rarity | Description |
@@ -58,15 +58,15 @@ Generated on 2026-06-13 from the item and relic databases. Public names here fav
 ## Relics
 | Relic | Rarity | Role | Signature | Description |
 |---|---|---|---|---|
-| Crit Loom | - | - | - | - |
-| Storm Cycle | - | - | - | - |
-| Void Cleave | - | - | - | - |
 | Aegis | common | - | - | Your party takes ~17% less damage. |
 | Bloodthirst | common | - | - | Critical hit rate increased by 12%. |
+| Crit Loom | common | - | - | - |
 | Glass Cannon | common | - | - | Your attacks deal +25% damage, but you take 8% recoil. |
 | Keen Eye | common | - | - | Party moves gain +15% accuracy. |
 | Momentum | common | - | - | Every 6th hit cleaves another enemy for 30% damage. |
 | Second Wind | common | - | - | After every 4 critical hits, heal 15% max HP. |
+| Storm Cycle | common | - | - | - |
+| Void Cleave | common | - | - | - |
 | Mirror Ward | common | defensive | - | When an ally is struck, 15% of the damage is reflected back at the attacker. |
 | Purification Crystal | common | defensive | - | Your active mons are cured of status conditions at the start of each turn. |
 | Soot Veil | common | defensive | - | Your hits have a 25% chance to BLIND the target for 2 turns (its attacks lose 25% accuracy). |

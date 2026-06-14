@@ -1,6 +1,6 @@
 # Move Catalog
 
-Generated on 2026-06-13 from the move database. The catalog tracks combat role and production status without exposing local project paths.
+Generated on 2026-06-14 from the move database. The catalog tracks combat role and production status without exposing local project paths.
 
 | Move | Element(s) | Category | Power | Accuracy | Flags | Style tags | VFX |
 |---|---|---|---:|---:|---|---|---|
@@ -16,7 +16,7 @@ Generated on 2026-06-13 from the move database. The catalog tracks combat role a
 | Blight | Life | status | 0 | 90% | status: poison | disruptor, support | Fallback VFX |
 | Blizzard Field | Water, Storm | special | 65 | 85% | AoE, status: freeze | sweeper, disruptor | Fallback VFX |
 | Bloom Burst | Life | special | 78 | 95% | drain | support, sweeper | Fallback VFX |
-| Corrupt | Dark | status | 0 | 90% | status: burn | disruptor | Fallback VFX |
+| Corrupt | Dark | status | 0 | 90% | status: curse | disruptor | Fallback VFX |
 | Crushing Blow | Machine | physical | 65 | 95% | debuff | sweeper, disruptor | Fallback VFX |
 | Dark Wave | Dark | special | 60 | 90% | AoE | sweeper, disruptor | Fallback VFX |
 | Draining Kiss | Mystic | special | 50 | 100% | drain, setup | support, sweeper | Fallback VFX |
@@ -52,7 +52,7 @@ Generated on 2026-06-13 from the move database. The catalog tracks combat role a
 | Mind Shatter | Mystic | special | 95 | 85% | damage | sweeper, berserk | Custom VFX |
 | Mucus Spray | Water | special | 20 | 90% | multi-hit | disruptor | Custom VFX |
 | Mystic Storm | Mystic | special | 70 | 85% | AoE | sweeper, berserk | Fallback VFX |
-| Night Soot | Dark | special | 40 | 90% | damage | balanced, disruptor | Custom VFX |
+| Night Soot | Dark | special | 40 | 90% | status: blind | balanced, disruptor | Custom VFX |
 | Oblivion | Dark | special | 95 | 85% | drain | sweeper, support | Fallback VFX |
 | Overclock | Machine | special | 80 | 85% | damage | sweeper, berserk | Custom VFX |
 | Overgrowth | Life | special | 72 | 90% | drain | support, sweeper | Fallback VFX |

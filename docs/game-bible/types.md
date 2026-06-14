@@ -6,7 +6,7 @@ The game uses nine elements plus neutral Base moves. Type math is additive: each
 |---|---:|---|---|---|---|---|---|
 | Fire | 9 | Burn / Persist | Life, Machine | Water, Mystic | Life, Machine | Water, Dark | Forge, rebirth spark |
 | Water | 9 | Cleanse / Flow | Fire, Machine | Life, Alien | Fire, Machine | Storm, Life | Heal, cleanse, stabilize |
-| Life | 12 | Regrow / Revive | Water | Fire | Water, Light | Fire, Dark | Grow, nurture, regenerate |
+| Life | 13 | Regrow / Revive | Water | Fire | Water, Light | Fire, Dark | Grow, nurture, regenerate |
 | Machine | 12 | Construct / Upgrade | Alien | Fire, Water | Storm, Mystic, Alien | Fire, Water | Upgrade, repair, retrofit |
 | Storm | 9 | Overcharge / Chain | Water, Alien | Mystic, Machine | - | - | Charge, accelerate, tune tempo |
 | Mystic | 13 | Foresee / Echo | Dark | Machine, Alien, Light | Storm, Light, Fire | Dark | Attune, echo, prophecy |
@@ -27,7 +27,7 @@ The game uses nine elements plus neutral Base moves. Type math is additive: each
 - Service seed: Heal, cleanse, stabilize.
 
 ### Life
-- Current roster: Aethernox, Dragonel, Florisha, Florune, Glimmy, Kappalette, Kappantra, Qilin-9, Quetzabranch, Saprim, Shroomnix, Thundraco.
+- Current roster: Aethernox, Cradroot, Dragonel, Florisha, Florune, Glimmy, Kappalette, Kappantra, Qilin-9, Quetzabranch, Saprim, Shroomnix, Thundraco.
 - Mechanical lean: HP, drain, comeback value.
 - Service seed: Grow, nurture, regenerate.
 

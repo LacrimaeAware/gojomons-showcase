@@ -1,6 +1,6 @@
 # Living Game Bible
 
-Generated from the current game data on 2026-06-13. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the private game repo canon before this snapshot is written.
+Generated from the current game data on 2026-06-14. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the source game repo canon before this snapshot is written.
 
 ## Interactive Bible
 
@@ -17,7 +17,7 @@ Generated from the current game data on 2026-06-13. This is the one-stop public 
 ## Current Scale
 | Area | Count |
 |---|---:|
-| Gojomons | 63 |
+| Gojomons | 64 |
 | Moves | 90 |
 | Items | 49 |
 | Relics | 32 |
@@ -38,7 +38,7 @@ Generated from the current game data on 2026-06-13. This is the one-stop public 
 | Fallback VFX | Move currently relies on the generic element-colored fallback. |
 
 ## Maintenance
-Regenerate after changing roster, moves, items, relics, or type-chart data. Prefer the private game repo runner because it refreshes the canon first:
+Regenerate after changing roster, moves, items, relics, or type-chart data. Prefer the source game repo runner because it refreshes the canon first:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"

@@ -464,8 +464,8 @@ Assert-CanonCount "project_facts.relics" $projectFacts.content_counts.relics $sn
 Assert-CanonCount "project_facts.types" $projectFacts.content_counts.types $snapshotCounts.types
 
 $canonSnapshot = [pscustomobject]@{
-  source_project = "Gojomons private game repo"
-  validation = "Public extraction matched private canon counts at build time."
+  source_project = "Gojomons source game repo"
+  validation = "Public extraction matched source canon counts at build time."
   source_files = [pscustomobject]@{
     docs_canon = "DOCUMENTATION/DOCS_CANON.md"
     docs_canon_manifest = "DOCUMENTATION/data/docs_canon_manifest.json"
@@ -490,6 +490,25 @@ $snapshotPath = Join-Path $dataDir "public-game-bible.json"
 $snapshotJson = ($snapshot | ConvertTo-Json -Depth 8) + "`n"
 [System.IO.File]::WriteAllText($snapshotPath, $snapshotJson, [System.Text.UTF8Encoding]::new($false))
 
+$htmlPath = Join-Path $outDir "living-game-bible.html"
+if (Test-Path -LiteralPath $htmlPath) {
+  $html = [System.IO.File]::ReadAllText($htmlPath, [System.Text.Encoding]::UTF8)
+  $html = [regex]::Replace(
+    $html,
+    '(?s)<script id="bibleDataFallback" type="application/json">.*?</script>',
+    '<script id="bibleDataFallback" type="application/json">' + $snapshotJson.TrimEnd() + '</script>'
+  )
+  $html = [regex]::Replace($html, '<div class="home-metric"><b>\d+</b><span>species</span></div>', '<div class="home-metric"><b>' + $mons.Count + '</b><span>species</span></div>')
+  $html = [regex]::Replace($html, '<div class="home-metric"><b>\d+</b><span>moves</span></div>', '<div class="home-metric"><b>' + $moves.Count + '</b><span>moves</span></div>')
+  $html = [regex]::Replace($html, '<div class="home-metric"><b>\d+</b><span>items</span></div>', '<div class="home-metric"><b>' + $items.Count + '</b><span>items</span></div>')
+  $html = [regex]::Replace($html, '<div class="home-metric"><b>\d+</b><span>relics</span></div>', '<div class="home-metric"><b>' + $relics.Count + '</b><span>relics</span></div>')
+  $html = [regex]::Replace($html, '<div class="home-metric"><b>\d+</b><span>types plus Base</span></div>', '<div class="home-metric"><b>' + $typeOrder.Count + '</b><span>types plus Base</span></div>')
+  $html = [regex]::Replace($html, '<div class="home-metric"><b>\d+</b><span>master specs</span></div>', '<div class="home-metric"><b>' + [int]$gameManifest.counts.master_specs + '</b><span>master specs</span></div>')
+  $snapshotLine = "$($mons.Count) species, $($moves.Count) moves, $($items.Count) items, $($relics.Count) relics, $($typeOrder.Count) types plus Base, $([int]$gameManifest.counts.masters) masters, $([int]$gameManifest.counts.master_specs) specs."
+  $html = [regex]::Replace($html, '\d+ species, \d+ moves, \d+ items, \d+ relics, \d+ types plus Base, \d+ masters(?: plus void)?, \d+ specs\.', $snapshotLine)
+  [System.IO.File]::WriteAllText($htmlPath, $html, [System.Text.UTF8Encoding]::new($false))
+}
+
 $typeCounts = @{}
 foreach ($type in $typeOrder) { $typeCounts[$type] = 0 }
 foreach ($mon in $mons) {
@@ -506,7 +525,7 @@ $legendaryMons = @($mons | Where-Object { $_.tags -contains "legendary" } | Sort
 $readme = New-Object System.Collections.Generic.List[string]
 $readme.Add("# Living Game Bible") | Out-Null
 $readme.Add("") | Out-Null
-$readme.Add("Generated from the current game data on $generatedDate. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the private game repo canon before this snapshot is written.") | Out-Null
+$readme.Add("Generated from the current game data on $generatedDate. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the source game repo canon before this snapshot is written.") | Out-Null
 $readme.Add("") | Out-Null
 $readme.Add("## Interactive Bible") | Out-Null
 $readme.Add("") | Out-Null
@@ -544,7 +563,7 @@ $readme.Add("| Custom VFX | Move has an authored or shared VFX scene assigned. |
 $readme.Add("| Fallback VFX | Move currently relies on the generic element-colored fallback. |") | Out-Null
 $readme.Add("") | Out-Null
 $readme.Add("## Maintenance") | Out-Null
-$readme.Add("Regenerate after changing roster, moves, items, relics, or type-chart data. Prefer the private game repo runner because it refreshes the canon first:") | Out-Null
+$readme.Add("Regenerate after changing roster, moves, items, relics, or type-chart data. Prefer the source game repo runner because it refreshes the canon first:") | Out-Null
 $readme.Add("") | Out-Null
 $readme.Add('```powershell') | Out-Null
 $readme.Add('powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"') | Out-Null

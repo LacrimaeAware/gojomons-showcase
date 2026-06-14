@@ -1,13 +1,13 @@
 # Gojomon Bestiary
 
-Generated on 2026-06-13 from the current roster database. The table gives the fast scan; the entries below it give the usable creature notes.
+Generated on 2026-06-14 from the current roster database. The table gives the fast scan; the entries below it give the usable creature notes.
 
 ## Roster Balance
 | Type | Count |
 |---|---:|
 | Fire | 9 |
 | Water | 9 |
-| Life | 12 |
+| Life | 13 |
 | Machine | 12 |
 | Storm | 9 |
 | Mystic | 13 |
@@ -22,11 +22,11 @@ Generated on 2026-06-13 from the current roster database. The table gives the fa
 | disruptor | 13 |
 | support | 16 |
 | sweeper | 12 |
-| tank | 12 |
+| tank | 13 |
 
 | Production status | Count |
 |---|---:|
-| Prototype marker | 49 |
+| Prototype marker | 50 |
 | Sprite-backed | 14 |
 
 ## Roster Table
@@ -42,6 +42,7 @@ Generated on 2026-06-13 from the current roster database. The table gives the fa
 | Cindara | Fire | sweeper | 418 | Prototype marker | Branches to Volcarion (level:34); Cranedel (item:prism_core_light) |
 | Cinder Hare | Fire | sweeper | 385 | Prototype marker | Evolves to Cindara at level 16 |
 | Cogspar | Machine | tank | 368 | Prototype marker | Evolves to Anvilion at level 16 |
+| Cradroot | Life | tank | 385 | Prototype marker | - |
 | Cranedel | Fire, Light | sweeper | 385 | Sprite-backed | - |
 | Cranelum | Light | support | 408 | Prototype marker | Evolves to Solmere at level 32 |
 | Cyclowl | Storm, Alien | disruptor | 394 | Prototype marker | - |
@@ -187,6 +188,15 @@ Generated on 2026-06-13 from the current roster database. The table gives the fa
 - Learnset: L1 Gear Strike, L1 Tackle, L6 Voltage Pulse, L10 Crushing Blow, L14 Overclock, L15 Iron Skin.
 - Evolution: Evolves to Anvilion at level 16.
 - Note: A small miner-automaton endlessly digging for a core it never finds. Sturdy, patient, and built to take hits.
+
+### Cradroot
+- Types: Life. Subtypes: Plant.
+- Style: tank. BST: 385. Status: Prototype marker.
+- Stats: HP 88, Atk 58, Def 82, SpA 55, SpD 72, Spd 30.
+- Default moves: Leaf Nibble, Overgrowth.
+- Learnset: L1 Tackle, L1 Leaf Nibble, L1 Vine Pop, L5 Overgrowth, L9 Iron Skin, L12 Recover, L16 Barrier, L20 Petal Storm.
+- Evolution: -.
+- Note: A mangrove-mother whose roots cradle the fallen and plant them anew. Slow and immovable, it turns a grove into a fortress and decay into fresh growth.
 
 ### Cranedel
 - Types: Fire, Light. Subtypes: Beast.
@@ -479,11 +489,11 @@ Generated on 2026-06-13 from the current roster database. The table gives the fa
 ### Qilin-9
 - Types: Machine, Life. Subtypes: Construct.
 - Style: balanced. BST: 385. Status: Prototype marker.
-- Stats: HP 75, Atk 66, Def 70, SpA 66, SpD 66, Spd 42.
+- Stats: HP 75, Atk 66, Def 62, SpA 66, SpD 58, Spd 58.
 - Default moves: Gear Strike, Overgrowth.
 - Learnset: L1 Gear Strike, L1 Overgrowth, L8 Voltage Pulse, L14 Vine Pop, L18 Recover, L24 Piston Punch, L30 Petal Storm.
 - Evolution: -.
-- Note: A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth.
+- Note: A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth quicker on its feet than it looks.
 
 ### Quetzabranch
 - Types: Life, Storm. Subtypes: Reptile.

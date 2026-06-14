@@ -1748,7 +1748,7 @@
           <b>Playtest the merged live-surfacing build, decide blacksmith/item quality, expand CampaignStateAdapter, then render CampaignFlow through the live day menu.</b>
         </div>
         <div class="home-metrics" aria-label="Current generated Bible counts">
-          <div class="home-metric"><b>63</b><span>species</span></div>
+          <div class="home-metric"><b>64</b><span>species</span></div>
           <div class="home-metric"><b>90</b><span>moves</span></div>
           <div class="home-metric"><b>49</b><span>items</span></div>
           <div class="home-metric"><b>32</b><span>relics</span></div>
@@ -1914,7 +1914,7 @@
           <tr><th>Surface</th><th>Status</th><th>Current read</th><th>Watch next</th></tr>
           <tr class="status-row" data-status="live"><td>Playable spine</td><td><span class="pill live">Live</span></td><td>Main menu, Master pick, starter trail, town prep, route rooms, battles, capture, rewards, PC, shop, gym, next-town choice, final boss, and end-run flow.</td><td>Manual freshness playtest of the merged live-surfacing build.</td></tr>
           <tr class="status-row" data-status="live"><td>Combat resolver</td><td><span class="pill live">Live</span></td><td>Damage, type effectiveness, shields, drain, recoil, crits, weather, status, multi-target, relic, master, and held-item hooks share a sim/live rules path.</td><td>Readability, VFX/SFX replacement, and remaining stall samples.</td></tr>
-          <tr class="status-row" data-status="live"><td>Content snapshot</td><td><span class="pill live">Live</span></td><td>63 species, 90 moves, 49 items, 32 relics, 9 types plus Base, 9 masters plus void, 28 specs.</td><td>Use generated data for the Bible; recount after game-data changes.</td></tr>
+          <tr class="status-row" data-status="live"><td>Content snapshot</td><td><span class="pill live">Live</span></td><td>64 species, 90 moves, 49 items, 32 relics, 9 types plus Base, 10 masters, 28 specs.</td><td>Use generated data for the Bible; recount after game-data changes.</td></tr>
           <tr class="status-row" data-status="lab"><td>CampaignFlow lab</td><td><span class="pill lab">Lab</span></td><td>The decision graph can simulate richer route/town options than the current live UI exposes.</td><td>Adapter expansion and day-menu rendering are the bridge.</td></tr>
           <tr class="status-row" data-status="lab"><td>Balance lab</td><td><span class="pill lab">Lab</span></td><td>Decision lab, balance sweep, entity DB, pacing, synergy, and gold audit exist as re-runnable measurement tools.</td><td>New work should log deltas and avoid treating old numbers as permanent.</td></tr>
           <tr class="status-row" data-status="planned"><td>Blacksmith / item quality</td><td><span class="pill planned">Planned</span></td><td>Highest-leverage next design call: upgrade tiers, gold sink, Machine identity, item/relic/gear quality, and service pricing.</td><td>Needs your shape before code should harden.</td></tr>
@@ -1927,28 +1927,21 @@
     <section id="sources">
       <div class="wrap">
         <div class="section-head">
-          <h2>Source And Freshness Audit</h2>
-          <p class="lede">This page keeps the local Bible honest. Current handoff, freshness, TODO, and design-bible files outrank older planning pages; raw secrets and personal/private data stay out, but useful design context can live here while the page remains local.</p>
+          <h2>Source And Freshness</h2>
+          <p class="lede">This page follows the current playable spine first, then the generated game data, then the public roadmap. Older planning material stays useful only when it agrees with that order.</p>
         </div>
         <div class="callout source-note">
-          The tracked HTML version now lives at <code>docs/game-bible/living-game-bible.html</code>. The ignored <code>pages-preview/</code> copy is the hot-reload workbench.
+          The tracked Bible lives here, beside generated markdown and JSON snapshots. Rebuild it after roster, move, item, relic, type-chart, or opponent-source changes.
         </div>
         <table style="margin-top: 18px">
-          <tr><th>Source</th><th>Freshness</th><th>Use In This Bible</th></tr>
-          <tr><td><code>private game repo / DOCUMENTATION/GAME_OVERVIEW.html</code></td><td><span class="pill live">Current</span></td><td>Fullest local living-bible source: playable spine, route rooms, CampaignFlow, services, bosses, balance, and restart order.</td></tr>
-          <tr><td><code>private game repo / DOCUMENTATION/rollups/DOCS_FRESHNESS_2026-06-13.md</code></td><td><span class="pill live">Current</span></td><td>Freshest repo-hygiene verdict, counts, verification, and active agenda.</td></tr>
-          <tr><td><code>private game repo / DOCUMENTATION/rollups/TODO.md</code></td><td><span class="pill live">Current</span></td><td>Active next-work list: playtest, blacksmith/item quality, CampaignStateAdapter, Phase 2 live rendering, random-down decision depth.</td></tr>
-          <tr><td><code>private game repo / DOCUMENTATION/design_bible/ROADMAP.md</code></td><td><span class="pill live">Current</span></td><td>Most explicit tractable roadmap: random-sinkers, skill-lifters, economy, towns/services, world, live integration, sim infrastructure.</td></tr>
-          <tr><td><code>master-organizer / docs/REPO_PORTFOLIO/project-bibles/gojomons*.md</code></td><td><span class="pill live">Current atlas</span></td><td>Confirms the source-order rule: this needs a route-level project Bible, stale ideas must be quarantined, and the showcase is the public presentation layer, not the whole private vault.</td></tr>
-          <tr><td><code>docs/roadmap/current-state.md</code></td><td><span class="pill live">Current</span></td><td>Showcase repo handoff and public-doc status.</td></tr>
-          <tr><td><code>docs/roadmap/showcase-documentation-plan.md</code></td><td><span class="pill live">Current</span></td><td>Owns status labels, living-bible checks, classification snapshot, and unresolved questions.</td></tr>
-          <tr><td><code>README.md</code></td><td><span class="pill live">Current</span></td><td>Showcase front door and scale snapshot. Recount the live Godot project before changing dated counts.</td></tr>
+          <tr><th>Reference</th><th>Freshness</th><th>Use In This Bible</th></tr>
+          <tr><td><code>docs/game-bible/data/public-game-bible.json</code></td><td><span class="pill live">Generated</span></td><td>Counts and catalogs for the current roster, moves, items, relics, and type spread.</td></tr>
+          <tr><td><code>docs/game-bible/*.md</code></td><td><span class="pill live">Generated</span></td><td>Readable companion pages for bestiary, types, moves, items, relics, and opponents.</td></tr>
+          <tr><td><code>docs/roadmap/current-state.md</code></td><td><span class="pill live">Current</span></td><td>Re-entry point for what changed recently and what should happen next.</td></tr>
+          <tr><td><code>docs/roadmap/showcase-documentation-plan.md</code></td><td><span class="pill live">Current</span></td><td>Status labels, classification snapshot, and open design questions.</td></tr>
+          <tr><td><code>README.md</code></td><td><span class="pill live">Current</span></td><td>Showcase front door and public scale snapshot.</td></tr>
           <tr><td><code>docs/design/*.md</code></td><td><span class="pill live">Current</span></td><td>Technical anchors for event-driven combat, balance simulation, and type-chart explanation.</td></tr>
-          <tr><td><code>media/README.md</code></td><td><span class="pill live">Current</span></td><td>Media boundary: committed stills are public, local video source files stay ignored.</td></tr>
-          <tr><td><code>private game repo / showcase/roadmap/pipeline_view.html</code></td><td><span class="pill question">Mixed but useful</span></td><td>Old broad checklist. Best used through the new Pipeline page, where each bucket is reclassified against the current agenda.</td></tr>
-          <tr><td><code>SHOWCASE_NOTES.md</code></td><td><span class="pill parked">Private</span></td><td>Ignored working notes. Do not copy raw text into public pages.</td></tr>
-          <tr><td><code>docs/game-bible/living-game-bible.html</code></td><td><span class="pill live">Tracked</span></td><td>Interactive one-stop Bible view: overview, pipeline, roster, types, bestiary, masters, economy, catalog, bosses, balance, and roadmap.</td></tr>
-          <tr><td><code>pages-preview/living-game-bible.html</code></td><td><span class="pill lab">Workbench</span></td><td>Local preview copy for quick design iteration before mirroring into the tracked Bible.</td></tr>
+          <tr><td><code>docs/roadmap/pipeline_view.html</code></td><td><span class="pill question">Historical</span></td><td>Older broad checklist, useful only after reclassification against the current roadmap.</td></tr>
         </table>
         <div class="grid three" style="margin-top: 18px">
           <article class="card">
@@ -1961,7 +1954,7 @@
           </article>
           <article class="card">
             <h3>Keep It Useful</h3>
-            <p>This local version can be candid and merged-up. Just keep passwords, tokens, private personal details, private debug dumps, and messy source dumps out of the page itself.</p>
+            <p>Keep the page readable as a game reference: concrete systems, clear status labels, and no raw planning dump.</p>
           </article>
         </div>
       </div>
@@ -1971,7 +1964,7 @@
       <div class="wrap">
         <div class="section-head">
           <h2>Pipeline View</h2>
-          <p class="lede">This is the merged read of the old checklist, the private living overview, the 2026-06-13 freshness audit, and the active TODO. It is meant to answer: what exists, what is next, what is lab-only, and what should stop pretending to be near-term.</p>
+          <p class="lede">This is the merged read of the current docs and older checklist material. It is meant to answer: what exists, what is next, what is lab-only, and what should stop pretending to be near-term.</p>
         </div>
 
         <div class="classification-strip" aria-label="Pipeline classification summary">
@@ -2505,9 +2498,36 @@
   </footer>
 
   <script id="bibleDataFallback" type="application/json">{
-    "generated_on":  "2026-06-13",
+    "generated_on":  "2026-06-14",
+    "canon":  {
+                  "source_project":  "Gojomons source game repo",
+                  "validation":  "Public extraction matched source canon counts at build time.",
+                  "source_files":  {
+                                       "docs_canon":  "DOCUMENTATION/DOCS_CANON.md",
+                                       "docs_canon_manifest":  "DOCUMENTATION/data/docs_canon_manifest.json",
+                                       "game_manifest":  "DOCUMENTATION/data/game_manifest.json",
+                                       "project_facts":  "DOCUMENTATION/data/project_facts.json"
+                                   },
+                  "docs_canon_updated":  "2026-06-14",
+                  "content_counts":  {
+                                         "items":  49,
+                                         "master_specs":  28,
+                                         "masters":  10,
+                                         "moves":  90,
+                                         "relics":  32,
+                                         "species":  64,
+                                         "types":  9,
+                                         "weather_states":  7
+                                     },
+                  "repository_metrics":  {
+                                             "gdscript_files":  195,
+                                             "gdscript_lines":  35254,
+                                             "scene_files":  80,
+                                             "git_commits":  426
+                                         }
+              },
     "counts":  {
-                   "gojomons":  63,
+                   "gojomons":  64,
                    "moves":  90,
                    "items":  49,
                    "relics":  32,
@@ -2704,6 +2724,25 @@
                                       "starter"
                                   ],
                          "description":  "A small miner-automaton endlessly digging for a core it never finds. Sturdy, patient, and built to take hits."
+                     },
+                     {
+                         "slug":  "cradroot",
+                         "name":  "Cradroot",
+                         "types":  [
+                                       "Life"
+                                   ],
+                         "subtypes":  [
+                                          "Plant"
+                                      ],
+                         "style":  "tank",
+                         "bst":  385,
+                         "production_status":  "Prototype marker",
+                         "evolution":  "-",
+                         "tags":  [
+                                      "forest",
+                                      "grove"
+                                  ],
+                         "description":  "A mangrove-mother whose roots cradle the fallen and plant them anew. Slow and immovable, it turns a grove into a fortress and decay into fresh growth."
                      },
                      {
                          "slug":  "cranedel",
@@ -3341,7 +3380,7 @@
                                       "shrine",
                                       "ruins"
                                   ],
-                         "description":  "A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth."
+                         "description":  "A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth quicker on its feet than it looks."
                      },
                      {
                          "slug":  "quetzabranch",
@@ -3910,7 +3949,7 @@
                       "power":  0,
                       "accuracy":  0.9,
                       "flags":  [
-                                    "status: burn"
+                                    "status: curse"
                                 ],
                       "vfx_status":  "Fallback VFX"
                   },
@@ -4417,7 +4456,7 @@
                       "power":  40,
                       "accuracy":  0.9,
                       "flags":  [
-                                    "damage"
+                                    "status: blind"
                                 ],
                       "vfx_status":  "Custom VFX"
                   },
@@ -5452,7 +5491,7 @@
                    {
                        "slug":  "crit-loom",
                        "name":  "Crit Loom",
-                       "rarity":  "",
+                       "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
                        "description":  ""
@@ -5612,7 +5651,7 @@
                    {
                        "slug":  "storm-cycle",
                        "name":  "Storm Cycle",
-                       "rarity":  "",
+                       "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
                        "description":  ""
@@ -5644,7 +5683,7 @@
                    {
                        "slug":  "void-cleave",
                        "name":  "Void Cleave",
-                       "rarity":  "",
+                       "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
                        "description":  ""
