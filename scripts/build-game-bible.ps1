@@ -16,6 +16,18 @@ function Read-SourceText([string]$RelativePath) {
   return [System.IO.File]::ReadAllText($path, [System.Text.Encoding]::UTF8)
 }
 
+function Read-SourceJson([string]$RelativePath) {
+  return (Read-SourceText $RelativePath) | ConvertFrom-Json
+}
+
+function Assert-CanonCount([string]$Name, [object]$Expected, [object]$Actual) {
+  $expectedInt = [int]$Expected
+  $actualInt = [int]$Actual
+  if ($expectedInt -ne $actualInt) {
+    throw "Canon count mismatch for ${Name}: manifest has $expectedInt, generated public snapshot has $actualInt."
+  }
+}
+
 function Clean-Text([object]$Value) {
   if ($null -eq $Value) { return "" }
   $text = [string]$Value
@@ -274,6 +286,9 @@ $movesText = Read-SourceText "SYSTEMS\moves\MovesDB.gd"
 $itemsText = Read-SourceText "SYSTEMS\items\item_db.gd"
 $relicsText = Read-SourceText "SYSTEMS\relics\relics_db.gd"
 $typeChartText = Read-SourceText "SYSTEMS\gojomons\rules\type_chart.gd"
+$gameManifest = Read-SourceJson "DOCUMENTATION\data\game_manifest.json"
+$projectFacts = Read-SourceJson "DOCUMENTATION\data\project_facts.json"
+$docsCanon = Read-SourceJson "DOCUMENTATION\data\docs_canon_manifest.json"
 
 $typeOrder = @("Fire", "Water", "Life", "Machine", "Storm", "Mystic", "Light", "Dark", "Alien")
 $typeIdentity = @{
@@ -429,15 +444,43 @@ foreach ($entry in $chartEntries) {
 }
 
 $generatedDate = Get-Date -Format "yyyy-MM-dd"
+$snapshotCounts = [pscustomobject]@{
+  gojomons = $mons.Count
+  moves = $moves.Count
+  items = $items.Count
+  relics = $relics.Count
+  types = $typeOrder.Count
+}
+
+Assert-CanonCount "species" $gameManifest.counts.species $snapshotCounts.gojomons
+Assert-CanonCount "moves" $gameManifest.counts.moves $snapshotCounts.moves
+Assert-CanonCount "items" $gameManifest.counts.items $snapshotCounts.items
+Assert-CanonCount "relics" $gameManifest.counts.relics $snapshotCounts.relics
+Assert-CanonCount "types" $gameManifest.counts.types $snapshotCounts.types
+Assert-CanonCount "project_facts.species" $projectFacts.content_counts.species $snapshotCounts.gojomons
+Assert-CanonCount "project_facts.moves" $projectFacts.content_counts.moves $snapshotCounts.moves
+Assert-CanonCount "project_facts.items" $projectFacts.content_counts.items $snapshotCounts.items
+Assert-CanonCount "project_facts.relics" $projectFacts.content_counts.relics $snapshotCounts.relics
+Assert-CanonCount "project_facts.types" $projectFacts.content_counts.types $snapshotCounts.types
+
+$canonSnapshot = [pscustomobject]@{
+  source_project = "Gojomons private game repo"
+  validation = "Public extraction matched private canon counts at build time."
+  source_files = [pscustomobject]@{
+    docs_canon = "DOCUMENTATION/DOCS_CANON.md"
+    docs_canon_manifest = "DOCUMENTATION/data/docs_canon_manifest.json"
+    game_manifest = "DOCUMENTATION/data/game_manifest.json"
+    project_facts = "DOCUMENTATION/data/project_facts.json"
+  }
+  docs_canon_updated = $docsCanon.updated
+  content_counts = $gameManifest.counts
+  repository_metrics = $projectFacts.repository_metrics
+}
+
 $snapshot = [pscustomobject]@{
   generated_on = $generatedDate
-  counts = [pscustomobject]@{
-    gojomons = $mons.Count
-    moves = $moves.Count
-    items = $items.Count
-    relics = $relics.Count
-    types = $typeOrder.Count
-  }
+  canon = $canonSnapshot
+  counts = $snapshotCounts
   gojomons = @($mons | Sort-Object name | Select-Object slug, name, types, subtypes, style, bst, production_status, evolution, tags, description)
   moves = @($moves | Sort-Object name | Select-Object slug, name, elements, category, power, accuracy, flags, vfx_status)
   items = @($items | Sort-Object name | Select-Object slug, name, category, price, rarity, description)
@@ -463,7 +506,11 @@ $legendaryMons = @($mons | Where-Object { $_.tags -contains "legendary" } | Sort
 $readme = New-Object System.Collections.Generic.List[string]
 $readme.Add("# Living Game Bible") | Out-Null
 $readme.Add("") | Out-Null
-$readme.Add("Generated from the current game data on $generatedDate. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure.") | Out-Null
+$readme.Add("Generated from the current game data on $generatedDate. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the private game repo canon before this snapshot is written.") | Out-Null
+$readme.Add("") | Out-Null
+$readme.Add("## Interactive Bible") | Out-Null
+$readme.Add("") | Out-Null
+$readme.Add("- [Living Game Bible](living-game-bible.html): searchable HTML view for the current game shape, pipeline, roster/capture policy, type ledger, bestiary, masters, economy, catalog, bosses, balance, and roadmap.") | Out-Null
 $readme.Add("") | Out-Null
 $readme.Add("## Sections") | Out-Null
 $readme.Add("- [Bestiary](bestiary.md): every current Gojomon, including type, style, stats, evolution notes, and production status.") | Out-Null
@@ -482,6 +529,12 @@ $readme.Add("| Items | $($items.Count) |") | Out-Null
 $readme.Add("| Relics | $($relics.Count) |") | Out-Null
 $readme.Add("| Types | $($typeOrder.Count) |") | Out-Null
 $readme.Add("") | Out-Null
+$readme.Add("## Canon Sources") | Out-Null
+$readme.Add('- `DOCUMENTATION/DOCS_CANON.md`: source ownership map.') | Out-Null
+$readme.Add('- `DOCUMENTATION/data/game_manifest.json`: live content counts from the game repo.') | Out-Null
+$readme.Add('- `DOCUMENTATION/data/project_facts.json`: repository metrics for showcase and portfolio pages.') | Out-Null
+$readme.Add('- `data/public-game-bible.json`: this showcase snapshot, including the canon block used by future tooling.') | Out-Null
+$readme.Add("") | Out-Null
 $readme.Add("## Production Status Words") | Out-Null
 $readme.Add("| Label | Meaning |") | Out-Null
 $readme.Add("|---|---|") | Out-Null
@@ -491,9 +544,12 @@ $readme.Add("| Custom VFX | Move has an authored or shared VFX scene assigned. |
 $readme.Add("| Fallback VFX | Move currently relies on the generic element-colored fallback. |") | Out-Null
 $readme.Add("") | Out-Null
 $readme.Add("## Maintenance") | Out-Null
-$readme.Add("Regenerate after changing roster, moves, items, relics, or type-chart data:") | Out-Null
+$readme.Add("Regenerate after changing roster, moves, items, relics, or type-chart data. Prefer the private game repo runner because it refreshes the canon first:") | Out-Null
 $readme.Add("") | Out-Null
 $readme.Add('```powershell') | Out-Null
+$readme.Add('powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"') | Out-Null
+$readme.Add("") | Out-Null
+$readme.Add("# Showcase-only fallback:") | Out-Null
 $readme.Add("powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1") | Out-Null
 $readme.Add("powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1") | Out-Null
 $readme.Add('```') | Out-Null

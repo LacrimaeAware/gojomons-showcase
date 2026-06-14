@@ -92,10 +92,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps
 git diff --check
 ```
 
-If source content changed, regenerate the bible first:
+If source content changed, refresh the private canon and regenerate the bible first:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"
 ```
 
 Then review the staged files and make sure local-only files remain ignored:

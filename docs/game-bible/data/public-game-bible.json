@@ -1,5 +1,32 @@
 {
     "generated_on":  "2026-06-13",
+    "canon":  {
+                  "source_project":  "Gojomons private game repo",
+                  "validation":  "Public extraction matched private canon counts at build time.",
+                  "source_files":  {
+                                       "docs_canon":  "DOCUMENTATION/DOCS_CANON.md",
+                                       "docs_canon_manifest":  "DOCUMENTATION/data/docs_canon_manifest.json",
+                                       "game_manifest":  "DOCUMENTATION/data/game_manifest.json",
+                                       "project_facts":  "DOCUMENTATION/data/project_facts.json"
+                                   },
+                  "docs_canon_updated":  "2026-06-14",
+                  "content_counts":  {
+                                         "items":  49,
+                                         "master_specs":  28,
+                                         "masters":  10,
+                                         "moves":  90,
+                                         "relics":  32,
+                                         "species":  63,
+                                         "types":  9,
+                                         "weather_states":  7
+                                     },
+                  "repository_metrics":  {
+                                             "gdscript_files":  192,
+                                             "gdscript_lines":  34486,
+                                             "scene_files":  80,
+                                             "git_commits":  407
+                                         }
+              },
     "counts":  {
                    "gojomons":  63,
                    "moves":  90,

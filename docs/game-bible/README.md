@@ -1,6 +1,6 @@
 # Living Game Bible
 
-Generated from the current game data on 2026-06-13. This is the one-stop reference for the project spine, roster, types, moves, items, relics, masters, economy, and opponent structure.
+Generated from the current game data on 2026-06-13. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the private game repo canon before this snapshot is written.
 
 ## Interactive Bible
 
@@ -23,6 +23,12 @@ Generated from the current game data on 2026-06-13. This is the one-stop referen
 | Relics | 32 |
 | Types | 9 |
 
+## Canon Sources
+- `DOCUMENTATION/DOCS_CANON.md`: source ownership map.
+- `DOCUMENTATION/data/game_manifest.json`: live content counts from the game repo.
+- `DOCUMENTATION/data/project_facts.json`: repository metrics for showcase and portfolio pages.
+- `data/public-game-bible.json`: this showcase snapshot, including the canon block used by future tooling.
+
 ## Production Status Words
 | Label | Meaning |
 |---|---|
@@ -32,9 +38,12 @@ Generated from the current game data on 2026-06-13. This is the one-stop referen
 | Fallback VFX | Move currently relies on the generic element-colored fallback. |
 
 ## Maintenance
-Regenerate after changing roster, moves, items, relics, or type-chart data:
+Regenerate after changing roster, moves, items, relics, or type-chart data. Prefer the private game repo runner because it refreshes the canon first:
 
 ```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"
+
+# Showcase-only fallback:
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1
 ```

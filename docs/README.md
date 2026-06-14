@@ -38,10 +38,13 @@ Public docs should make their status clear:
 
 When docs disagree, use this order:
 
-1. The playable game.
-2. The current design-bible/roadmap decision.
-3. Current balance or simulation findings.
-4. Chronological notes and old idea banks.
+1. The private game repo canon: `DOCUMENTATION/DOCS_CANON.md`,
+   `DOCUMENTATION/data/game_manifest.json`, and
+   `DOCUMENTATION/data/project_facts.json`.
+2. The playable game.
+3. The current design-bible/roadmap decision.
+4. Current balance or simulation findings.
+5. Chronological notes and old idea banks.
 
 Do not publish raw working notes, local-only previews, unreviewed exports, or
 media with placeholder commercial audio.
