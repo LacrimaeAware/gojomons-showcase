@@ -6,19 +6,27 @@ Use this checklist when updating the showcase repo or preparing public pages.
 
 1. Read [docs/README.md](../README.md) and the latest return handoff.
 2. Compare README claims against the current playable game and current roadmap.
-3. Check whether roadmap docs still label ideas correctly: current, roadmap,
+3. Refresh the private game repo canon first:
+
+```powershell
+python DOCUMENTATION/tools/doc_intake.py generate_game_manifest --write
+python DOCUMENTATION/tools/docs_canon.py generate_project_facts --write
+python DOCUMENTATION/tools/docs_canon.py validate
+```
+
+4. Check whether roadmap docs still label ideas correctly: current, roadmap,
    future intended, possible alternative, parked, cut, or needs call.
-4. Keep chronological material chronological. If a page is old pipeline context,
+5. Keep chronological material chronological. If a page is old pipeline context,
    label it that way instead of silently treating it as current.
-5. Regenerate the Living Game Bible if roster, move, item, relic, type-chart, or
+6. Regenerate the Living Game Bible if roster, move, item, relic, type-chart, or
    opponent data changed:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1
 ```
 
-6. Update links after moving docs.
-7. Run the public-doc check:
+7. Update links after moving docs.
+8. Run the public-doc check:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1

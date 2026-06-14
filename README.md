@@ -47,7 +47,7 @@ resolve on their own, so you win or lose on drafting, routing, and synergies.
 
 | | |
 |---|---|
-| Lines of GDScript | ~30,100 |
+| Lines of GDScript | ~34,500 |
 | Scripts (`.gd`) | 192 |
 | Scenes (`.tscn`) | 80 |
 | Creatures | 63 |
@@ -56,7 +56,8 @@ resolve on their own, so you win or lose on drafting, routing, and synergies.
 | Relics | 32 |
 | Elements | 9 + neutral `Base` |
 
-*Snapshot: 2026-06-13.*
+*Snapshot: 2026-06-14. Counts follow the private game repo's generated
+`DOCUMENTATION/data/game_manifest.json` and `DOCUMENTATION/data/project_facts.json`.*
 
 ---
 
