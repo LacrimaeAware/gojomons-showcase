@@ -142,7 +142,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Draining Kiss, Mind Focus.
 - Learnset: L1 Tackle, L1 Shadow Jab, L1 Draining Kiss, L1 Mind Focus, L3 Mind Pulse, L5 Night Soot, L8 Hex Flame, L12 Scale Rush, L16 Arcane Blast, L20 Drake Flare.
 - Evolution: -.
-- Note: A lithe mystic feline that strikes from blind angles. High special power and speed but little to spare on defense it ends fights before they start.
+- Note: A lithe mystic feline that strikes from blind angles. High special power and speed but little to spare on defense - it ends fights before they start.
 
 ### Chimmy
 - Types: Alien. Subtypes: Beast.
@@ -160,7 +160,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Void Call, Gear Strike.
 - Learnset: L1 Void Call, L1 Gear Strike, L4 Phase Slash, L7 Voltage Pulse, L10 Overclock, L13 Night Soot, L17 Drake Flare.
 - Evolution: -.
-- Note: An unstable alien-machine that drains and glitches what it touches. Fast and special-leaning but fragile a hit-and-run saboteur.
+- Note: An unstable alien-machine that drains and glitches what it touches. Fast and special-leaning but fragile - a hit-and-run saboteur.
 
 ### Cindara
 - Types: Fire. Subtypes: Beast.
@@ -169,7 +169,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Blaze Fang, Fire Cross.
 - Learnset: L1 Ember, L1 Flash Step, L1 Flame Surge, L8 Scale Rush, L12 Solar Dart, L16 Drake Flare.
 - Evolution: Branches to Volcarion (level:34); Cranedel (item:prism_core_light).
-- Note: Cinder Hare's grown form a lantern-striped cat wreathed in calligraphic flame. Faster and fiercer, it presses advantages its smaller self never could.
+- Note: Cinder Hare's grown form - a lantern-striped cat wreathed in calligraphic flame. Faster and fiercer, it presses advantages its smaller self never could.
 
 ### Cinder Hare
 - Types: Fire. Subtypes: Beast.
@@ -178,7 +178,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Ember, Ignite.
 - Learnset: L1 Ember, L1 Ignite, L5 Flash Step, L9 Flame Surge, L12 Power Charge, L14 Scale Rush, L18 Drake Flare.
 - Evolution: Evolves to Cindara at level 16.
-- Note: A spark-fueled hare that ignites with every leap. Trades bulk for blazing speed strikes first, burns fast, and rarely sticks around to take a hit.
+- Note: A spark-fueled hare that ignites with every leap. Trades bulk for blazing speed - strikes first, burns fast, and rarely sticks around to take a hit.
 
 ### Cogspar
 - Types: Machine. Subtypes: Construct.
@@ -322,7 +322,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Overgrowth, Mind Pulse.
 - Learnset: L1 Leaf Nibble, L1 Mind Pulse, L1 Overgrowth, L4 Vine Pop, L11 Regenerate, L14 Stone Guard, L20 Life Surge.
 - Evolution: -.
-- Note: A gentle life-spirit that mends as it lingers. Strong special bulk and modest power it wins by keeping the team alive, not by hitting hard.
+- Note: A gentle life-spirit that mends as it lingers. Strong special bulk and modest power - it wins by keeping the team alive, not by hitting hard.
 
 ### GreenCatra
 - Types: Mystic. Subtypes: Feline.
@@ -331,7 +331,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Psy Lance, Arcane Blast.
 - Learnset: L1 Mind Pulse, L1 Shadow Jab, L1 Psy Lance, L1 Arcane Blast, L4 Hex Weaken, L7 Scary Face, L10 Mind Focus, L13 Mystic Storm.
 - Evolution: -.
-- Note: A mutant Catra strain wired for mischief. Extreme speed and special power with brittle bulk it disrupts and outpaces before retaliation lands.
+- Note: A mutant Catra strain wired for mischief. Extreme speed and special power with brittle bulk - it disrupts and outpaces before retaliation lands.
 
 ### Infinarch
 - Types: Storm, Machine. Subtypes: Construct.
@@ -376,7 +376,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Rend, Shadow Jab.
 - Learnset: L1 Shadow Jab, L1 Rend, L4 Shadow Step, L7 Hex Flame, L10 Power Charge, L14 Soul Drain, L18 Oblivion.
 - Evolution: -.
-- Note: A vengeful dark spirit that hits like a landslide. Towering attack and speed, almost no defense a true glass cannon that lives or dies on its first move.
+- Note: A vengeful dark spirit that hits like a landslide. Towering attack and speed, almost no defense - a true glass cannon that lives or dies on its first move.
 
 ### Lotunari
 - Types: Mystic, Light. Subtypes: Spirit.
@@ -394,7 +394,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Blizzard Field, Tide Rise.
 - Learnset: L1 Tidal Wave, L1 Torrent, L1 Mucus Spray, L1 Mind Pulse, L1 Aqua Bolt, L1 Blizzard Field, L1 Tide Rise, L1 Water Wall.
 - Evolution: -.
-- Note: A leviathan of the deep tides whose presence calms or drowns. The Water realm's apex an ocean that simply outlasts everything.
+- Note: A leviathan of the deep tides whose presence calms or drowns. The Water realm's apex - an ocean that simply outlasts everything.
 
 ### Makrill
 - Types: Water, Machine. Subtypes: Reptile.
@@ -466,7 +466,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Judgment, Mystic Storm.
 - Learnset: L1 Judgment, L1 Oblivion, L1 Mind Shatter, L1 Radiant Beam, L1 Arcane Blast, L1 Dark Wave, L1 Flash Nova, L1 Mystic Storm, L1 Soul Crush, L1 Terror Strike.
 - Evolution: -.
-- Note: A three-faced deity of serenity, doubt, and clarity whose faces never align. A legend embodying the Wanderer realm light, dark, and mind in one.
+- Note: A three-faced deity of serenity, doubt, and clarity whose faces never align. A legend embodying the Wanderer realm - light, dark, and mind in one.
 
 ### Pyrethon
 - Types: Fire. Subtypes: Dragon.
@@ -475,7 +475,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Inferno, Eruption.
 - Learnset: L1 Inferno, L1 Flame Surge, L1 Blaze Fang, L1 Drake Flare, L1 Eruption, L1 Fire Cross, L1 Power Charge.
 - Evolution: -.
-- Note: A sky-scorching wyrm wreathed in perpetual flame. The Fire realm's apex relentless, blinding offense few can outlast.
+- Note: A sky-scorching wyrm wreathed in perpetual flame. The Fire realm's apex - relentless, blinding offense few can outlast.
 
 ### Pyrridra
 - Types: Fire. Subtypes: Dragon.
@@ -493,7 +493,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Gear Strike, Overgrowth.
 - Learnset: L1 Gear Strike, L1 Overgrowth, L8 Voltage Pulse, L14 Vine Pop, L18 Recover, L24 Piston Punch, L30 Petal Storm.
 - Evolution: -.
-- Note: A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth quicker on its feet than it looks.
+- Note: A cyber-qilin forged to restore balance, if it can relearn compassion. An even, dependable bridge between gear and growth - quicker on its feet than it looks.
 
 ### Quetzabranch
 - Types: Life, Storm. Subtypes: Reptile.
@@ -547,7 +547,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Ember, Mind Pulse.
 - Learnset: L1 Ember, L1 Mind Pulse, L7 Flame Surge, L12 Arcane Blast, L16 Tackle.
 - Evolution: -.
-- Note: A charred monk spirit that reforms its cracked body mid-battle. Discipline through combustion steady, hard to put down.
+- Note: A charred monk spirit that reforms its cracked body mid-battle. Discipline through combustion - steady, hard to put down.
 
 ### Seraphawn
 - Types: Light, Mystic. Subtypes: Beast.
@@ -565,7 +565,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Leaf Nibble, Vine Pop.
 - Learnset: L1 Leaf Nibble, L1 Vine Pop, L4 Tackle, L7 Mucus Spray, L10 Overgrowth, L12 Recover, L14 Tidal Wave, L18 Mind Pulse.
 - Evolution: -.
-- Note: A spore-laden fungus that smothers foes slowly. Enormous special defense and HP it stalls, seeds status, and waits out the clock.
+- Note: A spore-laden fungus that smothers foes slowly. Enormous special defense and HP - it stalls, seeds status, and waits out the clock.
 
 ### Slugel
 - Types: Water. Subtypes: Aquatic.
@@ -574,7 +574,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Torrent, Water Wall.
 - Learnset: L1 Aqua Bolt, L1 Torrent, L1 Water Wall, L4 Mucus Spray, L8 Tide Rise, L12 Tide Renewal, L16 Tidal Wave, L20 Barrier.
 - Evolution: -.
-- Note: A briny aquatic wall that oozes forward and absorbs everything. Huge HP and defense, glacial speed it wins routes by simply not dying.
+- Note: A briny aquatic wall that oozes forward and absorbs everything. Huge HP and defense, glacial speed - it wins routes by simply not dying.
 
 ### Solmere
 - Types: Light, Water. Subtypes: Beast.
@@ -637,7 +637,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Fire Cross, Flame Surge.
 - Learnset: L1 Flame Surge, L1 Blaze Fang, L1 Fire Cross, L1 Flash Step, L1 Power Charge, L1 Inferno, L36 Eruption.
 - Evolution: -.
-- Note: A volcanic lion whose roar forges updrafts into storms. A late, hard-won final form overwhelming offense that demands real investment to reach.
+- Note: A volcanic lion whose roar forges updrafts into storms. A late, hard-won final form - overwhelming offense that demands real investment to reach.
 
 ### Volkarta
 - Types: Fire. Subtypes: Reptile.
@@ -664,7 +664,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Default moves: Alien Swarm, Alien Focus.
 - Learnset: L1 Warp Strike, L1 Astral Drain, L1 Void Call, L1 Phase Slash, L1 Arcane Blast, L1 Alien Swarm, L1 Alien Focus, L1 Hex Rot.
 - Evolution: -.
-- Note: An extradimensional sovereign that warps space around its strikes. The Alien realm's apex it rewrites the battle's rules as it fights.
+- Note: An extradimensional sovereign that warps space around its strikes. The Alien realm's apex - it rewrites the battle's rules as it fights.
 
 ### Zephyreel
 - Types: Storm, Light. Subtypes: Spirit.

@@ -44,9 +44,11 @@ Before a bible section becomes a showcase page, check it against this order:
 
 1. Current playable behavior.
 2. Current design-bible decisions and roadmap.
-3. Current balance and simulation findings.
-4. Current content changelog.
-5. Older idea banks and source notes.
+3. The latest generated Living Game Bible snapshot for counts, item/relic
+   wording, and repo metrics.
+4. Current balance and simulation findings.
+5. Current content changelog.
+6. Older idea banks and source notes.
 
 If an older idea conflicts with the current spine, the current spine wins. If the
 code and design notes disagree, the page should say what the player can actually

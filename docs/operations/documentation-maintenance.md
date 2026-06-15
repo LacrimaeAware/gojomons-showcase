@@ -4,32 +4,38 @@ Use this checklist when updating the showcase repo or preparing public pages.
 
 ## Routine Freshness Pass
 
-1. Read [docs/README.md](../README.md) and the latest return handoff.
+1. Read [docs/README.md](../README.md) and the latest return handoff. Treat
+   `roadmap/current-state.md` as a dated handoff, not the live count source.
 2. Compare README claims against the current playable game and current roadmap.
 3. Refresh the source game repo canon first:
 
 ```powershell
+# Run from the private/source Gojomons repo:
+powershell -NoProfile -ExecutionPolicy Bypass -File DOCUMENTATION/tools/refresh_docs_canon.ps1
+
+# Fallback if you only need the private canon files:
 python DOCUMENTATION/tools/doc_intake.py generate_game_manifest --write
 python DOCUMENTATION/tools/docs_canon.py generate_project_facts --write
-python DOCUMENTATION/tools/docs_canon.py validate
 ```
 
 4. Check whether roadmap docs still label ideas correctly: current, roadmap,
    future intended, possible alternative, parked, cut, or needs call.
-5. Keep chronological material chronological. If a page is old pipeline context,
+5. If public orientation docs repeat counts or current content shape, point them
+   back to the Living Game Bible snapshot unless the recap is doing real work.
+6. Keep chronological material chronological. If a page is old pipeline context,
    label it that way instead of silently treating it as current.
-6. Regenerate the Living Game Bible if roster, move, item, relic, type-chart, or
+7. Regenerate the Living Game Bible if roster, move, item, relic, type-chart, or
    opponent data changed:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1
 ```
 
-7. Update orientation surfaces that duplicate generated counts or snapshot text,
+8. Update orientation surfaces that duplicate generated counts or snapshot text,
    especially the root `README.md` scale block and any hard-coded copy inside
    `docs/game-bible/living-game-bible.html`.
-8. Update links after moving docs.
-9. Run the public-doc check:
+9. Update links after moving docs.
+10. Run the public-doc check:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1
@@ -49,7 +55,8 @@ reviewable docs branches instead of quietly publishing major changes.
 Before publishing a page, clip, or README update:
 
 - Use edited project copy, not unreviewed exports or local-only scratch material.
-- Keep account names, local paths, credentials, and unreleased working notes out.
+- Keep account names, explicit local filesystem paths, credentials, and
+  unreleased working notes out.
 - Use original or licensed media for public clips and images.
 - Keep protected-series names out of in-world labels and project identity.
 - If AI use is mentioned, keep it short and quality-centered.

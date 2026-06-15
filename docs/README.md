@@ -6,13 +6,13 @@ live here.
 
 ## Read First
 
-- [Current state](roadmap/current-state.md): current state, what was
-  happening, and what to do next.
 - [Living Game Bible](game-bible/living-game-bible.html): interactive reference
-  for the game shape, pipeline, roster, types, bestiary, masters, economy,
-  catalog, bosses, balance, and roadmap.
-- [Generated Bible files](game-bible/README.md): markdown and JSON roster,
-  type, move, item, relic, and opponent reference.
+  for the current game shape, pipeline, roster, types, bestiary, masters,
+  economy, catalog, bosses, balance, and roadmap.
+- [Generated Bible files](game-bible/README.md): the current public snapshot for
+  roster, type, move, item, relic, and opponent data.
+- [Current state](roadmap/current-state.md): dated handoff and next-work note,
+  not the primary source for live counts.
 - [Showcase documentation plan](roadmap/showcase-documentation-plan.md): current
   public framing, status labels, and open decisions.
 - [Roadmap index](roadmap/README.md): roadmap document map.
@@ -41,10 +41,11 @@ When docs disagree, use this order:
 1. The source game repo canon: `DOCUMENTATION/DOCS_CANON.md`,
    `DOCUMENTATION/data/game_manifest.json`, and
    `DOCUMENTATION/data/project_facts.json`.
-2. The playable game.
-3. The current design-bible/roadmap decision.
-4. Current balance or simulation findings.
-5. Chronological notes and old idea banks.
+2. The generated Living Game Bible snapshot in `docs/game-bible/`.
+3. The playable game.
+4. The current design-bible/roadmap decision.
+5. Current balance or simulation findings.
+6. Chronological notes and old idea banks.
 
 Keep unfinished workbench material, unreviewed exports, and draft media out of
 the published docs until they are ready.

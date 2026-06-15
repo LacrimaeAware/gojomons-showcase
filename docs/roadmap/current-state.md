@@ -1,7 +1,9 @@
 # Current State - 2026-06-15
 
-This is the re-entry point for the showcase repo after the June documentation
-cleanup, generated Bible refresh, and freshness pass.
+This is the dated re-entry handoff for the showcase repo after the June 15
+Living Game Bible refresh and docs-freshness pass. For live public counts and
+content detail, start with `docs/game-bible/README.md` and
+`docs/game-bible/living-game-bible.html`.
 
 ## Where We Are
 

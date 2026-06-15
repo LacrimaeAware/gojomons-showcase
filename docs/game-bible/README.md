@@ -41,7 +41,8 @@ Generated from the current game data on 2026-06-15. This is the one-stop public 
 Regenerate after changing roster, moves, items, relics, or type-chart data. Prefer the source game repo runner because it refreshes the canon first:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"
+# Run from the private/source Gojomons repo:
+powershell -NoProfile -ExecutionPolicy Bypass -File DOCUMENTATION/tools/refresh_docs_canon.ps1
 
 # Showcase-only fallback:
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1

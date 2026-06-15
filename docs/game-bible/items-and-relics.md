@@ -75,13 +75,13 @@ Generated on 2026-06-15 from the item and relic databases. Public names here fav
 |---|---|---|---|---|
 | Aegis | common | - | - | Your party takes ~17% less damage. |
 | Bloodthirst | common | - | - | Critical hit rate increased by 12%. |
-| Crit Loom | common | - | - | After landing 5 critical hits, your hits deal +40% bonus damage a payoff for crit-heavy builds. |
+| Crit Loom | common | - | - | After landing 5 critical hits, your hits deal +40% bonus damage - a payoff for crit-heavy builds. |
 | Glass Cannon | common | - | - | Your attacks deal +25% damage, but you take 8% recoil. |
 | Keen Eye | common | - | - | Party moves gain +15% accuracy. |
 | Momentum | common | - | - | Every 6th hit cleaves another enemy for 30% damage. |
 | Second Wind | common | - | - | After every 4 critical hits, heal 15% max HP. |
-| Storm Cycle | common | - | - | Every 5th hit lands a guaranteed critical hit a crit ENABLER for steady multi-hit builds. |
-| Void Cleave | common | - | - | Every 5th hit cleaves a second enemy for 35% damage light AoE pressure. |
+| Storm Cycle | common | - | - | Every 5th hit lands a guaranteed critical hit - a crit ENABLER for steady multi-hit builds. |
+| Void Cleave | common | - | - | Every 5th hit cleaves a second enemy for 35% damage - light AoE pressure. |
 | Mirror Ward | common | defensive | - | When an ally is struck, 15% of the damage is reflected back at the attacker. |
 | Purification Crystal | common | defensive | - | Your active mons are cured of status conditions at the start of each turn. |
 | Soot Veil | common | defensive | - | Your hits have a 25% chance to BLIND the target for 2 turns (its attacks lose 25% accuracy). |
@@ -90,12 +90,12 @@ Generated on 2026-06-15 from the item and relic databases. Public names here fav
 | Burning Blood | common | offensive | - | Your attacks deal +30% damage, but you take 10% recoil. (The costlier sibling of Glass Cannon.) |
 | Carrion Feast | common | offensive | - | Your attacks deal +18% damage to AFFLICTED targets (cursed, blinded, or burning). |
 | Echo Bell | common | offensive | - | Any hit has a 15% chance to ECHO, striking again for half damage. |
-| Ember Brand | common | offensive | - | Your attacks have a 25% chance to BURN the target burns STACK (up to 3), intensifying the damage each turn. |
+| Ember Brand | common | offensive | - | Your attacks have a 25% chance to BURN the target - burns STACK (up to 3), intensifying the damage each turn. |
 | Ember Charm | common | offensive | - | Fire / commit. Your Fire moves deal +10% damage. |
 | Gear Charm | common | offensive | - | Machine / commit. Your Machine moves deal +10% damage. |
 | Hex Brand | common | offensive | - | Your hits have a 30% chance to BRAND the target (it takes +6% damage per brand, up to 5). |
 | Lumen Charm | common | offensive | - | Light / commit. Your Light moves deal +10% damage. |
-| Reckless Idol | common | offensive | - | While below 55% HP your attacks deal +35% damage but your party takes ~18% more physical damage. |
+| Reckless Idol | common | offensive | - | While below 55% HP your attacks deal +35% damage - but your party takes ~18% more physical damage. |
 | Rune Charm | common | offensive | - | Mystic / commit. Your Mystic moves deal +10% damage. |
 | Spark Charm | common | offensive | - | Storm / commit. Your Storm moves deal +10% damage. |
 | Spore Charm | common | offensive | - | Alien / commit. Your Alien moves deal +10% damage. |
@@ -106,12 +106,12 @@ Generated on 2026-06-15 from the item and relic databases. Public names here fav
 | Oasis Charm | common | support | - | After every 3 critical hits, heal 12% max HP. |
 | Far Sight | common | utility | - | Party moves gain +20% accuracy. |
 | Lure Totem | common | utility | - | Wild Gojomon come quietly: +12% to all capture chance. |
-| Glass Reactor | rare | offensive | - | Your attacks deal +45% damage, but you take 16% recoil a high-roll for a team that can out-sustain the cost. |
+| Glass Reactor | rare | offensive | - | Your attacks deal +45% damage, but you take 16% recoil - a high-roll for a team that can out-sustain the cost. |
 | Collector's Eye | rare | utility | - | You catch the unfamiliar with ease: 1.35 capture chance vs a wild whose types you don't own yet (no bonus if you already own any of its types). |
 | Blueprint Core | signature | defensive | machine | Machine / Construct. Party takes ~17% less physical damage. (True item-synergy version is future work.) |
 | Prism Seal | signature | defensive | light | Light / Protect. Light types are immune to Dark damage. |
 | Tide Sigil | signature | defensive | water | Water / Flow. Party takes ~17% less special damage. |
-| Wear Coil | signature | defensive | machine | When an ally is struck, the attacker takes chip damage (5% of its OWN max HP) attacking your wall wears it down. |
+| Wear Coil | signature | defensive | machine | When an ally is struck, the attacker takes chip damage (5% of its OWN max HP) - attacking your wall wears it down. |
 | Ashfall Crown | signature | offensive | fire | Your CRITS set the target burning (intensifying existing burns). |
 | Champion's Will | signature | offensive | fire | Fire / Will. KO an enemy: gain +1 Attack stage. Fire moves deal +25% damage. |
 | Cinder Focus | signature | offensive | fire | Your crit chance rises against BURNING targets (+12% per burn stack). |
@@ -119,7 +119,7 @@ Generated on 2026-06-15 from the item and relic databases. Public names here fav
 | Dream Catalyst | signature | offensive | mystic | Mystic / Echo. Mystic moves deal +15% damage, and any hit has a 25% chance to ECHO for half damage. |
 | Larval Pod | signature | offensive | alien | Alien / Assimilate. Every 5th hit is a critical hit. |
 | Obsidian Veil | signature | offensive | dark | Dark / Corrupt. After every 5 crits, deal +40% bonus damage. |
-| Sun Pyre | signature | offensive | fire | Fire's signature relic your Fire moves deal +30% damage. |
+| Sun Pyre | signature | offensive | fire | Fire's signature relic - your Fire moves deal +30% damage. |
 | Root Heart | signature | support | life | Life / Regrow. After every 4 crits, heal 18% max HP. |
 
 ## Follow-Up Calls

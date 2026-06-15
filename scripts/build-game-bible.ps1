@@ -31,6 +31,11 @@ function Assert-CanonCount([string]$Name, [object]$Expected, [object]$Actual) {
 function Clean-Text([object]$Value) {
   if ($null -eq $Value) { return "" }
   $text = [string]$Value
+  $text = $text.Replace([string][char]0x2019, "'").Replace([string][char]0x2018, "'")
+  $text = $text.Replace([string][char]0x201C, '"').Replace([string][char]0x201D, '"')
+  $text = $text.Replace([string][char]0x2014, " - ").Replace([string][char]0x2013, " - ")
+  $text = $text.Replace([string][char]0x2026, "...")
+  $text = $text.Replace([string][char]0x2192, " -> ")
   $text = [regex]::Replace($text, '[^\u0009\u000A\u000D\u0020-\u007E]', '')
   $text = $text -replace '\s+', ' '
   return $text.Trim()
@@ -566,7 +571,8 @@ $readme.Add("## Maintenance") | Out-Null
 $readme.Add("Regenerate after changing roster, moves, items, relics, or type-chart data. Prefer the source game repo runner because it refreshes the canon first:") | Out-Null
 $readme.Add("") | Out-Null
 $readme.Add('```powershell') | Out-Null
-$readme.Add('powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"') | Out-Null
+$readme.Add('# Run from the private/source Gojomons repo:') | Out-Null
+$readme.Add('powershell -NoProfile -ExecutionPolicy Bypass -File DOCUMENTATION/tools/refresh_docs_canon.ps1') | Out-Null
 $readme.Add("") | Out-Null
 $readme.Add("# Showcase-only fallback:") | Out-Null
 $readme.Add("powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1") | Out-Null
