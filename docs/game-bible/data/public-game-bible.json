@@ -1,5 +1,5 @@
 {
-    "generated_on":  "2026-06-14",
+    "generated_on":  "2026-06-15",
     "canon":  {
                   "source_project":  "Gojomons source game repo",
                   "validation":  "Public extraction matched source canon counts at build time.",
@@ -11,27 +11,27 @@
                                    },
                   "docs_canon_updated":  "2026-06-14",
                   "content_counts":  {
-                                         "items":  49,
+                                         "items":  64,
                                          "master_specs":  28,
                                          "masters":  10,
                                          "moves":  90,
-                                         "relics":  32,
+                                         "relics":  48,
                                          "species":  64,
                                          "types":  9,
                                          "weather_states":  7
                                      },
                   "repository_metrics":  {
-                                             "gdscript_files":  195,
-                                             "gdscript_lines":  35254,
-                                             "scene_files":  80,
-                                             "git_commits":  426
+                                             "gdscript_files":  208,
+                                             "gdscript_lines":  37242,
+                                             "scene_files":  92,
+                                             "git_commits":  487
                                          }
               },
     "counts":  {
                    "gojomons":  64,
                    "moves":  90,
-                   "items":  49,
-                   "relics":  32,
+                   "items":  64,
+                   "relics":  48,
                    "types":  9
                },
     "gojomons":  [
@@ -2564,6 +2564,14 @@
                       "description":  "Boosts the holder\u0027s Water moves by 30%."
                   },
                   {
+                      "slug":  "arc-coil",
+                      "name":  "Arc Coil",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Storm / Chain). Every 5th hit cleaves another enemy for 30% damage."
+                  },
+                  {
                       "slug":  "arcane-charm",
                       "name":  "Arcane Charm",
                       "category":  "Element charm",
@@ -2580,12 +2588,28 @@
                       "description":  "Temporarily boosts the holder\u0027s Attack by 50% for 3 turns."
                   },
                   {
+                      "slug":  "bulwark-shard",
+                      "name":  "Bulwark Shard",
+                      "category":  "Consumable",
+                      "price":  150,
+                      "rarity":  "",
+                      "description":  "Permanently raises one mon\u0027s Defense (~+10%). Use on a chosen party member."
+                  },
+                  {
                       "slug":  "choice-relay",
                       "name":  "Choice Relay",
                       "category":  "Held item",
                       "price":  160,
                       "rarity":  "",
                       "description":  "Locks the holder into one move, but boosts its damage by 20%."
+                  },
+                  {
+                      "slug":  "cinder-fang",
+                      "name":  "Cinder Fang",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Fire / Burn). The holder\u0027s hits have a 22% chance to BURN the target (stacks, cap 3)."
                   },
                   {
                       "slug":  "commander-s-crest",
@@ -2628,6 +2652,14 @@
                       "description":  "While the holder is below 30% HP, its attacks deal +30% damage."
                   },
                   {
+                      "slug":  "echo-prism",
+                      "name":  "Echo Prism",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Mystic / Echo). Any hit has a 15% chance to ECHO for half damage."
+                  },
+                  {
                       "slug":  "ember-charm",
                       "name":  "Ember Charm",
                       "category":  "Element charm",
@@ -2668,6 +2700,22 @@
                       "description":  "Boosts the holder\u0027s Fire moves by 30%."
                   },
                   {
+                      "slug":  "fleet-shard",
+                      "name":  "Fleet Shard",
+                      "category":  "Consumable",
+                      "price":  150,
+                      "rarity":  "",
+                      "description":  "Permanently raises one mon\u0027s Speed (~+10%). Use on a chosen party member."
+                  },
+                  {
+                      "slug":  "focus-shard",
+                      "name":  "Focus Shard",
+                      "category":  "Consumable",
+                      "price":  150,
+                      "rarity":  "",
+                      "description":  "Permanently raises one mon\u0027s Sp. Attack (~+10%). Use on a chosen party member."
+                  },
+                  {
                       "slug":  "gear-charm",
                       "name":  "Gear Charm",
                       "category":  "Element charm",
@@ -2682,6 +2730,14 @@
                       "price":  80,
                       "rarity":  "",
                       "description":  "Auto-heals the holder for 30% max HP when it drops below 30%. One charge."
+                  },
+                  {
+                      "slug":  "hex-brand-charm",
+                      "name":  "Hex Brand Charm",
+                      "category":  "Element charm",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Dark / Corrupt). The holder\u0027s hits have a 30% chance to BRAND the target (+6% damage taken per brand, up to 5)."
                   },
                   {
                       "slug":  "last-stand-band",
@@ -2748,6 +2804,14 @@
                       "description":  "Rewrites the holder\u0027s type to Machine and cloaks it in a steel aura."
                   },
                   {
+                      "slug":  "mirror-ward-plate",
+                      "name":  "Mirror Ward Plate",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Light / Reflect). 15% of the damage the holder takes is reflected at the attacker."
+                  },
+                  {
                       "slug":  "mystic-core",
                       "name":  "Mystic Core",
                       "category":  "Held item",
@@ -2788,12 +2852,28 @@
                       "description":  "Once per battle, the holder survives a KO hit with 1 HP."
                   },
                   {
+                      "slug":  "power-shard",
+                      "name":  "Power Shard",
+                      "category":  "Consumable",
+                      "price":  150,
+                      "rarity":  "",
+                      "description":  "Permanently raises one mon\u0027s Attack (~+10%). Use on a chosen party member."
+                  },
+                  {
                       "slug":  "prime-capture-orb",
                       "name":  "Prime Capture Orb",
                       "category":  "Capture",
                       "price":  150,
                       "rarity":  "",
                       "description":  "A premium capture orb. ~97% catch chance on a defeated wild."
+                  },
+                  {
+                      "slug":  "rare-candy",
+                      "name":  "Rare Candy",
+                      "category":  "Consumable",
+                      "price":  200,
+                      "rarity":  "",
+                      "description":  "Instantly raises a chosen mon\u0027s level by 1."
                   },
                   {
                       "slug":  "reliable-capture-orb",
@@ -2810,6 +2890,14 @@
                       "price":  60,
                       "rarity":  "",
                       "description":  "Use on a fainted or weak ally to revive and heal 35% of its max HP."
+                  },
+                  {
+                      "slug":  "spore-barb",
+                      "name":  "Spore Barb",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Alien / Infect). The holder\u0027s hits have a 20% chance to poison the target."
                   },
                   {
                       "slug":  "standard-capture-orb",
@@ -2868,6 +2956,14 @@
                       "description":  "Passively improves accuracy by 10%."
                   },
                   {
+                      "slug":  "tideguard-pearl",
+                      "name":  "Tideguard Pearl",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Water / Flow). The holder takes ~13% less special damage."
+                  },
+                  {
                       "slug":  "training-manual-ember",
                       "name":  "Training Manual: Ember",
                       "category":  "Training",
@@ -2900,6 +2996,22 @@
                       "description":  "Boosts the holder\u0027s Life moves by 30%."
                   },
                   {
+                      "slug":  "verdant-seed",
+                      "name":  "Verdant Seed",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Life / Sustain). While below 50% HP, the holder heals 8% max HP at turn start."
+                  },
+                  {
+                      "slug":  "vital-root",
+                      "name":  "Vital Root",
+                      "category":  "Consumable",
+                      "price":  150,
+                      "rarity":  "",
+                      "description":  "Permanently raises one mon\u0027s max HP (~+10%). Use on a chosen party member."
+                  },
+                  {
                       "slug":  "vitality-core",
                       "name":  "Vitality Core",
                       "category":  "Held item",
@@ -2930,6 +3042,14 @@
                       "price":  240,
                       "rarity":  "rare",
                       "description":  "Rewrites the holder\u0027s type to Water and cloaks it in a tidal aura."
+                  },
+                  {
+                      "slug":  "wear-plating",
+                      "name":  "Wear Plating",
+                      "category":  "Held item",
+                      "price":  130,
+                      "rarity":  "",
+                      "description":  "Verb gear (Machine / Construct). When the holder is struck, the attacker takes chip damage (5% of its own max HP)."
                   }
               ],
     "relics":  [
@@ -2940,6 +3060,14 @@
                        "role":  "",
                        "master_signature":  "",
                        "description":  "Your party takes ~17% less damage."
+                   },
+                   {
+                       "slug":  "ashfall-crown",
+                       "name":  "Ashfall Crown",
+                       "rarity":  "signature",
+                       "role":  "offensive",
+                       "master_signature":  "fire",
+                       "description":  "Your CRITS set the target burning (intensifying existing burns)."
                    },
                    {
                        "slug":  "berserker-aura",
@@ -2966,12 +3094,36 @@
                        "description":  "Machine / Construct. Party takes ~17% less physical damage. (True item-synergy version is future work.)"
                    },
                    {
+                       "slug":  "burning-blood",
+                       "name":  "Burning Blood",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Your attacks deal +30% damage, but you take 10% recoil. (The costlier sibling of Glass Cannon.)"
+                   },
+                   {
+                       "slug":  "carrion-feast",
+                       "name":  "Carrion Feast",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Your attacks deal +18% damage to AFFLICTED targets (cursed, blinded, or burning)."
+                   },
+                   {
                        "slug":  "champion-s-will",
                        "name":  "Champion\u0027s Will",
                        "rarity":  "signature",
                        "role":  "offensive",
                        "master_signature":  "fire",
                        "description":  "Fire / Will. KO an enemy: gain +1 Attack stage. Fire moves deal +25% damage."
+                   },
+                   {
+                       "slug":  "cinder-focus",
+                       "name":  "Cinder Focus",
+                       "rarity":  "signature",
+                       "role":  "offensive",
+                       "master_signature":  "fire",
+                       "description":  "Your crit chance rises against BURNING targets (+12% per burn stack)."
                    },
                    {
                        "slug":  "collector-s-eye",
@@ -2995,7 +3147,7 @@
                        "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
-                       "description":  ""
+                       "description":  "After landing 5 critical hits, your hits deal +40% bonus damage a payoff for crit-heavy builds."
                    },
                    {
                        "slug":  "dream-catalyst",
@@ -3022,6 +3174,14 @@
                        "description":  "Your attacks have a 25% chance to BURN the target burns STACK (up to 3), intensifying the damage each turn."
                    },
                    {
+                       "slug":  "ember-charm",
+                       "name":  "Ember Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Fire / commit. Your Fire moves deal +10% damage."
+                   },
+                   {
                        "slug":  "far-sight",
                        "name":  "Far Sight",
                        "rarity":  "common",
@@ -3030,12 +3190,28 @@
                        "description":  "Party moves gain +20% accuracy."
                    },
                    {
+                       "slug":  "gear-charm",
+                       "name":  "Gear Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Machine / commit. Your Machine moves deal +10% damage."
+                   },
+                   {
                        "slug":  "glass-cannon",
                        "name":  "Glass Cannon",
                        "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
                        "description":  "Your attacks deal +25% damage, but you take 8% recoil."
+                   },
+                   {
+                       "slug":  "glass-reactor",
+                       "name":  "Glass Reactor",
+                       "rarity":  "rare",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Your attacks deal +45% damage, but you take 16% recoil a high-roll for a team that can out-sustain the cost."
                    },
                    {
                        "slug":  "hex-brand",
@@ -3060,6 +3236,14 @@
                        "role":  "offensive",
                        "master_signature":  "alien",
                        "description":  "Alien / Assimilate. Every 5th hit is a critical hit."
+                   },
+                   {
+                       "slug":  "lumen-charm",
+                       "name":  "Lumen Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Light / commit. Your Light moves deal +10% damage."
                    },
                    {
                        "slug":  "lure-totem",
@@ -3118,12 +3302,28 @@
                        "description":  "Your active mons are cured of status conditions at the start of each turn."
                    },
                    {
+                       "slug":  "reckless-idol",
+                       "name":  "Reckless Idol",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "While below 55% HP your attacks deal +35% damage but your party takes ~18% more physical damage."
+                   },
+                   {
                        "slug":  "root-heart",
                        "name":  "Root Heart",
                        "rarity":  "signature",
                        "role":  "support",
                        "master_signature":  "life",
                        "description":  "Life / Regrow. After every 4 crits, heal 18% max HP."
+                   },
+                   {
+                       "slug":  "rune-charm",
+                       "name":  "Rune Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Mystic / commit. Your Mystic moves deal +10% damage."
                    },
                    {
                        "slug":  "second-wind",
@@ -3142,6 +3342,22 @@
                        "description":  "Your hits have a 25% chance to BLIND the target for 2 turns (its attacks lose 25% accuracy)."
                    },
                    {
+                       "slug":  "spark-charm",
+                       "name":  "Spark Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Storm / commit. Your Storm moves deal +10% damage."
+                   },
+                   {
+                       "slug":  "spore-charm",
+                       "name":  "Spore Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Alien / commit. Your Alien moves deal +10% damage."
+                   },
+                   {
                        "slug":  "stoneward",
                        "name":  "Stoneward",
                        "rarity":  "common",
@@ -3155,7 +3371,7 @@
                        "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
-                       "description":  ""
+                       "description":  "Every 5th hit lands a guaranteed critical hit a crit ENABLER for steady multi-hit builds."
                    },
                    {
                        "slug":  "sun-pyre",
@@ -3163,7 +3379,15 @@
                        "rarity":  "signature",
                        "role":  "offensive",
                        "master_signature":  "fire",
-                       "description":  ""
+                       "description":  "Fire\u0027s signature relic your Fire moves deal +30% damage."
+                   },
+                   {
+                       "slug":  "tide-charm",
+                       "name":  "Tide Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Water / commit. Your Water moves deal +10% damage."
                    },
                    {
                        "slug":  "tide-sigil",
@@ -3174,6 +3398,14 @@
                        "description":  "Water / Flow. Party takes ~17% less special damage."
                    },
                    {
+                       "slug":  "umbra-charm",
+                       "name":  "Umbra Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Dark / commit. Your Dark moves deal +10% damage."
+                   },
+                   {
                        "slug":  "venom-needle",
                        "name":  "Venom Needle",
                        "rarity":  "common",
@@ -3182,12 +3414,28 @@
                        "description":  "Your attacks have a 20% chance to poison the target."
                    },
                    {
+                       "slug":  "verdant-charm",
+                       "name":  "Verdant Charm",
+                       "rarity":  "common",
+                       "role":  "offensive",
+                       "master_signature":  "",
+                       "description":  "Life / commit. Your Life moves deal +10% damage."
+                   },
+                   {
                        "slug":  "void-cleave",
                        "name":  "Void Cleave",
                        "rarity":  "common",
                        "role":  "",
                        "master_signature":  "",
-                       "description":  ""
+                       "description":  "Every 5th hit cleaves a second enemy for 35% damage light AoE pressure."
+                   },
+                   {
+                       "slug":  "wear-coil",
+                       "name":  "Wear Coil",
+                       "rarity":  "signature",
+                       "role":  "defensive",
+                       "master_signature":  "machine",
+                       "description":  "When an ally is struck, the attacker takes chip damage (5% of its OWN max HP) attacking your wall wears it down."
                    }
                ]
 }

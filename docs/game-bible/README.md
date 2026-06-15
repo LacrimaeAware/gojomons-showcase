@@ -1,6 +1,6 @@
 # Living Game Bible
 
-Generated from the current game data on 2026-06-14. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the source game repo canon before this snapshot is written.
+Generated from the current game data on 2026-06-15. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the source game repo canon before this snapshot is written.
 
 ## Interactive Bible
 
@@ -19,8 +19,8 @@ Generated from the current game data on 2026-06-14. This is the one-stop public 
 |---|---:|
 | Gojomons | 64 |
 | Moves | 90 |
-| Items | 49 |
-| Relics | 32 |
+| Items | 64 |
+| Relics | 48 |
 | Types | 9 |
 
 ## Canon Sources

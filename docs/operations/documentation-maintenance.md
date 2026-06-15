@@ -25,8 +25,11 @@ python DOCUMENTATION/tools/docs_canon.py validate
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1
 ```
 
-7. Update links after moving docs.
-8. Run the public-doc check:
+7. Update orientation surfaces that duplicate generated counts or snapshot text,
+   especially the root `README.md` scale block and any hard-coded copy inside
+   `docs/game-bible/living-game-bible.html`.
+8. Update links after moving docs.
+9. Run the public-doc check:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1

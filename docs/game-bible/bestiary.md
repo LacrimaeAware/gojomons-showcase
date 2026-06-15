@@ -1,6 +1,6 @@
 # Gojomon Bestiary
 
-Generated on 2026-06-14 from the current roster database. The table gives the fast scan; the entries below it give the usable creature notes.
+Generated on 2026-06-15 from the current roster database. The table gives the fast scan; the entries below it give the usable creature notes.
 
 ## Roster Balance
 | Type | Count |

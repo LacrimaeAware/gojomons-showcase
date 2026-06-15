@@ -1,4 +1,4 @@
-# Current State - 2026-06-14
+# Current State - 2026-06-15
 
 This is the re-entry point for the showcase repo after the June documentation
 cleanup, generated Bible refresh, and freshness pass.
@@ -64,10 +64,11 @@ Since then, `scripts/build-game-bible.ps1` now builds the public game-bible
 snapshot from the game repo data. It does not copy creature art or local paths;
 it records production status as sprite-backed or prototype marker.
 
-The June 14 refresh moved the public snapshot to 64 Gojomons after the source
-roster added Cradroot and updated Qilin-9's stat/note record. The interactive
-Bible now rebuilds its embedded fallback data from the same generated JSON, so
-`file://` viewing and the markdown pages use the same counts.
+The June 15 refresh kept the roster at 64 Gojomons, held moves at 90, and
+expanded the public power-object snapshot to 64 items and 48 relics. The
+generated bible files under `docs/game-bible/` are the current source for live
+counts and catalog detail; the root README now mirrors that snapshot instead of
+carrying its own stale totals.
 
 ## Next Agenda
 
@@ -90,24 +91,11 @@ Bible now rebuilds its embedded fallback data from the same generated JSON, so
 
 ## Maintenance Loop
 
-Before committing public doc changes:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1
-git diff --check
-```
-
-If source content changed, refresh the source canon and regenerate the bible first:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\Gojomons\DOCUMENTATION\tools\refresh_docs_canon.ps1"
-```
-
-Then review the staged files and make sure local-only files remain ignored:
-
-- `SHOWCASE_NOTES.md`
-- `pages-preview/`
-- local `.mp4` files under `media/`
+Use [Documentation maintenance](../operations/documentation-maintenance.md) as
+the source checklist. The short version is: refresh the source canon when the
+private data moved, rebuild the public bible, run
+`scripts/check-public-docs.ps1`, run `git diff --check`, and keep local-only
+material ignored.
 
 ## Pages Status
 
