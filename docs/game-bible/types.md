@@ -9,7 +9,7 @@ The game uses nine elements plus neutral Base moves. Type math is additive: each
 | Life | 13 | Regrow / Revive | Water | Fire | Water, Light | Fire, Dark | Grow, nurture, regenerate |
 | Machine | 12 | Construct / Upgrade | Alien | Fire, Water | Storm, Mystic, Alien | Fire, Water | Upgrade, repair, retrofit |
 | Storm | 9 | Overcharge / Chain | Water, Alien | Mystic, Machine | - | - | Charge, accelerate, tune tempo |
-| Mystic | 13 | Foresee / Echo | Dark | Machine, Alien, Light | Storm, Light, Fire | Dark | Attune, echo, prophecy |
+| Mystic | 12 | Foresee / Echo | Dark | Machine, Alien, Light | Storm, Light, Fire | Dark | Attune, echo, prophecy |
 | Light | 12 | Protect / Reflect | - | Mystic, Life | Dark, Mystic | - | Bless, reveal, purify |
 | Dark | 12 | Corrupt / Obscure | Mystic, Fire, Life | Light, Alien | - | Mystic | Curse, bargain, drain |
 | Alien | 10 | Mutate / Assimilate | - | Machine | Mystic, Dark, Water | Storm, Machine | Mutate, distort, reroll |
@@ -42,7 +42,7 @@ The game uses nine elements plus neutral Base moves. Type math is additive: each
 - Service seed: Charge, accelerate, tune tempo.
 
 ### Mystic
-- Current roster: Aethernox, Catra, Dreamoon, GreenCatra, Lotunari, Mindveil, Nyxcrow, Obelune, Omnindra, Scarmonk, Seraphawn, Tidemourn, Veeprion.
+- Current roster: Aethernox, Catra, Dreamoon, GreenCatra, Lotunari, Mindveil, Nyxcrow, Obelune, Scarmonk, Seraphawn, Tidemourn, Veeprion.
 - Mechanical lean: special power, repeat effects.
 - Service seed: Attune, echo, prophecy.
 

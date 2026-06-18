@@ -47,16 +47,17 @@ resolve on their own, so you win or lose on drafting, routing, and synergies.
 
 | | |
 |---|---|
-| Lines of GDScript | ~37,200 |
-| Scripts (`.gd`) | 208 |
-| Scenes (`.tscn`) | 92 |
-| Creatures | 64 |
-| Moves | 90 |
-| Items | 64 |
-| Relics | 48 |
-| Elements | 9 + neutral `Base` |
+| Lines of GDScript | **~44,700** |
+| Scripts (`.gd`) | **233** |
+| Scenes (`.tscn`) | **111** |
+| Commits | **761** in this repo |
+| Creatures | **64** |
+| Moves | **90** |
+| Items | **64** |
+| Relics | **48** |
+| Elements | **9** + neutral `Base` |
 
-*Snapshot: 2026-06-15. Counts follow the source game repo's generated
+*Snapshot: 2026-06-18. Counts follow the source game repo's generated
 `DOCUMENTATION/data/game_manifest.json` and `DOCUMENTATION/data/project_facts.json`.
 For the live roster, catalog, and count snapshot, prefer the
 [`Living Game Bible`](docs/game-bible/README.md).*

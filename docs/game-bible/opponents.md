@@ -17,7 +17,7 @@ The opponent model is built from the same creature database as the player roster
 | Aethernox | Life, Mystic | balanced | 520 | A many-winged dragon of reincarnation; each scale holds a lifetime. A run-defining legend that bends growth and fate alike. |
 | Infinarch | Storm, Machine | tank | 520 | A colossus of stormlight and machinery ascending an endless staircase. An unstoppable legend that only grows heavier with the climb. |
 | Maelura | Water | tank | 520 | A leviathan of the deep tides whose presence calms or drowns. The Water realm's apex - an ocean that simply outlasts everything. |
-| Omnindra | Light, Dark, Mystic | balanced | 520 | A three-faced deity of serenity, doubt, and clarity whose faces never align. A legend embodying the Wanderer realm - light, dark, and mind in one. |
+| Omnindra | Light, Dark | balanced | 520 | A three-faced deity of serenity, doubt, and clarity whose faces never align. A legend embodying the Wanderer realm - light, dark, and mind in one. |
 | Pyrethon | Fire | sweeper | 520 | A sky-scorching wyrm wreathed in perpetual flame. The Fire realm's apex - relentless, blinding offense few can outlast. |
 | Xenarch | Alien | disruptor | 520 | An extradimensional sovereign that warps space around its strikes. The Alien realm's apex - it rewrites the battle's rules as it fights. |
 

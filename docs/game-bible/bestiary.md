@@ -1,6 +1,6 @@
 # Gojomon Bestiary
 
-Generated on 2026-06-15 from the current roster database. The table gives the fast scan; the entries below it give the usable creature notes.
+Generated on 2026-06-18 from the current roster database. The table gives the fast scan; the entries below it give the usable creature notes.
 
 ## Roster Balance
 | Type | Count |
@@ -10,7 +10,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 | Life | 13 |
 | Machine | 12 |
 | Storm | 9 |
-| Mystic | 13 |
+| Mystic | 12 |
 | Light | 12 |
 | Dark | 12 |
 | Alien | 10 |
@@ -72,7 +72,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 | Nulling | Alien, Dark | disruptor | 395 | Prototype marker | - |
 | Nyxcrow | Dark, Mystic | disruptor | 396 | Prototype marker | - |
 | Obelune | Alien, Mystic | tank | 402 | Prototype marker | - |
-| Omnindra | Light, Dark, Mystic | balanced | 520 | Prototype marker | - |
+| Omnindra | Light, Dark | balanced | 520 | Prototype marker | - |
 | Pyrethon | Fire | sweeper | 520 | Prototype marker | - |
 | Pyrridra | Fire | berserk | 390 | Prototype marker | - |
 | Qilin-9 | Machine, Life | balanced | 385 | Prototype marker | - |
@@ -460,7 +460,7 @@ Generated on 2026-06-15 from the current roster database. The table gives the fa
 - Note: A floating rune-stone head that speaks only in glyphs. An ancient monolith that endures and answers slowly.
 
 ### Omnindra
-- Types: Light, Dark, Mystic. Subtypes: Spirit.
+- Types: Light, Dark. Subtypes: Spirit.
 - Style: balanced. BST: 520. Status: Prototype marker.
 - Stats: HP 95, Atk 80, Def 82, SpA 105, SpD 88, Spd 70.
 - Default moves: Judgment, Mystic Storm.
