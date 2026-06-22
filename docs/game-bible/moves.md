@@ -1,6 +1,6 @@
 # Move Catalog
 
-Generated on 2026-06-18 from the move database. The catalog tracks combat role and production status without exposing local project paths.
+Generated on 2026-06-22 from the move database. The catalog tracks combat role and production status without exposing local project paths.
 
 | Move | Element(s) | Category | Power | Accuracy | Flags | Style tags | VFX |
 |---|---|---|---:|---:|---|---|---|

@@ -106,12 +106,21 @@ function Find-MatchingBrace([string]$Text, [int]$OpenIndex) {
   throw "Could not find matching brace."
 }
 
-function Get-DictEntries([string]$Text, [string]$MarkerPattern) {
-  $marker = [regex]::Match($Text, $MarkerPattern)
-  if (-not $marker.Success) { throw "Could not find dictionary marker: $MarkerPattern" }
+function Get-DictEntries([string]$Text, [string[]]$MarkerPatterns) {
+  $marker = $null
+  $matchedPattern = ""
+  foreach ($pattern in $MarkerPatterns) {
+    $candidate = [regex]::Match($Text, $pattern)
+    if ($candidate.Success) {
+      $marker = $candidate
+      $matchedPattern = $pattern
+      break
+    }
+  }
+  if ($null -eq $marker) { throw "Could not find dictionary marker: $($MarkerPatterns -join ' | ')" }
 
   $open = $Text.IndexOf("{", $marker.Index)
-  if ($open -lt 0) { throw "Could not find dictionary opening brace: $MarkerPattern" }
+  if ($open -lt 0) { throw "Could not find dictionary opening brace: $matchedPattern" }
   $close = Find-MatchingBrace $Text $open
   $body = $Text.Substring($open + 1, $close - $open - 1)
 
@@ -314,7 +323,7 @@ if ($realSpriteMatch.Success) {
   $realSpriteIds = @([regex]::Matches($realSpriteMatch.Groups["body"].Value, '"([^"]+)"') | ForEach-Object { $_.Groups[1].Value })
 }
 
-$moveEntries = Get-DictEntries $movesText 'const\s+_MOVES:\s*Dictionary\s*='
+$moveEntries = Get-DictEntries $movesText @('const\s+_MOVES:\s*Dictionary\s*=')
 $moves = @()
 foreach ($entry in $moveEntries) {
   $block = $entry.Block
@@ -336,7 +345,10 @@ foreach ($entry in $moveEntries) {
 $moveNameById = @{}
 foreach ($move in $moves) { $moveNameById[$move.source_key] = $move.name }
 
-$aspectEntries = Get-DictEntries $aspectsText 'var\s+aspects\s*:='
+$aspectEntries = Get-DictEntries $aspectsText @(
+  'var\s+aspects\s*:=',
+  'var\s+aspects\s*:\s*Variant\s*='
+)
 $mons = @()
 foreach ($entry in $aspectEntries) {
   $block = $entry.Block
@@ -403,7 +415,7 @@ foreach ($mon in $mons) {
   $mon.PSObject.Properties.Remove("raw_block")
 }
 
-$itemEntries = Get-DictEntries $itemsText 'const\s+ITEMS:\s*Dictionary\s*='
+$itemEntries = Get-DictEntries $itemsText @('const\s+ITEMS:\s*Dictionary\s*=')
 $items = @()
 foreach ($entry in $itemEntries) {
   $block = $entry.Block
@@ -420,7 +432,7 @@ foreach ($entry in $itemEntries) {
   }
 }
 
-$relicEntries = Get-DictEntries $relicsText 'const\s+RELICS:\s*Dictionary\s*='
+$relicEntries = Get-DictEntries $relicsText @('const\s+RELICS:\s*Dictionary\s*=')
 $relics = @()
 foreach ($entry in $relicEntries) {
   $block = $entry.Block
@@ -437,7 +449,7 @@ foreach ($entry in $relicEntries) {
   }
 }
 
-$chartEntries = Get-DictEntries $typeChartText 'static\s+var\s+CHART:\s*Dictionary\s*='
+$chartEntries = Get-DictEntries $typeChartText @('static\s+var\s+CHART:\s*Dictionary\s*=')
 $chart = @{}
 foreach ($entry in $chartEntries) {
   $chart[$entry.Id] = [pscustomobject]@{

@@ -1,6 +1,6 @@
-# Current State - 2026-06-15
+# Current State - 2026-06-22
 
-This is the dated re-entry handoff for the showcase repo after the June 15
+This is the dated re-entry handoff for the showcase repo after the June 22
 Living Game Bible refresh and docs-freshness pass. For live public counts and
 content detail, start with `docs/game-bible/README.md` and
 `docs/game-bible/living-game-bible.html`.
@@ -62,15 +62,18 @@ The last active work was documentation freshness and public-facing organization:
 - replace the local Living Game Bible preview with a maintainable generated
   reference under `docs/game-bible/`.
 
-Since then, `scripts/build-game-bible.ps1` now builds the public game-bible
+Since then, `scripts/build-game-bible.ps1` builds the public game-bible
 snapshot from the game repo data. It does not copy creature art or local paths;
-it records production status as sprite-backed or prototype marker.
+it records production status as sprite-backed or prototype marker, and the June
+22 refresh also taught the parser to survive the current `AspectsDB.gd`
+dictionary declaration format.
 
-The June 15 refresh kept the roster at 64 Gojomons, held moves at 90, and
-expanded the public power-object snapshot to 64 items and 48 relics. The
-generated bible files under `docs/game-bible/` are the current source for live
-counts and catalog detail; the root README now mirrors that snapshot instead of
-carrying its own stale totals.
+The June 22 refresh kept the roster at 64 Gojomons, 90 moves, 64 items, 48
+relics, 10 Masters, and 28 specs. Repo metrics now read as 233 GDScript files,
+45,308 lines, 111 scenes, and 838 commits in the source repo. The generated
+bible files under `docs/game-bible/` remain the current source for live counts
+and catalog detail; the root README now mirrors that snapshot again instead of
+carrying stale repo metrics.
 
 ## Next Agenda
 
