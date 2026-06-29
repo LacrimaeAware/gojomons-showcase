@@ -1,6 +1,6 @@
-# Current State - 2026-06-22
+# Current State - 2026-06-29
 
-This is the dated re-entry handoff for the showcase repo after the June 22
+This is the dated re-entry handoff for the showcase repo after the June 29
 Living Game Bible refresh and docs-freshness pass. For live public counts and
 content detail, start with `docs/game-bible/README.md` and
 `docs/game-bible/living-game-bible.html`.
@@ -52,7 +52,9 @@ build game first, not a full collection game.
 
 ## What We Were Working On
 
-The last active work was documentation freshness and public-facing organization:
+The last active work was another documentation freshness pass after new private
+source-repo commits changed the repository metrics while leaving the authored
+content counts flat:
 
 - clean named-inspiration shorthand out of public docs,
 - keep private/local notes out of the repo,
@@ -62,18 +64,19 @@ The last active work was documentation freshness and public-facing organization:
 - replace the local Living Game Bible preview with a maintainable generated
   reference under `docs/game-bible/`.
 
-Since then, `scripts/build-game-bible.ps1` builds the public game-bible
+`scripts/build-game-bible.ps1` still builds the public game-bible
 snapshot from the game repo data. It does not copy creature art or local paths;
 it records production status as sprite-backed or prototype marker, and the June
-22 refresh also taught the parser to survive the current `AspectsDB.gd`
-dictionary declaration format.
+22 parser hardening for `AspectsDB.gd` still holds on the current branch.
 
-The June 22 refresh kept the roster at 64 Gojomons, 90 moves, 64 items, 48
-relics, 10 Masters, and 28 specs. Repo metrics now read as 233 GDScript files,
-45,308 lines, 111 scenes, and 838 commits in the source repo. The generated
-bible files under `docs/game-bible/` remain the current source for live counts
-and catalog detail; the root README now mirrors that snapshot again instead of
-carrying stale repo metrics.
+The June 29 refresh still shows 64 Gojomons, 90 moves, 64 items, 48 relics, 10
+Masters, and 28 specs. Repo metrics now read as 239 GDScript files, 46,225
+lines, 114 scenes, and 871 commits in the source repo. The generated bible
+files under `docs/game-bible/` remain the current source for live counts and
+catalog detail; the root README now mirrors that snapshot again instead of
+carrying stale repo metrics. The refresh also exposed a stale private
+`showcase/README.md` snapshot, which is now back in sync with the canon
+validator.
 
 ## Next Agenda
 

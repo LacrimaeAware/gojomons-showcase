@@ -1,6 +1,6 @@
 # Items And Relics
 
-Generated on 2026-06-22 from the item and relic databases. Public names here favor original language for capture and training objects even when older source keys still need a naming pass.
+Generated on 2026-06-29 from the item and relic databases. Public names here favor original language for capture and training objects even when older source keys still need a naming pass.
 
 ## Items
 | Item | Category | Price | Rarity | Description |

@@ -47,17 +47,17 @@ resolve on their own, so you win or lose on drafting, routing, and synergies.
 
 | | |
 |---|---|
-| Lines of GDScript | **~45,300** |
-| Scripts (`.gd`) | **233** |
-| Scenes (`.tscn`) | **111** |
-| Commits | **838** in this repo |
+| Lines of GDScript | **~46,200** |
+| Scripts (`.gd`) | **239** |
+| Scenes (`.tscn`) | **114** |
+| Commits | **871** in this repo |
 | Creatures | **64** |
 | Moves | **90** |
 | Items | **64** |
 | Relics | **48** |
 | Elements | **9** + neutral `Base` |
 
-*Snapshot: 2026-06-22. Counts follow the source game repo's generated
+*Snapshot: 2026-06-29. Counts follow the source game repo's generated
 `DOCUMENTATION/data/game_manifest.json` and `DOCUMENTATION/data/project_facts.json`.
 For the live roster, catalog, and count snapshot, prefer the
 [`Living Game Bible`](docs/game-bible/README.md).*
@@ -91,9 +91,9 @@ balance simulator use.
 ### Tests and balance tooling
 
 A headless runner (`godot --headless`) checks the combat rules, type chart, and
-game state with roughly 1,500 assertions. Since battles auto-resolve, the same
-rules also drive a headless simulator that replays fights to measure win rates,
-which I use to find balance outliers. See
+game state with a broad regression suite, and the same rules also drive a
+headless simulator that replays fights to measure win rates. I use that shared
+rules layer to find balance outliers before they land in the playable loop. See
 [docs/design/balance-by-simulation.md](docs/design/balance-by-simulation.md) and
 [docs/design/symmetrical-type-chart.md](docs/design/symmetrical-type-chart.md).
 

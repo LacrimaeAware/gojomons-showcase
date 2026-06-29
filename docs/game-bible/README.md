@@ -1,6 +1,6 @@
 # Living Game Bible
 
-Generated from the current game data on 2026-06-22. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the source game repo canon before this snapshot is written.
+Generated from the current game data on 2026-06-29. This is the one-stop public reference for the project spine, roster, types, moves, items, relics, and opponent structure. Counts are checked against the source game repo canon before this snapshot is written.
 
 ## Interactive Bible
 
