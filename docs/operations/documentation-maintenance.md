@@ -4,10 +4,13 @@ Use this checklist when updating the showcase repo or preparing public pages.
 
 ## Routine Freshness Pass
 
-1. Read [docs/README.md](../README.md) and the latest return handoff. Treat
+1. Fetch/prune both repos and inspect branch plus worktree status before
+   editing. If the main showcase checkout is dirty, do the audit in a clean
+   worktree and leave local-only changes alone.
+2. Read [docs/README.md](../README.md) and the latest return handoff. Treat
    `roadmap/current-state.md` as a dated handoff, not the live count source.
-2. Compare README claims against the current playable game and current roadmap.
-3. Refresh the source game repo canon first:
+3. Compare README claims against the current playable game and current roadmap.
+4. Refresh the source game repo canon first:
 
 ```powershell
 # Run from the private/source Gojomons repo:
@@ -18,24 +21,24 @@ python DOCUMENTATION/tools/doc_intake.py generate_game_manifest --write
 python DOCUMENTATION/tools/docs_canon.py generate_project_facts --write
 ```
 
-4. Check whether roadmap docs still label ideas correctly: current, roadmap,
+5. Check whether roadmap docs still label ideas correctly: current, roadmap,
    future intended, possible alternative, parked, cut, or needs call.
-5. If public orientation docs repeat counts or current content shape, point them
+6. If public orientation docs repeat counts or current content shape, point them
    back to the Living Game Bible snapshot unless the recap is doing real work.
-6. Keep chronological material chronological. If a page is old pipeline context,
+7. Keep chronological material chronological. If a page is old pipeline context,
    label it that way instead of silently treating it as current.
-7. Regenerate the Living Game Bible if roster, move, item, relic, type-chart, or
+8. Regenerate the Living Game Bible if roster, move, item, relic, type-chart, or
    opponent data changed:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-game-bible.ps1
 ```
 
-8. Update orientation surfaces that duplicate generated counts or snapshot text,
+9. Update orientation surfaces that duplicate generated counts or snapshot text,
    especially the root `README.md` scale block and any hard-coded copy inside
    `docs/game-bible/living-game-bible.html`.
-9. Update links after moving docs.
-10. Run the public-doc check:
+10. Update links after moving docs.
+11. Run the public-doc check:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-public-docs.ps1

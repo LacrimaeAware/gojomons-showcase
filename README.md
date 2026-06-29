@@ -47,7 +47,7 @@ resolve on their own, so you win or lose on drafting, routing, and synergies.
 
 | | |
 |---|---|
-| Lines of GDScript | **~46,200** |
+| Lines of GDScript | **~46,225** |
 | Scripts (`.gd`) | **239** |
 | Scenes (`.tscn`) | **114** |
 | Commits | **871** in this repo |

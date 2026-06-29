@@ -1,8 +1,9 @@
 # Roadmap
 
-Start with [`current-state.md`](current-state.md) if returning after a break.
-Use [`showcase-documentation-plan.md`](showcase-documentation-plan.md) for the
-current public documentation shape.
+Start with [`showcase-documentation-plan.md`](showcase-documentation-plan.md)
+for the evergreen public framing and status labels. Use
+[`current-state.md`](current-state.md) for the latest dated handoff, repo
+hygiene notes, and next-work context.
 
 `pipeline_view.html` is an interactive checklist of the development pipeline,
 grouped by system area (Combat, Macro, Map, Town, Overworld, Unlocks, and more),

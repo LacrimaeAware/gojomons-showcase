@@ -11,8 +11,8 @@ live here.
   economy, catalog, bosses, balance, and roadmap.
 - [Generated Bible files](game-bible/README.md): the current public snapshot for
   roster, type, move, item, relic, and opponent data.
-- [Current state](roadmap/current-state.md): dated handoff and next-work note,
-  not the primary source for live counts.
+- [Current state](roadmap/current-state.md): dated weekly handoff and repo-hygiene
+  note, not the primary source for live counts.
 - [Showcase documentation plan](roadmap/showcase-documentation-plan.md): current
   public framing, status labels, and open decisions.
 - [Roadmap index](roadmap/README.md): roadmap document map.
